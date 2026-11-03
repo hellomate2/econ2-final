@@ -22,8 +22,8 @@
 </ul>
 <p>The consumption function in his notation is <code class="f">C = C̄ + mpc × (Y − T)</code>. Here C̄ (read "C bar") is <strong>autonomous consumption</strong>, the part of consumption that does not depend on income. The mpc is "between 0 and 1." His slide adds why the economy-wide mpc is an average: "The poor have high MPC equal to 1, while the rich have much lower MPC (closer to 0)." Part of the reason is the size of consumption needs relative to income, and part is wealth.</p>
 <p>Because taxes enter as <code class="f">mpc × (Y − T)</code>, a $1 rise in T lowers consumption by mpc dollars at every level of income. Households absorb the rest of the hit by saving less.</p>
-<figure class="graph"><svg viewBox="0 0 400 384" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
-<rect x="0" y="0" width="400" height="384" fill="#ffffff"/>
+<figure class="graph"><svg viewBox="0 0 400 394" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="400" height="394" fill="#ffffff"/>
 <polyline points="52.0,179.0 272.0,179.0 272.0,344.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
 <polyline points="52.0,206.5 272.0,206.5 272.0,344.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
 <line x1="52" y1="344.0" x2="382.0" y2="344.0" stroke="#1d2430" stroke-width="1.4"/>
@@ -40,7 +40,7 @@
 <text x="45" y="210.5" text-anchor="end" fill="#1d2430">10</text>
 <line x1="48" y1="179.0" x2="52" y2="179.0" stroke="#1d2430"/>
 <text x="45" y="183.0" text-anchor="end" fill="#1d2430">12</text>
-<text x="217.0" y="380" text-anchor="middle" fill="#1d2430" font-weight="600">Income, Y</text>
+<text x="217.0" y="390" text-anchor="middle" fill="#1d2430" font-weight="600">Income, Y</text>
 <text x="12" y="179.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 179.0)">Consumption, C</text>
 <polyline points="52.0,289.0 57.5,286.2 63.0,283.5 68.5,280.8 74.0,278.0 79.5,275.2 85.0,272.5 90.5,269.8 96.0,267.0 101.5,264.2 107.0,261.5 112.5,258.8 118.0,256.0 123.5,253.2 129.0,250.5 134.5,247.8 140.0,245.0 145.5,242.2 151.0,239.5 156.5,236.8 162.0,234.0 167.5,231.2 173.0,228.5 178.5,225.8 184.0,223.0 189.5,220.2 195.0,217.5 200.5,214.8 206.0,212.0 211.5,209.2 217.0,206.5 222.5,203.8 228.0,201.0 233.5,198.2 239.0,195.5 244.5,192.8 250.0,190.0 255.5,187.2 261.0,184.5 266.5,181.8 272.0,179.0 277.5,176.2 283.0,173.5 288.5,170.8 294.0,168.0 299.5,165.2 305.0,162.5 310.5,159.8 316.0,157.0 321.5,154.2 327.0,151.5 332.5,148.8 338.0,146.0 343.5,143.3 349.0,140.5 354.5,137.8 360.0,135.0 365.5,132.2 371.0,129.5 376.5,126.8 382.0,124.0" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
 <polyline points="52.0,316.5 57.5,313.8 63.0,311.0 68.5,308.2 74.0,305.5 79.5,302.8 85.0,300.0 90.5,297.2 96.0,294.5 101.5,291.8 107.0,289.0 112.5,286.2 118.0,283.5 123.5,280.8 129.0,278.0 134.5,275.2 140.0,272.5 145.5,269.8 151.0,267.0 156.5,264.2 162.0,261.5 167.5,258.8 173.0,256.0 178.5,253.2 184.0,250.5 189.5,247.8 195.0,245.0 200.5,242.2 206.0,239.5 211.5,236.8 217.0,234.0 222.5,231.2 228.0,228.5 233.5,225.8 239.0,223.0 244.5,220.2 250.0,217.5 255.5,214.8 261.0,212.0 266.5,209.2 272.0,206.5 277.5,203.8 283.0,201.0 288.5,198.2 294.0,195.5 299.5,192.8 305.0,190.0 310.5,187.2 316.0,184.5 321.5,181.8 327.0,179.0 332.5,176.2 338.0,173.5 343.5,170.8 349.0,168.0 354.5,165.2 360.0,162.5 365.5,159.8 371.0,157.0 376.5,154.2 382.0,151.5" fill="none" stroke="#c0392b" stroke-width="2.2" stroke-linejoin="round"/>
@@ -64,13 +64,13 @@
 <h3>Why there is a multiplier, in his two pictures</h3>
 <p>His slide 34 gives the round-by-round story. Suppose autonomous spending rises by $1. In the first round, output rises by $1, because someone sold $1 more. That $1 is someone's income, so in the second round they spend mpc of it, and output rises by another mpc dollars. In the third round, those sellers spend mpc of that, adding mpc² dollars. Adding every round, <code class="f">1 + mpc + mpc² + ... = 1 ÷ (1 − mpc)</code>. His slide 6 says the same thing in words: "Shocks to income multiply across consumers because we're interconnected."</p>
 <p>His slides 9 to 11 make the point with numbers. If PAE were a flat line, so that spending did not depend on income, GDP would be $30 trillion in normal times, "And maybe $29 if a trillion dollar shock pushes planned spending down." Once PAE slopes upward because C depends on Y, the same $1 trillion shock lowers output to $27.5 trillion: "an even bigger multiplied effect on output." A $2.5 trillion fall from a $1 trillion shock is a multiplier of 2.5, which goes with an mpc of 0.6, since 1 ÷ (1 − 0.6) = 2.5.</p>
-<figure class="graph"><svg viewBox="0 0 400 384" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
-<rect x="0" y="0" width="400" height="384" fill="#ffffff"/>
+<figure class="graph"><svg viewBox="0 0 400 394" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="400" height="394" fill="#ffffff"/>
 <polyline points="52.0,69.0 327.0,69.0 327.0,344.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
 <polyline points="52.0,78.2 317.8,78.2 317.8,344.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
 <line x1="52" y1="344.0" x2="382.0" y2="344.0" stroke="#1d2430" stroke-width="1.4"/>
 <line x1="52" y1="14" x2="52" y2="344.0" stroke="#1d2430" stroke-width="1.4"/>
-<text x="217.0" y="380" text-anchor="middle" fill="#1d2430" font-weight="600">Real GDP, Y ($ trillions)</text>
+<text x="217.0" y="390" text-anchor="middle" fill="#1d2430" font-weight="600">Real GDP, Y ($ trillions)</text>
 <text x="12" y="179.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 179.0)">PAE ($ trillions)</text>
 <polyline points="52.0,344.0 382.0,14.0" fill="none" stroke="#6b7380" stroke-width="1.8" stroke-linejoin="round"/>
 <polyline points="52.0,69.0 339.1,69.0" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
@@ -87,8 +87,8 @@
 <text x="235.3" y="234.0" fill="#1d2430" text-anchor="middle" font-size="11">flat PAE: a $1 trillion drop</text>
 <text x="235.3" y="252.3" fill="#1d2430" text-anchor="middle" font-size="11">lowers Y by exactly $1 trillion</text>
 </svg><figcaption>His slide 10 drawn to scale. With a flat PAE line (slope 0, so no multiplier), a $1 trillion drop in PAE lowers equilibrium output by exactly $1 trillion, from 30 to 29.</figcaption></figure>
-<figure class="graph"><svg viewBox="0 0 400 384" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
-<rect x="0" y="0" width="400" height="384" fill="#ffffff"/>
+<figure class="graph"><svg viewBox="0 0 400 394" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="400" height="394" fill="#ffffff"/>
 <polyline points="52.0,69.0 327.0,69.0 327.0,344.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
 <polyline points="52.0,91.9 304.1,91.9 304.1,344.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
 <line x1="52" y1="344.0" x2="382.0" y2="344.0" stroke="#1d2430" stroke-width="1.4"/>
@@ -105,7 +105,7 @@
 <text x="45" y="95.9" text-anchor="end" fill="#1d2430">27.5</text>
 <line x1="48" y1="69.0" x2="52" y2="69.0" stroke="#1d2430"/>
 <text x="45" y="73.0" text-anchor="end" fill="#1d2430">30</text>
-<text x="217.0" y="380" text-anchor="middle" fill="#1d2430" font-weight="600">Real GDP, Y ($ trillions)</text>
+<text x="217.0" y="390" text-anchor="middle" fill="#1d2430" font-weight="600">Real GDP, Y ($ trillions)</text>
 <text x="12" y="179.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 179.0)">PAE ($ trillions)</text>
 <polyline points="52.0,344.0 382.0,14.0" fill="none" stroke="#6b7380" stroke-width="1.8" stroke-linejoin="round"/>
 <polyline points="52.0,234.0 339.1,61.7" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
@@ -134,8 +134,8 @@
 <tr><td>0.8</td><td>5</td><td>−4</td><td>$5.00</td><td>$4.00</td></tr>
 </table></div>
 <p>A pattern worth knowing: the tax multiplier is always exactly 1 smaller in size than the spending multiplier, because 1 ÷ (1 − mpc) − mpc ÷ (1 − mpc) = (1 − mpc) ÷ (1 − mpc) = 1.</p>
-<figure class="graph"><svg viewBox="0 0 400 384" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
-<rect x="0" y="0" width="400" height="384" fill="#ffffff"/>
+<figure class="graph"><svg viewBox="0 0 400 394" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="400" height="394" fill="#ffffff"/>
 <polyline points="52.0,119.0 277.0,119.0 277.0,344.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
 <polyline points="52.0,89.0 307.0,89.0 307.0,344.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
 <polyline points="52.0,59.0 337.0,59.0 337.0,344.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
@@ -159,7 +159,7 @@
 <text x="45" y="93.0" text-anchor="end" fill="#1d2430">34</text>
 <line x1="48" y1="59.0" x2="52" y2="59.0" stroke="#1d2430"/>
 <text x="45" y="63.0" text-anchor="end" fill="#1d2430">38</text>
-<text x="217.0" y="380" text-anchor="middle" fill="#1d2430" font-weight="600">Real GDP, Y ($ trillions)</text>
+<text x="217.0" y="390" text-anchor="middle" fill="#1d2430" font-weight="600">Real GDP, Y ($ trillions)</text>
 <text x="12" y="179.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 179.0)">PAE ($ trillions)</text>
 <polyline points="52.0,344.0 382.0,14.0" fill="none" stroke="#6b7380" stroke-width="1.8" stroke-linejoin="round"/>
 <polyline points="52.0,231.5 339.1,87.9" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
@@ -183,8 +183,8 @@
 <li>An <strong>expansionary gap</strong> means Y is above Y* (an overheating economy). Contractionary fiscal policy (cut G or raise T) closes it.</li>
 </ul>
 <div class="key"><p>Three steps. (1) Needed change in output: <code class="f">ΔY = Y* − Y</code>. (2) Needed change in PAE: <code class="f">ΔPAE = ΔY × (1 − mpc)</code>, because ΔY = ΔPAE ÷ (1 − mpc). (3) Either change G by ΔPAE, or change T by <code class="f">−ΔPAE ÷ mpc</code>.</p></div>
-<figure class="graph"><svg viewBox="0 0 400 384" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
-<rect x="0" y="0" width="400" height="384" fill="#ffffff"/>
+<figure class="graph"><svg viewBox="0 0 400 394" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="400" height="394" fill="#ffffff"/>
 <polyline points="52.0,113.0 283.0,113.0 283.0,344.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
 <polyline points="52.0,80.0 316.0,80.0 316.0,344.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
 <line x1="52" y1="344.0" x2="382.0" y2="344.0" stroke="#1d2430" stroke-width="1.4"/>
@@ -201,7 +201,7 @@
 <text x="45" y="117.0" text-anchor="end" fill="#1d2430">28</text>
 <line x1="48" y1="80.0" x2="52" y2="80.0" stroke="#1d2430"/>
 <text x="45" y="84.0" text-anchor="end" fill="#1d2430">32</text>
-<text x="217.0" y="380" text-anchor="middle" fill="#1d2430" font-weight="600">Real GDP, Y ($ trillions)</text>
+<text x="217.0" y="390" text-anchor="middle" fill="#1d2430" font-weight="600">Real GDP, Y ($ trillions)</text>
 <text x="12" y="179.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 179.0)">PAE ($ trillions)</text>
 <polyline points="52.0,344.0 382.0,14.0" fill="none" stroke="#6b7380" stroke-width="1.8" stroke-linejoin="round"/>
 <polyline points="52.0,228.5 339.1,85.0" fill="none" stroke="#c0392b" stroke-width="2.2" stroke-linejoin="round"/>
@@ -219,8 +219,8 @@
 <polygon points="118.0,180.7 121.5,187.9 114.5,187.9" fill="#1f5fbf"/>
 <text x="123.0" y="202.1" fill="#1f5fbf" text-anchor="start" font-size="11">G +2</text>
 </svg><figcaption>Recessionary gap. PAE<sub>1</sub> = 14 + 0.5Y gives Y = 28, but Y* = 32. To raise Y by 4 with a multiplier of 2, PAE must rise by 2. Raising G by 2 gives PAE<sub>2</sub> = 16 + 0.5Y, which crosses the 45-degree line at exactly 32. A tax cut would need to be 2 ÷ 0.5 = 4.</figcaption></figure>
-<figure class="graph"><svg viewBox="0 0 400 384" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
-<rect x="0" y="0" width="400" height="384" fill="#ffffff"/>
+<figure class="graph"><svg viewBox="0 0 400 394" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="400" height="394" fill="#ffffff"/>
 <polyline points="52.0,47.0 349.0,47.0 349.0,344.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
 <polyline points="52.0,80.0 316.0,80.0 316.0,344.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
 <line x1="52" y1="344.0" x2="382.0" y2="344.0" stroke="#1d2430" stroke-width="1.4"/>
@@ -237,7 +237,7 @@
 <text x="45" y="84.0" text-anchor="end" fill="#1d2430">32</text>
 <line x1="48" y1="47.0" x2="52" y2="47.0" stroke="#1d2430"/>
 <text x="45" y="51.0" text-anchor="end" fill="#1d2430">36</text>
-<text x="217.0" y="380" text-anchor="middle" fill="#1d2430" font-weight="600">Real GDP, Y ($ trillions)</text>
+<text x="217.0" y="390" text-anchor="middle" fill="#1d2430" font-weight="600">Real GDP, Y ($ trillions)</text>
 <text x="12" y="179.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 179.0)">PAE ($ trillions)</text>
 <polyline points="52.0,344.0 382.0,14.0" fill="none" stroke="#6b7380" stroke-width="1.8" stroke-linejoin="round"/>
 <polyline points="52.0,195.5 358.9,42.1" fill="none" stroke="#c0392b" stroke-width="2.2" stroke-linejoin="round"/>
@@ -256,8 +256,8 @@
 <text x="123.0" y="192.2" fill="#1f5fbf" text-anchor="start" font-size="11">T +4, PAE −2</text>
 </svg><figcaption>Expansionary gap. PAE<sub>1</sub> = 18 + 0.5Y gives Y = 36, above Y* = 32. PAE must fall by 4 × 0.5 = 2. A tax increase of 4 lowers PAE by 0.5 × 4 = 2, giving PAE<sub>2</sub> = 16 + 0.5Y and Y = 32. Cutting G by 2 would do the same.</figcaption></figure>
 <p><strong>The offsetting-shock shortcut (Fall 2025 Q3(j)).</strong> If the question tells you a shock moved PAE by some amount and asks for the G that fully counteracts it, you do not need the multiplier at all. Change G by the same amount in the opposite direction. The shock lowered the intercept of PAE; the new G raises it back to where it was, so the PAE line, and with it equilibrium output, returns to the original. The key's wording: "As long as the marginal propensity to consume remains the same across these offsetting shocks, then government could match the decrease in PAE with an equal and opposite increase in PAE deriving from G." To offset the same shock with taxes, you would need a tax cut of the PAE drop divided by mpc, which is bigger.</p>
-<figure class="graph"><svg viewBox="0 0 400 384" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
-<rect x="0" y="0" width="400" height="384" fill="#ffffff"/>
+<figure class="graph"><svg viewBox="0 0 400 394" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="400" height="394" fill="#ffffff"/>
 <polyline points="52.0,69.0 327.0,69.0 327.0,344.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
 <polyline points="52.0,96.5 299.5,96.5 299.5,344.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
 <line x1="52" y1="344.0" x2="382.0" y2="344.0" stroke="#1d2430" stroke-width="1.4"/>
@@ -274,7 +274,7 @@
 <text x="45" y="100.5" text-anchor="end" fill="#1d2430">27</text>
 <line x1="48" y1="69.0" x2="52" y2="69.0" stroke="#1d2430"/>
 <text x="45" y="73.0" text-anchor="end" fill="#1d2430">30</text>
-<text x="217.0" y="380" text-anchor="middle" fill="#1d2430" font-weight="600">Real GDP, Y ($ trillions)</text>
+<text x="217.0" y="390" text-anchor="middle" fill="#1d2430" font-weight="600">Real GDP, Y ($ trillions)</text>
 <text x="12" y="179.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 179.0)">PAE ($ trillions)</text>
 <polyline points="52.0,344.0 382.0,14.0" fill="none" stroke="#6b7380" stroke-width="1.8" stroke-linejoin="round"/>
 <polyline points="52.0,160.7 339.1,65.0" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
@@ -346,8 +346,8 @@
 </table></div>
 <p>Notice the mix. Most of the early money was tax cuts and transfers, which raise PAE by only mpc per dollar. Direct government investment, which raises PAE one for one, was zero through March, only $5.9 billion through June, and still only $16.5 billion of the $151.4 billion through August. That is the "different speeds" point. (The rows add to $151.5 billion through August and $11.7 billion through March because each row is rounded; the totals shown are the slide's.)</p>
 <p>His slide 67 shows CBO's February 2011 estimates of the effect: in the first quarter of 2010, real GDP was 1.8 to 4.3 percent higher and the unemployment rate 0.7 to 1.5 percentage points lower than without the Act. His verdict on slide 66: "The Recovery Act counteracted some, but by no means all of the fall in output."</p>
-<figure class="graph"><svg viewBox="0 0 400 384" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
-<rect x="0" y="0" width="400" height="384" fill="#ffffff"/>
+<figure class="graph"><svg viewBox="0 0 400 394" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="400" height="394" fill="#ffffff"/>
 <polyline points="52.0,69.0 327.0,69.0 327.0,344.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
 <polyline points="52.0,105.7 290.3,105.7 290.3,344.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
 <polyline points="52.0,142.3 253.7,142.3 253.7,344.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
@@ -371,7 +371,7 @@
 <text x="45" y="109.7" text-anchor="end" fill="#1d2430">26</text>
 <line x1="48" y1="69.0" x2="52" y2="69.0" stroke="#1d2430"/>
 <text x="45" y="73.0" text-anchor="end" fill="#1d2430">30</text>
-<text x="217.0" y="380" text-anchor="middle" fill="#1d2430" font-weight="600">Real GDP, Y ($ trillions)</text>
+<text x="217.0" y="390" text-anchor="middle" fill="#1d2430" font-weight="600">Real GDP, Y ($ trillions)</text>
 <text x="12" y="179.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 179.0)">PAE ($ trillions)</text>
 <polyline points="52.0,344.0 382.0,14.0" fill="none" stroke="#6b7380" stroke-width="1.8" stroke-linejoin="round"/>
 <polyline points="52.0,206.5 339.1,62.9" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
