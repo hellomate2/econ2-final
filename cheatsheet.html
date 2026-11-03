@@ -1,1 +1,772 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Cheat sheet · ECON 2 Final</title><meta name="description" content="One page, front and back, the size he allows. Also as a PDF."><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&family=Fira+Sans+Condensed:wght@500;600;700&family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="site.css"></head><body><header class="top"><button class="menu-btn" aria-label="Open unit list">Units</button><a class="brand" href="index.html">ECON 2 <span>Final</span></a><nav><a href="index.html" class="">Home</a><a href="plan.html" class="">Study plan</a><a href="flashcards.html" class="">Flashcards</a><a href="cheatsheet.html" class="on">Cheat sheet</a></nav></header><div class="layout" style="grid-template-columns:minmax(0,1fr)"><main class="content"><article style="max-width:1100px"><h1>Cheat sheet</h1><p>Coming soon.</p></article></main></div><script src="site.js"></script></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Cheat sheet · ECON 2 Final</title><meta name="description" content="One page, front and back, the size he allows. Also as a PDF."><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&family=Fira+Sans+Condensed:wght@500;600;700&family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="site.css"></head><body><header class="top"><button class="menu-btn" aria-label="Open unit list">Units</button><a class="brand" href="index.html">ECON 2 <span>Final</span></a><nav><a href="index.html" class="">Home</a><a href="plan.html" class="">Study plan</a><a href="flashcards.html" class="">Flashcards</a><a href="cheatsheet.html" class="on">Cheat sheet</a></nav></header><div class="layout" style="grid-template-columns:minmax(0,1fr)"><main class="content"><article style="max-width:1100px"><link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet"><style>/* ECON 2 final cheat sheet. Everything is scoped under .csx so it can sit inside the study site (site.css) without leaking.
+   Print: two .sheet blocks, each exactly 10.5in tall on letter paper with .25in margins, overflow hidden.
+   Topic = solid color band, gold row = memorize, red chip = trap. */
+.csx{--paper:#fff;--ink:#121821;--mute:#566070;--rule:#c9d0da;--rule2:#7d8796;--key:#ffe18a;--keybar:#d79b00;--trap:#c21f30;--thbg:#eef1f5;
+--t0:#334155;--t1:#155a96;--t2:#1b6c41;--t3:#93500b;--t4:#0b6a73;--t5:#3f48a6;--t6:#7c2c88;--t7:#b23a1a;
+--f:"Fira Sans Condensed","Arial Narrow",Arial,sans-serif;--fs:7pt;--lh:1.15;
+color:var(--ink);font-family:var(--f);-webkit-print-color-adjust:exact;print-color-adjust:exact;font-kerning:normal}
+.csx *{box-sizing:border-box}
+.csx .sheet{width:8in;max-width:100%;margin:0 auto 28px;font-size:var(--fs);line-height:var(--lh);background:var(--paper);color:var(--ink)}
+.csx .sheet header{display:flex;justify-content:space-between;font-weight:700;font-size:8.6pt;line-height:1.25;border-bottom:2px solid var(--ink);padding-bottom:1px;margin:0;letter-spacing:.01em}
+.csx .legend{margin:2px 0 3px;padding:1px 3px 2px;font-size:6.7pt;line-height:1.2;border-bottom:.75px solid var(--rule2);color:var(--ink)}
+.csx .legend b{font-weight:700}
+.csx .cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 7px;margin-top:3px}
+.csx .col{display:flex;flex-direction:column;gap:4px;min-width:0}
+.csx section{margin:0}
+.csx h2{font-family:var(--f);font-weight:700;font-size:8.4pt;line-height:1.22;margin:0 0 2px;padding:.5px 3px 0;color:#fff;background:var(--hc,var(--t0));border:0;border-radius:1.5px;display:flex;justify-content:space-between;align-items:baseline;gap:4px;text-wrap:initial}
+.csx h2 small{font-size:6.7pt;font-weight:600;opacity:.95;white-space:nowrap;letter-spacing:.02em}
+.csx .t0{--hc:var(--t0)}.csx .t1{--hc:var(--t1)}.csx .t2{--hc:var(--t2)}.csx .t3{--hc:var(--t3)}.csx .t4{--hc:var(--t4)}.csx .t5{--hc:var(--t5)}.csx .t6{--hc:var(--t6)}.csx .t7{--hc:var(--t7)}
+.csx ul,.csx ol{margin:0;padding:0}
+.csx ul{list-style:none}
+.csx li{position:relative;padding-left:7px;margin:0 0 .8px;max-width:none;text-wrap:pretty}
+.csx ul>li::before{content:"";position:absolute;left:1px;top:calc(var(--lh) * .5em - 1.5px);width:3px;height:3px;border-radius:50%;background:var(--mute)}
+.csx li.k{background:var(--key);font-weight:500;padding:0 2px 0 7px;box-shadow:inset 2px 0 0 var(--keybar)}
+.csx li.k::before{display:none}
+.csx .tr{display:inline-block;background:var(--trap);color:#fff;font-weight:700;font-size:6.6pt;line-height:1.15;padding:0 2px;border-radius:1.5px;text-transform:uppercase;letter-spacing:.05em;vertical-align:.04em;margin-right:1px}
+.csx sub{font-size:6.6pt;line-height:0;vertical-align:-.25em}
+.csx sup{font-size:6.6pt;line-height:0;vertical-align:.4em}
+.csx b{font-weight:600}
+.csx table{border-collapse:collapse;width:100%;margin:1px 0 2px;font-size:6.85pt;line-height:1.13;font-variant-numeric:tabular-nums lining-nums;table-layout:fixed}
+.csx th,.csx td{border:.75px solid var(--rule);padding:.2px 2px;text-align:left;vertical-align:top;text-wrap:pretty}
+.csx th{font-weight:600;background:var(--thbg);border-bottom-color:var(--rule2)}
+.csx td:first-child{font-weight:500}
+/* side 1: graph atlas cells */
+.csx .s1 .cols{counter-reset:g}
+.csx .cell{border:1px solid var(--rule);border-radius:3px;padding:0 4px 3px;min-width:0;overflow:hidden}
+.csx .cell h2{margin:0 -4px 2px;padding:1px 4px;border-radius:2px 2px 0 0}
+.csx .cell h2 span::before{counter-increment:g;content:counter(g);display:inline-block;min-width:1.3em;margin-right:4px;padding:0 2px;border-radius:2px;background:#fff;color:var(--hc);text-align:center;font-size:.9em;line-height:1.2}
+.csx .cell svg{display:block;width:100%;height:auto;margin:0 0 1px}
+.csx .cell p.lab{margin:1px 0;font-size:6.75pt;line-height:1.16}
+.csx .cell p.lab b{color:var(--hc)}
+.csx .cell ol{margin:1px 0 0;padding-left:11px;font-size:6.75pt;line-height:1.16;list-style:decimal}
+.csx .cell ol li{padding-left:0;margin:0 0 .5px}
+.csx .cell ul.calc{background:#fff6d1;box-shadow:inset 2px 0 0 var(--keybar);padding:1px 2px 1px 3px;margin-top:2px;font-size:6.75pt;line-height:1.16}
+.csx .cell ul.calc li{margin:0 0 .6px}
+/* side 2 */
+.csx .p ul{margin-top:1px}
+.csx .p li{font-size:7pt}
+.csx .defs li{font-size:6.8pt}
+@media screen and (max-width:760px){.csx .sheet{width:auto;font-size:13px}.csx .cols{grid-template-columns:1fr;gap:10px}.csx .col{gap:8px}.csx table,.csx .legend,.csx .cell p.lab,.csx .cell ol,.csx .cell ul.calc,.csx .p li,.csx .defs li{font-size:12.5px}.csx h2{font-size:15px}.csx .sheet header{font-size:14px;flex-wrap:wrap}}
+@media print{.csx .sheet{margin:0;height:10.5in;overflow:hidden;break-after:page;page-break-after:always}.csx .sheet:last-child{break-after:auto;page-break-after:auto}}
+@page{size:letter;margin:.25in}
+.csx-intro h1{margin:0 0 6px}.csx-intro p{margin:0 0 8px}.csx-intro .btn{margin-left:6px}.csx-note{color:var(--mute);font-size:15px}.csx{background:#fff;padding:12px 0;border-radius:8px;margin-top:10px;color:#121821}@media print{.csx-intro{display:none}.csx{padding:0;margin:0}}</style><div class="csx-intro"><h1>Cheat sheet</h1><p>One letter page, front and back, the size the final allows. Side 1 is every graph with how to draw and shift it; side 2 is the rules, formulas, and definitions. <a class="btn primary" href="ECON2-final-cheat-sheet.pdf">Download the print PDF</a></p><p class="csx-note">Print it at actual size (100%, no "fit to page") and double-sided.</p></div><div class="csx"><div class="sheet s1"><header><span>ECON 2 final · Side 1 · Every graph: draw it, label it, shift it</span><span>Name and SID on every page</span></header>
+<div class="legend"><b>Symbol key.</b> W wage · L workers · MPL marginal product of labor (extra output from one more worker) · MR marginal revenue (the price, for a competitive firm) · MRPL = MR × MPL, extra revenue from one more worker · MPK, MRPK the same for capital K · R rental price of capital · P price · Q quantity · D demand · S supply · Pw world price · QS, QD quantity supplied, demanded · t tariff per unit · WM washing machines · Y real GDP (output and income) · Y* potential output · C consumption · I investment · G government purchases · NX net exports = EX (exports) − IM (imports) · T net taxes (taxes minus transfers) · PAE planned aggregate expenditure · mpc marginal propensity to consume · A autonomous spending · i nominal interest rate · r real interest rate · π inflation · RF Fed reaction function · e price of $1 in another currency · NKI net capital inflows · MB, MC marginal benefit, cost · EMC, SMC, PMC external, social, private marginal cost · DWL deadweight loss · CS consumer surplus · Δ "change in" · 1 before, 2 after</div>
+<div class="cols">
+<div class="col">
+<section class="cell t1"><h2><span>Labor market and its shifts</span><small>Class 12</small></h2><svg viewBox="0 0 240 108" xmlns="http://www.w3.org/2000/svg" font-family="Fira Sans Condensed, Arial Narrow, Arial, sans-serif" font-size="9">
+<g transform="translate(0,0)">
+<rect x="0" y="0" width="116" height="108" fill="#ffffff"/>
+<polyline points="22.0,50.6 74.8,50.6 74.8,95.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<polyline points="22.0,60.4 57.2,60.4 57.2,95.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<path d="M22.0,14.0 V95.0 H110.0" fill="none" stroke="#1d2430" stroke-width="1.1"/>
+<line x1="74.8" y1="95.0" x2="74.8" y2="97.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="74.8" y="105.5" text-anchor="middle" font-size="9" fill="#1d2430">L1</text>
+<line x1="57.2" y1="95.0" x2="57.2" y2="97.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="57.2" y="105.5" text-anchor="middle" font-size="9" fill="#1d2430">L2</text>
+<line x1="19.5" y1="50.6" x2="22.0" y2="50.6" stroke="#1d2430" stroke-width="0.9"/>
+<text x="18.5" y="52.8" text-anchor="end" font-size="9" fill="#1d2430">W1</text>
+<line x1="19.5" y1="60.4" x2="22.0" y2="60.4" stroke="#1d2430" stroke-width="0.9"/>
+<text x="18.5" y="64.6" text-anchor="end" font-size="9" fill="#1d2430">W2</text>
+<text x="19.0" y="20.0" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">W</text>
+<text x="110.0" y="105.5" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">L</text>
+<text x="66.0" y="10.0" text-anchor="middle" font-size="9" font-weight="700" fill="#1d2430">Demand shifts in</text>
+<polyline points="22.0,20.9 110.0,70.3" fill="none" stroke="#1f5fbf" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="22.0,40.7 110.0,90.1" fill="none" stroke="#1f5fbf" stroke-width="1.7" stroke-dasharray="6 4" stroke-linejoin="round"/>
+<polyline points="22.0,80.2 110.0,30.8" fill="none" stroke="#c0392b" stroke-width="1.7" stroke-linejoin="round"/>
+<circle cx="74.8" cy="50.6" r="2.2" fill="#1d2430"/>
+<circle cx="57.2" cy="60.4" r="2.2" fill="#1d2430"/>
+<text x="24.6" y="17.2" fill="#1f5fbf" text-anchor="start" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">MRPL1</text>
+<text x="109.1" y="81.4" fill="#1f5fbf" text-anchor="end" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">MRPL2</text>
+<text x="109.1" y="44.9" fill="#c0392b" text-anchor="end" font-size="9.5" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">S</text>
+<line x1="94.2" y1="61.4" x2="85.4" y2="71.8" stroke="#1d2430" stroke-width="1.6"/>
+<polygon points="85.4,71.8 87.4,64.0 92.7,68.6" fill="#1d2430"/>
+</g>
+<g transform="translate(124,0)">
+<rect x="0" y="0" width="116" height="108" fill="#ffffff"/>
+<polyline points="22.0,50.6 74.8,50.6 74.8,95.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<polyline points="22.0,60.4 92.4,60.4 92.4,95.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<path d="M22.0,14.0 V95.0 H110.0" fill="none" stroke="#1d2430" stroke-width="1.1"/>
+<line x1="74.8" y1="95.0" x2="74.8" y2="97.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="74.8" y="105.5" text-anchor="middle" font-size="9" fill="#1d2430">L1</text>
+<line x1="92.4" y1="95.0" x2="92.4" y2="97.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="92.4" y="105.5" text-anchor="middle" font-size="9" fill="#1d2430">L2</text>
+<line x1="19.5" y1="50.6" x2="22.0" y2="50.6" stroke="#1d2430" stroke-width="0.9"/>
+<text x="18.5" y="52.8" text-anchor="end" font-size="9" fill="#1d2430">W1</text>
+<line x1="19.5" y1="60.4" x2="22.0" y2="60.4" stroke="#1d2430" stroke-width="0.9"/>
+<text x="18.5" y="64.6" text-anchor="end" font-size="9" fill="#1d2430">W2</text>
+<text x="19.0" y="20.0" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">W</text>
+<text x="110.0" y="105.5" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">L</text>
+<text x="66.0" y="10.0" text-anchor="middle" font-size="9" font-weight="700" fill="#1d2430">Supply shifts out</text>
+<polyline points="22.0,20.9 110.0,70.3" fill="none" stroke="#1f5fbf" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="22.0,80.2 110.0,30.8" fill="none" stroke="#c0392b" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="30.8,95.0 110.0,50.6" fill="none" stroke="#c0392b" stroke-width="1.7" stroke-dasharray="6 4" stroke-linejoin="round"/>
+<circle cx="74.8" cy="50.6" r="2.2" fill="#1d2430"/>
+<circle cx="92.4" cy="60.4" r="2.2" fill="#1d2430"/>
+<text x="25.5" y="29.6" fill="#1f5fbf" text-anchor="start" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">D = MRPL</text>
+<text x="109.1" y="27.6" fill="#c0392b" text-anchor="end" font-size="9.5" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">S1</text>
+<text x="109.1" y="46.9" fill="#c0392b" text-anchor="end" font-size="9.5" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">S2</text>
+<line x1="50.2" y1="64.1" x2="64.2" y2="73.8" stroke="#1d2430" stroke-width="1.6"/>
+<polygon points="64.2,73.8 56.3,72.6 60.3,66.8" fill="#1d2430"/>
+</g>
+</svg>
+<ol><li>W up, L across. D = MRPL = MR × MPL slopes down; S slopes up. Mark W1 and L1 on both axes.</li><li>Shift only the curve the story touches. Mark W2, L2, and an arrow.</li></ol>
+<ul class="calc"><li>Output price (MR) or MPL falls (trade war, cheaper imports, machines replace these workers): D shifts in, so W and L fall.</li><li>MR or MPL rises (better tools, export boom): D shifts out, so W and L rise.</li><li>More workers (immigration): S shifts out, so W falls and L rises. Removals shift S in.</li></ul></section>
+<section class="cell t1"><h2><span>Wage floor and the EITC</span><small>Classes 12, 13</small></h2><svg viewBox="0 0 240 108" xmlns="http://www.w3.org/2000/svg" font-family="Fira Sans Condensed, Arial Narrow, Arial, sans-serif" font-size="9">
+<g transform="translate(0,0)">
+<rect x="0" y="0" width="116" height="108" fill="#ffffff"/>
+<polyline points="22.0,50.6 74.8,50.6 74.8,95.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<polyline points="57.2,40.7 57.2,95.0" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<polyline points="92.4,40.7 92.4,95.0" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<path d="M22.0,14.0 V95.0 H110.0" fill="none" stroke="#1d2430" stroke-width="1.1"/>
+<line x1="74.8" y1="95.0" x2="74.8" y2="97.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="74.8" y="105.5" text-anchor="middle" font-size="9" fill="#1d2430">L1</text>
+<line x1="57.2" y1="95.0" x2="57.2" y2="97.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="56.2" y="105.5" text-anchor="middle" font-size="9" fill="#1d2430">LD</text>
+<line x1="92.4" y1="95.0" x2="92.4" y2="97.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="93.4" y="105.5" text-anchor="middle" font-size="9" fill="#1d2430">LS</text>
+<line x1="19.5" y1="50.6" x2="22.0" y2="50.6" stroke="#1d2430" stroke-width="0.9"/>
+<text x="18.5" y="53.8" text-anchor="end" font-size="9" fill="#1d2430">W1</text>
+<line x1="19.5" y1="40.7" x2="22.0" y2="40.7" stroke="#1d2430" stroke-width="0.9"/>
+<text x="18.5" y="43.9" text-anchor="end" font-size="9" fill="#1d2430">WN</text>
+<text x="19.0" y="20.0" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">W</text>
+<text x="110.0" y="105.5" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">L</text>
+<text x="66.0" y="10.0" text-anchor="middle" font-size="9" font-weight="700" fill="#1d2430">Wage floor WN</text>
+<polyline points="22.0,20.9 110.0,70.3" fill="none" stroke="#1f5fbf" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="22.0,80.2 110.0,30.8" fill="none" stroke="#c0392b" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="22.0,40.7 110.0,40.7" fill="none" stroke="#1d2430" stroke-width="1.3" stroke-linejoin="round"/>
+<circle cx="74.8" cy="50.6" r="2.2" fill="#1d2430"/>
+<circle cx="57.2" cy="40.7" r="2.2" fill="#1d2430"/>
+<circle cx="92.4" cy="40.7" r="2.2" fill="#1d2430"/>
+<path d="M57.2,40.7 V37.7 H92.4 V40.7" fill="none" stroke="#1d2430" stroke-width="1"/>
+<text x="74.8" y="35.7" text-anchor="middle" font-size="9" font-weight="700" fill="#1d2430" stroke="#fff" stroke-width="2.6" paint-order="stroke">unemployed</text>
+<text x="24.6" y="17.2" fill="#1f5fbf" text-anchor="start" font-size="9.5" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">D</text>
+<text x="108.2" y="26.9" fill="#c0392b" text-anchor="end" font-size="9.5" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">S</text>
+</g>
+<g transform="translate(124,0)">
+<rect x="0" y="0" width="116" height="108" fill="#ffffff"/>
+<polyline points="22.0,50.6 74.8,50.6 74.8,95.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<polyline points="22.0,60.4 92.4,60.4 92.4,95.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<polyline points="22.0,40.7 92.4,40.7" stroke="#2a9d8f" stroke-width="1" stroke-dasharray="2.5 2"/>
+<path d="M22.0,14.0 V95.0 H110.0" fill="none" stroke="#1d2430" stroke-width="1.1"/>
+<line x1="74.8" y1="95.0" x2="74.8" y2="97.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="74.8" y="105.5" text-anchor="middle" font-size="9" fill="#1d2430">L1</text>
+<line x1="92.4" y1="95.0" x2="92.4" y2="97.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="92.4" y="105.5" text-anchor="middle" font-size="9" fill="#1d2430">L2</text>
+<line x1="19.5" y1="50.6" x2="22.0" y2="50.6" stroke="#1d2430" stroke-width="0.9"/>
+<text x="18.5" y="52.8" text-anchor="end" font-size="9" fill="#1d2430">W1</text>
+<line x1="19.5" y1="60.4" x2="22.0" y2="60.4" stroke="#1d2430" stroke-width="0.9"/>
+<text x="18.5" y="64.6" text-anchor="end" font-size="9" fill="#1d2430">W2</text>
+<text x="19.0" y="20.0" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">W</text>
+<text x="110.0" y="105.5" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">L</text>
+<text x="66.0" y="10.0" text-anchor="middle" font-size="9" font-weight="700" fill="#1d2430">EITC: S down by credit</text>
+<polyline points="22.0,20.9 110.0,70.3" fill="none" stroke="#1f5fbf" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="22.0,80.2 110.0,30.8" fill="none" stroke="#c0392b" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="30.8,95.0 110.0,50.6" fill="none" stroke="#c0392b" stroke-width="1.7" stroke-dasharray="6 4" stroke-linejoin="round"/>
+<circle cx="74.8" cy="50.6" r="2.2" fill="#1d2430"/>
+<circle cx="92.4" cy="60.4" r="2.2" fill="#1d2430"/>
+<circle cx="92.4" cy="40.7" r="2.2" fill="#2a9d8f"/>
+<text x="24.6" y="47.4" fill="#2a9d8f" text-anchor="start" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">W2 + EITC</text>
+<line x1="100.3" y1="36.2" x2="100.3" y2="56.0" stroke="#2a9d8f" stroke-width="1.2"/>
+<text x="24.6" y="17.2" fill="#1f5fbf" text-anchor="start" font-size="9.5" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">D</text>
+<text x="109.1" y="27.6" fill="#c0392b" text-anchor="end" font-size="9.5" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">S1</text>
+<text x="109.1" y="67.3" fill="#c0392b" text-anchor="end" font-size="9.5" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">S2</text>
+</g>
+</svg>
+<ol><li>Floor: a flat line at WN above W1. Firms hire LD (on D); LS people want work (on S).</li><li>EITC (earned income tax credit): shift S down by the credit. Employers pay W2; workers get W2 + EITC.</li></ol>
+<ul class="calc"><li>Unemployment = LS − LD. Example: D is W = 30 − 2L, S is W = 6 + 2L, WN = 22: LD = 4, LS = 8, so 4 are unemployed.</li><li>A floor below W1 does not bind. With the EITC, L rises and W2 &lt; W1 &lt; W2 + EITC.</li></ul></section>
+<section class="cell t1"><h2><span>Two labor markets: inequality</span><small>Class 13</small></h2><svg viewBox="0 0 240 108" xmlns="http://www.w3.org/2000/svg" font-family="Fira Sans Condensed, Arial Narrow, Arial, sans-serif" font-size="9">
+<g transform="translate(0,0)">
+<rect x="0" y="0" width="116" height="108" fill="#ffffff"/>
+<polyline points="22.0,58.5 74.8,58.5 74.8,95.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<polyline points="22.0,67.7 61.6,67.7 61.6,95.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<path d="M22.0,14.0 V95.0 H110.0" fill="none" stroke="#1d2430" stroke-width="1.1"/>
+<line x1="74.8" y1="95.0" x2="74.8" y2="97.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="76.8" y="105.5" text-anchor="middle" font-size="9" fill="#1d2430">LL1</text>
+<line x1="61.6" y1="95.0" x2="61.6" y2="97.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="59.6" y="105.5" text-anchor="middle" font-size="9" fill="#1d2430">LL2</text>
+<line x1="19.5" y1="58.5" x2="22.0" y2="58.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="18.5" y="60.2" text-anchor="end" font-size="9" fill="#1d2430">WL1</text>
+<line x1="19.5" y1="67.7" x2="22.0" y2="67.7" stroke="#1d2430" stroke-width="0.9"/>
+<text x="18.5" y="72.4" text-anchor="end" font-size="9" fill="#1d2430">WL2</text>
+<text x="19.0" y="20.0" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">W</text>
+<text x="110.0" y="105.5" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">L</text>
+<text x="66.0" y="10.0" text-anchor="middle" font-size="9" font-weight="700" fill="#1d2430">Low-skill market</text>
+<polyline points="22.0,22.1 110.0,82.8" fill="none" stroke="#1f5fbf" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="22.0,40.3 101.2,95.0" fill="none" stroke="#1f5fbf" stroke-width="1.7" stroke-dasharray="6 4" stroke-linejoin="round"/>
+<polyline points="22.0,95.0 110.0,34.2" fill="none" stroke="#c0392b" stroke-width="1.7" stroke-linejoin="round"/>
+<circle cx="74.8" cy="58.5" r="2.2" fill="#1d2430"/>
+<circle cx="61.6" cy="67.7" r="2.2" fill="#1d2430"/>
+<text x="25.5" y="19.0" fill="#1f5fbf" text-anchor="start" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">DL1</text>
+<text x="71.3" y="87.7" fill="#1f5fbf" text-anchor="start" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">DL2</text>
+<text x="109.1" y="45.5" fill="#c0392b" text-anchor="end" font-size="9.5" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">SL</text>
+<line x1="44.9" y1="32.4" x2="36.1" y2="45.8" stroke="#1d2430" stroke-width="1.6"/>
+<polygon points="36.1,45.8 37.1,37.8 42.9,41.7" fill="#1d2430"/>
+</g>
+<g transform="translate(124,0)">
+<rect x="0" y="0" width="116" height="108" fill="#ffffff"/>
+<polyline points="22.0,64.6 77.0,64.6 77.0,95.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<polyline points="22.0,55.5 88.0,55.5 88.0,95.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<path d="M22.0,14.0 V95.0 H110.0" fill="none" stroke="#1d2430" stroke-width="1.1"/>
+<line x1="77.0" y1="95.0" x2="77.0" y2="97.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="75.0" y="105.5" text-anchor="middle" font-size="9" fill="#1d2430">LH1</text>
+<line x1="88.0" y1="95.0" x2="88.0" y2="97.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="91.0" y="105.5" text-anchor="middle" font-size="9" fill="#1d2430">LH2</text>
+<line x1="19.5" y1="64.6" x2="22.0" y2="64.6" stroke="#1d2430" stroke-width="0.9"/>
+<text x="18.5" y="68.8" text-anchor="end" font-size="9" fill="#1d2430">WH1</text>
+<line x1="19.5" y1="55.5" x2="22.0" y2="55.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="18.5" y="57.7" text-anchor="end" font-size="9" fill="#1d2430">WH2</text>
+<text x="19.0" y="20.0" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">W</text>
+<text x="110.0" y="105.5" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">L</text>
+<text x="66.0" y="10.0" text-anchor="middle" font-size="9" font-weight="700" fill="#1d2430">High-skill market</text>
+<polyline points="22.0,34.2 110.0,82.8" fill="none" stroke="#1f5fbf" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="22.0,19.0 110.0,67.7" fill="none" stroke="#1f5fbf" stroke-width="1.7" stroke-dasharray="6 4" stroke-linejoin="round"/>
+<polyline points="40.3,95.0 110.0,37.3" fill="none" stroke="#c0392b" stroke-width="1.7" stroke-linejoin="round"/>
+<circle cx="77.0" cy="64.6" r="2.2" fill="#1d2430"/>
+<circle cx="88.0" cy="55.5" r="2.2" fill="#1d2430"/>
+<text x="24.8" y="43.3" fill="#1f5fbf" text-anchor="start" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">DH1</text>
+<text x="109.5" y="62.3" fill="#1f5fbf" text-anchor="end" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">DH2</text>
+<text x="107.8" y="32.0" fill="#c0392b" text-anchor="end" font-size="9.5" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">SH</text>
+<line x1="57.8" y1="53.4" x2="63.8" y2="46.7" stroke="#1d2430" stroke-width="1.6"/>
+<polygon points="63.8,46.7 61.5,54.4 56.4,49.7" fill="#1d2430"/>
+</g>
+</svg>
+<ol><li>Low-skill panel on the left, high-skill on the right, WH1 above WL1. Inequality is the gap WH − WL.</li><li>Shift only the curves the story names.</li></ol>
+<ul class="calc"><li>Globalization (shown): low-skill goods get cheaper, so DL shifts in; high-skill export prices rise, so DH shifts out. The gap grows.</li><li>Skill-biased technology: only DH shifts out. More college graduates: SH shifts out and SL shifts in, so the gap shrinks.</li></ul></section>
+<section class="cell t1"><h2><span>Capital: rental price and bond price</span><small>Class 14</small></h2><svg viewBox="0 0 240 108" xmlns="http://www.w3.org/2000/svg" font-family="Fira Sans Condensed, Arial Narrow, Arial, sans-serif" font-size="9">
+<g transform="translate(0,0)">
+<rect x="0" y="0" width="116" height="108" fill="#ffffff"/>
+<polyline points="22.0,73.5 66.0,73.5 66.0,95.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<polyline points="22.0,59.1 66.0,59.1 66.0,95.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<path d="M22.0,14.0 V95.0 H110.0" fill="none" stroke="#1d2430" stroke-width="1.1"/>
+<line x1="66.0" y1="95.0" x2="66.0" y2="97.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="66.0" y="105.5" text-anchor="middle" font-size="9" fill="#1d2430">K1</text>
+<line x1="19.5" y1="73.5" x2="22.0" y2="73.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="18.5" y="76.7" text-anchor="end" font-size="9" fill="#1d2430">R1</text>
+<line x1="19.5" y1="59.1" x2="22.0" y2="59.1" stroke="#1d2430" stroke-width="0.9"/>
+<text x="18.5" y="62.3" text-anchor="end" font-size="9" fill="#1d2430">R2</text>
+<text x="19.0" y="20.0" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">R</text>
+<text x="110.0" y="105.5" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">K</text>
+<text x="66.0" y="10.0" text-anchor="middle" font-size="9" font-weight="700" fill="#1d2430">Rental market for capital</text>
+<polyline points="22.0,37.5 92.4,95.0" fill="none" stroke="#1f5fbf" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="22.0,23.2 110.0,95.0" fill="none" stroke="#1f5fbf" stroke-width="1.7" stroke-dasharray="6 4" stroke-linejoin="round"/>
+<polyline points="66.0,95.0 66.0,19.6" fill="none" stroke="#c0392b" stroke-width="1.7" stroke-linejoin="round"/>
+<circle cx="66.0" cy="73.5" r="2.2" fill="#1d2430"/>
+<circle cx="66.0" cy="59.1" r="2.2" fill="#1d2430"/>
+<text x="68.6" y="25.0" fill="#c0392b" text-anchor="start" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">S (fixed)</text>
+<text x="25.5" y="33.2" fill="#1f5fbf" text-anchor="start" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">MRPK1</text>
+<text x="32.6" y="21.0" fill="#1f5fbf" text-anchor="start" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">MRPK2</text>
+<line x1="80.1" y1="85.7" x2="91.5" y2="81.0" stroke="#1d2430" stroke-width="1.6"/>
+<polygon points="91.5,81.0 86.2,86.9 83.5,80.5" fill="#1d2430"/>
+</g>
+<g transform="translate(124,0)">
+<rect x="0" y="0" width="116" height="108" fill="#ffffff"/>
+<polyline points="24.0,30.9 24.0,30.9 24.0,95.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<polyline points="24.0,41.9 67.0,41.9 67.0,95.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<path d="M24.0,14.0 V95.0 H110.0" fill="none" stroke="#1d2430" stroke-width="1.1"/>
+<line x1="67.0" y1="95.0" x2="67.0" y2="97.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="67.0" y="105.5" text-anchor="middle" font-size="9" fill="#1d2430">10</text>
+<line x1="24.0" y1="95.0" x2="24.0" y2="97.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="24.0" y="105.5" text-anchor="middle" font-size="9" fill="#1d2430">0</text>
+<line x1="21.5" y1="30.9" x2="24.0" y2="30.9" stroke="#1d2430" stroke-width="0.9"/>
+<text x="20.5" y="34.1" text-anchor="end" font-size="9" fill="#1d2430">300</text>
+<line x1="21.5" y1="41.9" x2="24.0" y2="41.9" stroke="#1d2430" stroke-width="0.9"/>
+<text x="20.5" y="45.1" text-anchor="end" font-size="9" fill="#1d2430">249</text>
+<text x="21.0" y="20.0" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">Price</text>
+<text x="110.0" y="105.5" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">i (%)</text>
+<text x="67.0" y="10.0" text-anchor="middle" font-size="9" font-weight="700" fill="#1d2430">Bond price and i</text>
+<polyline points="24.0,30.9 25.4,31.4 26.9,31.8 28.3,32.2 29.7,32.6 31.2,33.0 32.6,33.4 34.0,33.8 35.5,34.2 36.9,34.6 38.3,35.0 39.8,35.4 41.2,35.7 42.6,36.1 44.1,36.5 45.5,36.9 46.9,37.2 48.4,37.6 49.8,37.9 51.2,38.3 52.7,38.6 54.1,39.0 55.5,39.3 57.0,39.6 58.4,40.0 59.8,40.3 61.3,40.6 62.7,41.0 64.1,41.3 65.6,41.6 67.0,41.9 68.4,42.2 69.9,42.5 71.3,42.8 72.7,43.1 74.2,43.4 75.6,43.7 77.0,44.0 78.5,44.3 79.9,44.6 81.3,44.9 82.8,45.2 84.2,45.4 85.6,45.7 87.1,46.0 88.5,46.3 89.9,46.5 91.4,46.8 92.8,47.0 94.2,47.3 95.7,47.6 97.1,47.8 98.5,48.1 100.0,48.3 101.4,48.6 102.8,48.8 104.3,49.1 105.7,49.3 107.1,49.5 108.6,49.8 110.0,50.0" fill="none" stroke="#1f5fbf" stroke-width="1.7" stroke-linejoin="round"/>
+<circle cx="24.0" cy="30.9" r="2.2" fill="#1d2430"/>
+<circle cx="67.0" cy="41.9" r="2.2" fill="#1d2430"/>
+<text x="27.4" y="69.4" fill="#1d2430" text-anchor="start" font-size="9" font-weight="500" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">at i = 0, price =</text>
+<text x="27.4" y="79.0" fill="#1d2430" text-anchor="start" font-size="9" font-weight="500" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">F1 + F2 + F3 = 300</text>
+<text x="109.1" y="56.6" fill="#1f5fbf" text-anchor="end" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">price = PV</text>
+</g>
+</svg>
+<ol><li>Rental market: R up, K across, D = MRPK = MR × MPK, S vertical (the stock is fixed). A higher output price shifts MRPK out, and only R rises.</li><li>Bond: the price falls as i rises. At i = 0 the price is F1 + F2 + F3.</li></ol>
+<ul class="calc"><li>$100 a year for 3 years is worth $300 at i = 0 and $248.69 at i = 10%.</li><li>If future MPK or MR falls, each MRPK falls, so the price of capital falls.</li></ul></section>
+</div>
+<div class="col">
+<section class="cell t2"><h2><span>Exports, then a trade war</span><small>Class 16</small></h2><svg viewBox="0 0 240 108" xmlns="http://www.w3.org/2000/svg" font-family="Fira Sans Condensed, Arial Narrow, Arial, sans-serif" font-size="9">
+<g transform="translate(0,0)">
+<rect x="0" y="0" width="240" height="108" fill="#ffffff"/>
+<polyline points="26.0,56.3 122.0,56.3 122.0,95.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<polyline points="26.0,43.4 90.0,43.4 90.0,95.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<polyline points="26.0,43.4 154.0,43.4 154.0,95.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<polyline points="26.0,69.2 154.0,69.2 154.0,95.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<path d="M26.0,6.0 V95.0 H234.0" fill="none" stroke="#1d2430" stroke-width="1.1"/>
+<line x1="122.0" y1="95.0" x2="122.0" y2="97.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="122.0" y="105.5" text-anchor="middle" font-size="9" fill="#1d2430">Q1</text>
+<line x1="90.0" y1="95.0" x2="90.0" y2="97.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="90.0" y="105.5" text-anchor="middle" font-size="9" fill="#1d2430">QD</text>
+<line x1="154.0" y1="95.0" x2="154.0" y2="97.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="154.0" y="105.5" text-anchor="middle" font-size="9" fill="#1d2430">QS</text>
+<line x1="23.5" y1="56.3" x2="26.0" y2="56.3" stroke="#1d2430" stroke-width="0.9"/>
+<text x="22.5" y="59.5" text-anchor="end" font-size="9" fill="#1d2430">P1</text>
+<line x1="23.5" y1="43.4" x2="26.0" y2="43.4" stroke="#1d2430" stroke-width="0.9"/>
+<text x="22.5" y="46.6" text-anchor="end" font-size="9" fill="#1d2430">Pw</text>
+<line x1="23.5" y1="69.2" x2="26.0" y2="69.2" stroke="#1d2430" stroke-width="0.9"/>
+<text x="22.5" y="72.4" text-anchor="end" font-size="9" fill="#1d2430">Ptw</text>
+<text x="23.0" y="12.0" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">P</text>
+<text x="234.0" y="105.5" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">Q</text>
+<polyline points="26.0,17.7 218.0,95.0" fill="none" stroke="#1f5fbf" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="26.0,95.0 226.0,14.4" fill="none" stroke="#c0392b" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="26.0,43.4 227.6,43.4" fill="none" stroke="#1d2430" stroke-width="1.3" stroke-linejoin="round"/>
+<polyline points="154.0,95.0 154.0,43.4" fill="none" stroke="#7a3fb0" stroke-width="1.4" stroke-linejoin="round"/>
+<circle cx="122.0" cy="56.3" r="2.2" fill="#1d2430"/>
+<circle cx="90.0" cy="43.4" r="2.2" fill="#1d2430"/>
+<circle cx="154.0" cy="43.4" r="2.2" fill="#1d2430"/>
+<path d="M90.0,43.4 V40.4 H154.0 V43.4" fill="none" stroke="#1d2430" stroke-width="1"/>
+<text x="122.0" y="38.4" text-anchor="middle" font-size="9" font-weight="700" fill="#1d2430" stroke="#fff" stroke-width="2.6" paint-order="stroke">exports = QS − QD</text>
+<circle cx="154.0" cy="69.2" r="2.2" fill="#7a3fb0"/>
+<line x1="158.0" y1="46.0" x2="158.0" y2="66.6" stroke="#7a3fb0" stroke-width="1.6"/>
+<polygon points="158.0,66.6 154.5,59.4 161.5,59.4" fill="#7a3fb0"/>
+<text x="227.6" y="40.9" fill="#1d2430" text-anchor="end" font-size="9.5" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">Pw</text>
+<text x="29.2" y="15.1" fill="#1f5fbf" text-anchor="start" font-size="9.5" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">D</text>
+<text x="224.4" y="24.1" fill="#c0392b" text-anchor="end" font-size="9.5" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">S</text>
+</g>
+</svg>
+<ol><li>Draw D and S; mark P1 and Q1. Draw a flat Pw line above P1.</li><li>At Pw read QD on D and QS on S. Exports = QS − QD.</li><li>Trade war, harvest fixed and not storable: go straight down from QS to D. That height is Ptw, below P1.</li></ol>
+<ul class="calc"><li>Example: D is P = 12 − Q, S is P = Q, Pw = 8: QD = 4, QS = 8, exports 4. Trade war: Ptw = 12 − 8 = 4 (P1 was 6).</li><li>If other buyers pay more than Ptw, their price is the floor, and exports = QS − QD at that price.</li></ul></section>
+<section class="cell t2"><h2><span>Imports with a tariff or a quota</span><small>Class 16</small></h2><svg viewBox="0 0 240 112" xmlns="http://www.w3.org/2000/svg" font-family="Fira Sans Condensed, Arial Narrow, Arial, sans-serif" font-size="9">
+<g transform="translate(0,0)">
+<rect x="0" y="0" width="240" height="112" fill="#ffffff"/>
+<polygon points="34.0,73.0 74.0,73.0 94.0,60.0 34.0,60.0" fill="#f2c14e" fill-opacity="0.55" stroke="none"/>
+<polygon points="74.0,73.0 94.0,60.0 94.0,73.0" fill="#e0455a" fill-opacity="0.6" stroke="none"/>
+<polygon points="94.0,73.0 174.0,73.0 174.0,60.0 94.0,60.0" fill="#2a9d8f" fill-opacity="0.45" stroke="none"/>
+<polygon points="174.0,73.0 174.0,60.0 194.0,73.0" fill="#e0455a" fill-opacity="0.6" stroke="none"/>
+<polygon points="34.0,99.0 74.0,73.0 34.0,73.0" fill="#9cc0f0" fill-opacity="0.6" stroke="none"/>
+<polyline points="34.0,34.0 134.0,34.0 134.0,99.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<polyline points="74.0,73.0 74.0,99.0" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<polyline points="94.0,60.0 94.0,99.0" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<polyline points="174.0,60.0 174.0,99.0" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<polyline points="194.0,73.0 194.0,99.0" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<path d="M34.0,6.0 V99.0 H234.0" fill="none" stroke="#1d2430" stroke-width="1.1"/>
+<line x1="134.0" y1="99.0" x2="134.0" y2="101.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="134.0" y="109.5" text-anchor="middle" font-size="9" fill="#1d2430">Q1</text>
+<line x1="74.0" y1="99.0" x2="74.0" y2="101.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="74.0" y="109.5" text-anchor="middle" font-size="9" fill="#1d2430">QS1</text>
+<line x1="94.0" y1="99.0" x2="94.0" y2="101.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="94.0" y="109.5" text-anchor="middle" font-size="9" fill="#1d2430">QS2</text>
+<line x1="174.0" y1="99.0" x2="174.0" y2="101.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="174.0" y="109.5" text-anchor="middle" font-size="9" fill="#1d2430">QD2</text>
+<line x1="194.0" y1="99.0" x2="194.0" y2="101.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="194.0" y="109.5" text-anchor="middle" font-size="9" fill="#1d2430">QD1</text>
+<line x1="31.5" y1="34.0" x2="34.0" y2="34.0" stroke="#1d2430" stroke-width="0.9"/>
+<text x="30.5" y="37.2" text-anchor="end" font-size="9" fill="#1d2430">P1</text>
+<line x1="31.5" y1="73.0" x2="34.0" y2="73.0" stroke="#1d2430" stroke-width="0.9"/>
+<text x="30.5" y="79.2" text-anchor="end" font-size="9" fill="#1d2430">Pw</text>
+<line x1="31.5" y1="60.0" x2="34.0" y2="60.0" stroke="#1d2430" stroke-width="0.9"/>
+<text x="30.5" y="61.2" text-anchor="end" font-size="9" fill="#1d2430">Pw + t</text>
+<text x="31.0" y="12.0" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">P</text>
+<text x="234.0" y="109.5" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">Q</text>
+<polyline points="94.0,8.0 234.0,99.0" fill="none" stroke="#1f5fbf" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="34.0,99.0 174.0,8.0" fill="none" stroke="#c0392b" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="34.0,73.0 229.0,73.0" fill="none" stroke="#1d2430" stroke-width="1.1" stroke-linejoin="round"/>
+<polyline points="34.0,60.0 229.0,60.0" fill="none" stroke="#1d2430" stroke-width="1.1" stroke-linejoin="round"/>
+<circle cx="134.0" cy="34.0" r="2.2" fill="#1d2430"/>
+<circle cx="74.0" cy="73.0" r="2.2" fill="#1d2430"/>
+<circle cx="94.0" cy="60.0" r="2.2" fill="#1d2430"/>
+<circle cx="174.0" cy="60.0" r="2.2" fill="#1d2430"/>
+<circle cx="194.0" cy="73.0" r="2.2" fill="#1d2430"/>
+<text x="50.0" y="69.4" fill="#1d2430" text-anchor="start" font-size="9.5" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">c</text>
+<text x="87.5" y="71.1" fill="#1d2430" text-anchor="middle" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">d</text>
+<text x="134.0" y="69.4" fill="#1d2430" text-anchor="middle" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">e = revenue</text>
+<text x="180.5" y="71.1" fill="#1d2430" text-anchor="middle" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">f</text>
+<text x="44.0" y="82.1" fill="#1d2430" text-anchor="start" font-size="9.5" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">g</text>
+<text x="232.0" y="92.5" fill="#1f5fbf" text-anchor="end" font-size="9.5" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">D</text>
+<text x="159.0" y="13.2" fill="#c0392b" text-anchor="end" font-size="9.5" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">S</text>
+<text x="39.0" y="30.1" fill="#1d2430" text-anchor="start" font-size="9" font-weight="500" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">a + b = CS</text>
+</g>
+</svg>
+<ol><li>Flat Pw below P1. Imports = QD1 − QS1.</li><li>Draw Pw + t. Read QS2 on S and QD2 on D.</li><li>Letter the strip between the lines c, d, e, f (g is producer surplus before).</li></ol>
+<ul class="calc"><li>Buyers lose c + d + e + f. Producers gain c. Revenue e = t × (QD2 − QS2). DWL = d + f.</li><li>Example: D is P = 20 − Q, S is P = Q, Pw = 4, t = 2: c = 10, d = 2, e = 16, f = 2.</li><li>Quota: draw "S + quota" (S shifted right by the quota above Pw). Equal imports give the tariff's price; e becomes quota rent.</li></ul></section>
+<section class="cell t2"><h2><span>PPC and CPC: gains from trade</span><small>Class 15</small></h2><svg viewBox="0 0 240 96" xmlns="http://www.w3.org/2000/svg" font-family="Fira Sans Condensed, Arial Narrow, Arial, sans-serif" font-size="9">
+<g transform="translate(0,0)">
+<rect x="0" y="0" width="116" height="96" fill="#ffffff"/>
+<polygon points="20.0,41.8 80.0,83.0 20.0,28.0" fill="#2a9d8f" fill-opacity="0.22" stroke="none"/>
+<path d="M20.0,14.0 V83.0 H110.0" fill="none" stroke="#1d2430" stroke-width="1.1"/>
+<line x1="50.0" y1="83.0" x2="50.0" y2="85.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="50.0" y="93.5" text-anchor="middle" font-size="9" fill="#1d2430">1</text>
+<line x1="80.0" y1="83.0" x2="80.0" y2="85.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="80.0" y="93.5" text-anchor="middle" font-size="9" fill="#1d2430">2</text>
+<line x1="17.5" y1="41.8" x2="20.0" y2="41.8" stroke="#1d2430" stroke-width="0.9"/>
+<text x="16.5" y="45.0" text-anchor="end" font-size="9" fill="#1d2430">2</text>
+<line x1="17.5" y1="28.0" x2="20.0" y2="28.0" stroke="#1d2430" stroke-width="0.9"/>
+<text x="16.5" y="31.2" text-anchor="end" font-size="9" fill="#1d2430">2⅔</text>
+<text x="17.0" y="20.0" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">WM</text>
+<text x="110.0" y="93.5" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">tons</text>
+<text x="65.0" y="10.0" text-anchor="middle" font-size="9" font-weight="700" fill="#1d2430">U.S. exports soybeans</text>
+<polyline points="20.0,41.8 80.0,83.0" fill="none" stroke="#1d2430" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="80.0,83.0 20.0,28.0" fill="none" stroke="#2a9d8f" stroke-width="1.7" stroke-linejoin="round"/>
+<circle cx="50.0" cy="62.4" r="2.2" fill="#1d2430"/>
+<circle cx="50.0" cy="55.5" r="2.2" fill="#2a9d8f"/>
+<text x="27.5" y="57.2" fill="#1d2430" text-anchor="start" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">PPC</text>
+<text x="53.6" y="53.1" fill="#2a9d8f" text-anchor="start" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">CPC</text>
+<text x="21.8" y="40.5" fill="#2a9d8f" text-anchor="start" font-size="9" font-weight="500" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">gain</text>
+<text x="108.5" y="30.4" fill="#1d2430" text-anchor="end" font-size="9" font-weight="500" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">slope −1</text>
+<text x="108.5" y="38.7" fill="#2a9d8f" text-anchor="end" font-size="9" font-weight="500" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">CPC: −1⅓</text>
+</g>
+<g transform="translate(124,0)">
+<rect x="0" y="0" width="116" height="96" fill="#ffffff"/>
+<polygon points="20.0,41.8 50.0,83.0 65.0,83.0" fill="#2a9d8f" fill-opacity="0.22" stroke="none"/>
+<path d="M20.0,14.0 V83.0 H110.0" fill="none" stroke="#1d2430" stroke-width="1.1"/>
+<line x1="50.0" y1="83.0" x2="50.0" y2="85.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="50.0" y="93.5" text-anchor="middle" font-size="9" fill="#1d2430">1</text>
+<line x1="65.0" y1="83.0" x2="65.0" y2="85.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="67.0" y="93.5" text-anchor="middle" font-size="9" fill="#1d2430">1½</text>
+<line x1="17.5" y1="41.8" x2="20.0" y2="41.8" stroke="#1d2430" stroke-width="0.9"/>
+<text x="16.5" y="45.0" text-anchor="end" font-size="9" fill="#1d2430">2</text>
+<text x="17.0" y="20.0" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">WM</text>
+<text x="110.0" y="93.5" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">tons</text>
+<text x="65.0" y="10.0" text-anchor="middle" font-size="9" font-weight="700" fill="#1d2430">China exports machines</text>
+<polyline points="20.0,41.8 50.0,83.0" fill="none" stroke="#1d2430" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="20.0,41.8 65.0,83.0" fill="none" stroke="#2a9d8f" stroke-width="1.7" stroke-linejoin="round"/>
+<text x="23.6" y="74.8" fill="#1d2430" text-anchor="start" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">PPC</text>
+<text x="66.5" y="77.8" fill="#2a9d8f" text-anchor="start" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">CPC</text>
+<text x="108.5" y="30.4" fill="#1d2430" text-anchor="end" font-size="9" font-weight="500" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">slope −2</text>
+<text x="108.5" y="38.7" fill="#2a9d8f" text-anchor="end" font-size="9" font-weight="500" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">CPC: −1⅓</text>
+</g>
+</svg>
+<ol><li>PPC (production possibilities) from one worker's day: U.S. 2 tons or 2 WM; China 1 ton or 2 WM.</li><li>The CPC (consumption possibilities) starts at the good the country specializes in, with slope = minus the terms of trade.</li><li>Shade the gain: the CPC lies outside the PPC.</li></ol>
+<ul class="calc"><li>Terms of trade = export price ÷ import price = $400 ÷ $300 = 1⅓ WM per ton, between the two opportunity costs (1 and 2).</li><li>CPC far ends: U.S. 2 × 1⅓ = 2⅔ WM; China 2 × ¾ = 1½ tons.</li></ul></section>
+<section class="cell t6"><h2><span>Monopoly and negative externality</span><small>micro</small></h2><svg viewBox="0 0 240 96" xmlns="http://www.w3.org/2000/svg" font-family="Fira Sans Condensed, Arial Narrow, Arial, sans-serif" font-size="9">
+<g transform="translate(0,0)">
+<rect x="0" y="0" width="116" height="96" fill="#ffffff"/>
+<polygon points="52.7,39.8 52.7,61.4 67.0,50.6" fill="#e0455a" fill-opacity="0.7" stroke="none"/>
+<polyline points="24.0,39.8 52.7,39.8 52.7,83.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<polyline points="24.0,50.6 67.0,50.6 67.0,83.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<path d="M24.0,14.0 V83.0 H110.0" fill="none" stroke="#1d2430" stroke-width="1.1"/>
+<line x1="52.7" y1="83.0" x2="52.7" y2="85.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="52.7" y="93.5" text-anchor="middle" font-size="9" fill="#1d2430">Qm</text>
+<line x1="67.0" y1="83.0" x2="67.0" y2="85.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="68.0" y="93.5" text-anchor="middle" font-size="9" fill="#1d2430">Qc</text>
+<line x1="21.5" y1="39.8" x2="24.0" y2="39.8" stroke="#1d2430" stroke-width="0.9"/>
+<text x="20.5" y="43.0" text-anchor="end" font-size="9" fill="#1d2430">Pm</text>
+<line x1="21.5" y1="50.6" x2="24.0" y2="50.6" stroke="#1d2430" stroke-width="0.9"/>
+<text x="20.5" y="53.8" text-anchor="end" font-size="9" fill="#1d2430">Pc</text>
+<text x="21.0" y="20.0" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">P</text>
+<text x="110.0" y="93.5" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">Q</text>
+<text x="67.0" y="10.0" text-anchor="middle" font-size="9" font-weight="700" fill="#1d2430">Monopoly</text>
+<polyline points="24.0,18.2 110.0,83.0" fill="none" stroke="#1f5fbf" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="24.0,18.2 67.0,83.0" fill="none" stroke="#1f5fbf" stroke-width="1.7" stroke-dasharray="6 4" stroke-linejoin="round"/>
+<polyline points="24.0,83.0 110.0,18.2" fill="none" stroke="#c0392b" stroke-width="1.7" stroke-linejoin="round"/>
+<circle cx="52.7" cy="39.8" r="2.2" fill="#1d2430"/>
+<circle cx="67.0" cy="50.6" r="2.2" fill="#1d2430"/>
+<circle cx="52.7" cy="61.4" r="2.2" fill="#1d2430"/>
+<text x="108.6" y="78.7" fill="#1f5fbf" text-anchor="end" font-size="9.5" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">D</text>
+<text x="68.4" y="80.4" fill="#1f5fbf" text-anchor="start" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">MR</text>
+<text x="108.6" y="35.0" fill="#c0392b" text-anchor="end" font-size="9.5" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">MC</text>
+<text x="57.0" y="33.7" fill="#c0392b" text-anchor="start" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">DWL</text>
+</g>
+<g transform="translate(124,0)">
+<rect x="0" y="0" width="116" height="96" fill="#ffffff"/>
+<polygon points="56.0,45.8 92.0,45.8 92.0,70.6" fill="#e0455a" fill-opacity="0.7" stroke="none"/>
+<polyline points="20.0,45.8 56.0,45.8 56.0,83.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<polyline points="20.0,70.6 92.0,70.6 92.0,83.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<path d="M20.0,14.0 V83.0 H110.0" fill="none" stroke="#1d2430" stroke-width="1.1"/>
+<line x1="56.0" y1="83.0" x2="56.0" y2="85.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="56.0" y="93.5" text-anchor="middle" font-size="9" fill="#1d2430">Q*</text>
+<line x1="92.0" y1="83.0" x2="92.0" y2="85.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="89.0" y="93.5" text-anchor="middle" font-size="9" fill="#1d2430">Qmkt</text>
+<text x="17.0" y="20.0" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">P</text>
+<text x="110.0" y="93.5" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">Q</text>
+<text x="65.0" y="10.0" text-anchor="middle" font-size="9" font-weight="700" fill="#1d2430">Negative externality</text>
+<polyline points="20.0,21.0 110.0,83.0" fill="none" stroke="#1f5fbf" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="20.0,70.6 110.0,70.6" fill="none" stroke="#c0392b" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="20.0,45.8 110.0,45.8" fill="none" stroke="#c0392b" stroke-width="1.7" stroke-dasharray="6 4" stroke-linejoin="round"/>
+<circle cx="56.0" cy="45.8" r="2.2" fill="#1d2430"/>
+<circle cx="92.0" cy="70.6" r="2.2" fill="#1d2430"/>
+<line x1="32.6" y1="69.8" x2="32.6" y2="46.5" stroke="#1d2430" stroke-width="1.2"/>
+<text x="35.3" y="61.3" fill="#1d2430" text-anchor="start" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">EMC = tax</text>
+<text x="109.1" y="42.7" fill="#c0392b" text-anchor="end" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">SMC</text>
+<text x="24.5" y="78.0" fill="#c0392b" text-anchor="start" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">S = PMC</text>
+<text x="23.6" y="21.6" fill="#1f5fbf" text-anchor="start" font-size="9.5" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">D</text>
+<text x="77.6" y="54.5" fill="#c0392b" text-anchor="start" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">DWL</text>
+</g>
+</svg>
+<ol><li>Monopoly: D = MB. MR starts with D and is twice as steep. Qm is where MR = MC; go up to D for Pm.</li><li>Externality: SMC = PMC + EMC. The market makes Qmkt (D meets PMC); the efficient Q* is where D meets SMC.</li></ol>
+<ul class="calc"><li>A monopolist raises P and cuts Q. Example: P = 300 − 10Q, MC = 10Q: 10 units at $200 against 15 at $150.</li><li>A Pigouvian tax equal to EMC moves the market to Q*.</li></ul></section>
+</div>
+<div class="col">
+<section class="cell t4"><h2><span>Keynesian cross: base and shock</span><small>Classes 19 to 21</small></h2><svg viewBox="0 0 240 145" xmlns="http://www.w3.org/2000/svg" font-family="Fira Sans Condensed, Arial Narrow, Arial, sans-serif" font-size="9">
+<g transform="translate(0,0)">
+<rect x="0" y="0" width="240" height="145" fill="#ffffff"/>
+<polyline points="24.0,17.5 138.5,17.5 138.5,132.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<polyline points="24.0,36.5 119.5,36.5 119.5,132.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<path d="M24.0,6.0 V132.0 H234.0" fill="none" stroke="#1d2430" stroke-width="1.1"/>
+<line x1="138.5" y1="132.0" x2="138.5" y2="134.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="138.5" y="142.5" text-anchor="middle" font-size="9" fill="#1d2430">24</text>
+<line x1="119.5" y1="132.0" x2="119.5" y2="134.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="119.5" y="142.5" text-anchor="middle" font-size="9" fill="#1d2430">20</text>
+<line x1="21.5" y1="17.5" x2="24.0" y2="17.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="20.5" y="20.7" text-anchor="end" font-size="9" fill="#1d2430">24</text>
+<line x1="21.5" y1="36.5" x2="24.0" y2="36.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="20.5" y="39.7" text-anchor="end" font-size="9" fill="#1d2430">20</text>
+<line x1="21.5" y1="74.7" x2="24.0" y2="74.7" stroke="#1d2430" stroke-width="0.9"/>
+<text x="20.5" y="76.9" text-anchor="end" font-size="9" fill="#1d2430">12</text>
+<line x1="21.5" y1="84.3" x2="24.0" y2="84.3" stroke="#1d2430" stroke-width="0.9"/>
+<text x="20.5" y="89.5" text-anchor="end" font-size="9" fill="#1d2430">10</text>
+<text x="21.0" y="12.0" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">PAE</text>
+<text x="234.0" y="142.5" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">Y</text>
+<polyline points="24.0,132.0 148.0,8.0" fill="none" stroke="#1d2430" stroke-width="1.4" stroke-linejoin="round"/>
+<polyline points="24.0,74.7 157.5,8.0" fill="none" stroke="#1f5fbf" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="24.0,84.3 176.5,8.0" fill="none" stroke="#c0392b" stroke-width="1.7" stroke-dasharray="6 4" stroke-linejoin="round"/>
+<circle cx="138.5" cy="17.5" r="2.2" fill="#1d2430"/>
+<circle cx="119.5" cy="36.5" r="2.2" fill="#1d2430"/>
+<circle cx="24.0" cy="74.7" r="2.2" fill="#1f5fbf"/>
+<circle cx="24.0" cy="84.3" r="2.2" fill="#c0392b"/>
+<text x="45.5" y="127.2" fill="#1d2430" text-anchor="start" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">45° line: Y = PAE</text>
+<text x="231.6" y="29.9" fill="#1f5fbf" text-anchor="end" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">PAE = 12 + 0.5Y</text>
+<text x="231.6" y="48.0" fill="#c0392b" text-anchor="end" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">PAE' = 10 + 0.5Y</text>
+<line x1="57.4" y1="59.0" x2="57.4" y2="66.6" stroke="#1d2430" stroke-width="1.6"/>
+<polygon points="57.4,66.6 53.9,59.4 60.9,59.4" fill="#1d2430"/>
+<text x="43.1" y="50.9" fill="#1d2430" text-anchor="start" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">ΔPAE = −2</text>
+<line x1="136.6" y1="117.7" x2="121.4" y2="117.7" stroke="#1d2430" stroke-width="1.6"/>
+<polygon points="121.4,117.7 128.6,114.2 128.6,121.2" fill="#1d2430"/>
+<text x="129.0" y="112.0" fill="#1d2430" text-anchor="middle" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">ΔY = −4</text>
+<text x="148.1" y="125.3" fill="#1d2430" text-anchor="start" font-size="9" font-weight="500" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">multiplier = 2</text>
+</g>
+</svg>
+<ol><li>Same scale on both axes; draw the 45° line Y = PAE.</li><li>PAE = C + I + G + NX starts at A and rises with slope mpc.</li><li>The crossing is Y = A ÷ (1 − mpc). Mark it on both axes.</li><li>Shock: PAE' is parallel, moved by ΔPAE. Mark its intercept and its crossing.</li></ol>
+<ul class="calc"><li>12 + 0.5Y gives Y = 12 ÷ 0.5 = 24; 10 + 0.5Y gives 20.</li><li>ΔPAE = −2 is the vertical shift. ΔY = 2 × (−2) = −4 is the horizontal move.</li><li>Right of the crossing Y &gt; PAE, so unsold goods pile up and firms cut output.</li></ul></section>
+<section class="cell t4"><h2><span>Output gaps and the policy fix</span><small>Classes 20 to 22</small></h2><svg viewBox="0 0 240 126" xmlns="http://www.w3.org/2000/svg" font-family="Fira Sans Condensed, Arial Narrow, Arial, sans-serif" font-size="9">
+<g transform="translate(0,0)">
+<rect x="0" y="0" width="116" height="126" fill="#ffffff"/>
+<polyline points="8.0,48.0 73.0,48.0 73.0,113.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<path d="M8.0,13.0 V113.0 H112.0" fill="none" stroke="#1d2430" stroke-width="1.1"/>
+<line x1="73.0" y1="113.0" x2="73.0" y2="115.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="70.0" y="123.5" text-anchor="middle" font-size="9" fill="#1d2430">Y1</text>
+<line x1="86.0" y1="113.0" x2="86.0" y2="115.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="89.0" y="123.5" text-anchor="middle" font-size="9" fill="#1d2430">Y*</text>
+<text x="5.0" y="19.0" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430"></text>
+<text x="112.0" y="123.5" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430"></text>
+<text x="60.0" y="10.0" text-anchor="middle" font-size="9" font-weight="700" fill="#1d2430">Recessionary gap</text>
+<polyline points="8.0,113.0 106.0,15.0" fill="none" stroke="#1d2430" stroke-width="1.2" stroke-linejoin="round"/>
+<polyline points="8.0,80.5 112.0,28.5" fill="none" stroke="#c0392b" stroke-width="1.7" stroke-dasharray="6 4" stroke-linejoin="round"/>
+<polyline points="8.0,74.0 112.0,22.0" fill="none" stroke="#1f5fbf" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="86.0,113.0 86.0,15.0" fill="none" stroke="#7a3fb0" stroke-width="1.1" stroke-dasharray="6 4" stroke-linejoin="round"/>
+<circle cx="73.0" cy="48.0" r="2.2" fill="#1d2430"/>
+<circle cx="86.0" cy="35.0" r="2.2" fill="#1d2430"/>
+<line x1="37.2" y1="64.9" x2="37.2" y2="60.4" stroke="#1d2430" stroke-width="1.6"/>
+<polygon points="37.2,60.4 40.7,67.6 33.8,67.6" fill="#1d2430"/>
+<text x="9.9" y="63.6" fill="#1f5fbf" text-anchor="start" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">PAE2</text>
+<text x="9.9" y="88.9" fill="#c0392b" text-anchor="start" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">PAE1</text>
+<text x="39.9" y="42.5" fill="#1d2430" text-anchor="start" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">+ΔG</text>
+</g>
+<g transform="translate(124,0)">
+<rect x="0" y="0" width="116" height="126" fill="#ffffff"/>
+<polyline points="8.0,22.0 99.0,22.0 99.0,113.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<path d="M8.0,13.0 V113.0 H112.0" fill="none" stroke="#1d2430" stroke-width="1.1"/>
+<line x1="99.0" y1="113.0" x2="99.0" y2="115.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="102.0" y="123.5" text-anchor="middle" font-size="9" fill="#1d2430">Y2</text>
+<line x1="86.0" y1="113.0" x2="86.0" y2="115.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="83.0" y="123.5" text-anchor="middle" font-size="9" fill="#1d2430">Y*</text>
+<text x="5.0" y="19.0" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430"></text>
+<text x="112.0" y="123.5" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430"></text>
+<text x="60.0" y="10.0" text-anchor="middle" font-size="9" font-weight="700" fill="#1d2430">Expansionary gap</text>
+<polyline points="8.0,113.0 106.0,15.0" fill="none" stroke="#1d2430" stroke-width="1.2" stroke-linejoin="round"/>
+<polyline points="8.0,67.5 112.0,15.5" fill="none" stroke="#c0392b" stroke-width="1.7" stroke-dasharray="6 4" stroke-linejoin="round"/>
+<polyline points="8.0,74.0 112.0,22.0" fill="none" stroke="#1f5fbf" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="86.0,113.0 86.0,15.0" fill="none" stroke="#7a3fb0" stroke-width="1.1" stroke-dasharray="6 4" stroke-linejoin="round"/>
+<circle cx="99.0" cy="22.0" r="2.2" fill="#1d2430"/>
+<circle cx="86.0" cy="35.0" r="2.2" fill="#1d2430"/>
+<line x1="37.2" y1="53.9" x2="37.2" y2="58.4" stroke="#1d2430" stroke-width="1.6"/>
+<polygon points="37.2,58.4 33.8,51.2 40.7,51.2" fill="#1d2430"/>
+<text x="9.9" y="57.1" fill="#c0392b" text-anchor="start" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">PAE2</text>
+<text x="9.9" y="82.5" fill="#1f5fbf" text-anchor="start" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">PAELR</text>
+<text x="11.2" y="36.0" fill="#1d2430" text-anchor="start" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">Fed raises r</text>
+</g>
+</svg>
+<ol><li>Draw a dashed line at Y*. Recessionary gap (Y1 &lt; Y*): raise G, cut T, or the Fed cuts r. PAE shifts up until it crosses at Y*.</li><li>Expansionary gap (Y2 &gt; Y*): inflation creeps up, so the Fed raises r. PAE shifts down to PAE<sub>LR</sub> (long run) at Y*.</li></ol>
+<ul class="calc"><li>Needed ΔPAE = (Y* − Y) × (1 − mpc). Example: Y = 20, Y* = 24, mpc = 0.5: raise G by 2, or cut T by 2 ÷ 0.5 = 4.</li></ul></section>
+<section class="cell t5"><h2><span>Fed reaction function, long-run r*</span><small>Classes 22, 23</small></h2><svg viewBox="0 0 240 96" xmlns="http://www.w3.org/2000/svg" font-family="Fira Sans Condensed, Arial Narrow, Arial, sans-serif" font-size="9">
+<g transform="translate(0,0)">
+<rect x="0" y="0" width="116" height="96" fill="#ffffff"/>
+<polyline points="20.0,54.3 42.5,54.3 42.5,83.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<polyline points="20.0,54.3 31.2,54.3 31.2,83.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<path d="M20.0,14.0 V83.0 H110.0" fill="none" stroke="#1d2430" stroke-width="1.1"/>
+<line x1="42.5" y1="83.0" x2="42.5" y2="85.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="44.5" y="93.5" text-anchor="middle" font-size="9" fill="#1d2430">2</text>
+<line x1="31.2" y1="83.0" x2="31.2" y2="85.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="30.2" y="93.5" text-anchor="middle" font-size="9" fill="#1d2430">1</text>
+<line x1="17.5" y1="54.3" x2="20.0" y2="54.3" stroke="#1d2430" stroke-width="0.9"/>
+<text x="16.5" y="57.5" text-anchor="end" font-size="9" fill="#1d2430">r*</text>
+<text x="17.0" y="20.0" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">r (%)</text>
+<text x="110.0" y="93.5" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">π (%)</text>
+<text x="65.0" y="10.0" text-anchor="middle" font-size="9" font-weight="700" fill="#1d2430">Fed reaction function</text>
+<polyline points="20.0,63.9 110.0,25.6" fill="none" stroke="#1f5fbf" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="20.0,59.1 110.0,20.8" fill="none" stroke="#1f5fbf" stroke-width="1.7" stroke-dasharray="6 4" stroke-linejoin="round"/>
+<circle cx="42.5" cy="54.3" r="2.2" fill="#1d2430"/>
+<circle cx="31.2" cy="54.3" r="2.2" fill="#1d2430"/>
+<text x="108.9" y="39.0" fill="#1f5fbf" text-anchor="end" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">RF1</text>
+<text x="71.8" y="27.5" fill="#1f5fbf" text-anchor="end" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">RF2</text>
+<text x="45.9" y="71.5" fill="#1d2430" text-anchor="start" font-size="9" font-weight="500" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">π target</text>
+</g>
+<g transform="translate(124,0)">
+<rect x="0" y="0" width="116" height="96" fill="#ffffff"/>
+<polyline points="20.0,54.3 65.0,54.3 65.0,83.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<path d="M20.0,14.0 V83.0 H110.0" fill="none" stroke="#1d2430" stroke-width="1.1"/>
+<line x1="65.0" y1="83.0" x2="65.0" y2="85.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="65.0" y="93.5" text-anchor="middle" font-size="9" fill="#1d2430">I*</text>
+<line x1="17.5" y1="54.3" x2="20.0" y2="54.3" stroke="#1d2430" stroke-width="0.9"/>
+<text x="16.5" y="57.5" text-anchor="end" font-size="9" fill="#1d2430">r*</text>
+<text x="17.0" y="20.0" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">r</text>
+<text x="110.0" y="93.5" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">I, S + NKI</text>
+<text x="65.0" y="10.0" text-anchor="middle" font-size="9" font-weight="700" fill="#1d2430">Long run: S + NKI = I</text>
+<polyline points="20.0,16.0 98.8,83.0" fill="none" stroke="#1f5fbf" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="31.2,83.0 110.0,16.0" fill="none" stroke="#c0392b" stroke-width="1.7" stroke-linejoin="round"/>
+<circle cx="65.0" cy="54.3" r="2.2" fill="#1d2430"/>
+<text x="23.4" y="24.6" fill="#1f5fbf" text-anchor="start" font-size="9.5" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">I</text>
+<text x="107.8" y="33.2" fill="#c0392b" text-anchor="end" font-size="9" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">S + NKI</text>
+</g>
+</svg>
+<ol><li>RF slopes up: higher π, higher r. At r*, read the π target.</li><li>Lower long-run inflation: shift RF up to RF2. After a short recession, π settles at the lower target (2% to 1% here).</li><li>Long run: I slopes down, S + NKI slopes up. Monetary policy moves neither, so r* stays put.</li></ol>
+<ul class="calc"><li>RF: r = 3 + 0.5 × (π − 2). At π = 4%, r = 4% and i = r + π = 8%.</li></ul></section>
+<section class="cell t5"><h2><span>Market for dollars</span><small>Class 23</small></h2><svg viewBox="0 0 240 100" xmlns="http://www.w3.org/2000/svg" font-family="Fira Sans Condensed, Arial Narrow, Arial, sans-serif" font-size="9">
+<g transform="translate(0,0)">
+<rect x="0" y="0" width="240" height="100" fill="#ffffff"/>
+<polyline points="40.0,45.1 137.0,45.1 137.0,87.0" fill="none" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<polyline points="40.0,33.1 137.0,33.1" stroke="#6b7380" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+<path d="M40.0,6.0 V87.0 H234.0" fill="none" stroke="#1d2430" stroke-width="1.1"/>
+<line x1="137.0" y1="87.0" x2="137.0" y2="89.5" stroke="#1d2430" stroke-width="0.9"/>
+<text x="137.0" y="97.5" text-anchor="middle" font-size="9" fill="#1d2430">Q1</text>
+<line x1="37.5" y1="45.1" x2="40.0" y2="45.1" stroke="#1d2430" stroke-width="0.9"/>
+<text x="36.5" y="48.3" text-anchor="end" font-size="9" fill="#1d2430">e1 = €0.70</text>
+<line x1="37.5" y1="33.1" x2="40.0" y2="33.1" stroke="#1d2430" stroke-width="0.9"/>
+<text x="36.5" y="36.3" text-anchor="end" font-size="9" fill="#1d2430">e2 = €0.90</text>
+<text x="37.0" y="12.0" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">€ per $1</text>
+<text x="234.0" y="97.5" text-anchor="end" font-size="9" font-style="italic" font-weight="600" fill="#1d2430">Q of $ traded</text>
+<polyline points="40.0,15.2 234.0,75.0" fill="none" stroke="#1f5fbf" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="59.4,9.2 234.0,63.1" fill="none" stroke="#1f5fbf" stroke-width="1.7" stroke-dasharray="6 4" stroke-linejoin="round"/>
+<polyline points="40.0,75.0 234.0,15.2" fill="none" stroke="#c0392b" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="40.0,63.1 214.6,9.2" fill="none" stroke="#c0392b" stroke-width="1.7" stroke-dasharray="6 4" stroke-linejoin="round"/>
+<circle cx="137.0" cy="45.1" r="2.2" fill="#1d2430"/>
+<circle cx="137.0" cy="33.1" r="2.2" fill="#1d2430"/>
+<text x="43.9" y="22.4" fill="#1f5fbf" text-anchor="start" font-size="9.5" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">D1</text>
+<text x="232.1" y="58.3" fill="#1f5fbf" text-anchor="end" font-size="9.5" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">D2</text>
+<text x="232.1" y="23.0" fill="#c0392b" text-anchor="end" font-size="9.5" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">S1</text>
+<text x="201.0" y="10.4" fill="#c0392b" text-anchor="end" font-size="9.5" font-weight="700" stroke="#fff" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round">S2</text>
+<line x1="175.8" y1="54.1" x2="193.3" y2="48.7" stroke="#1d2430" stroke-width="1.6"/>
+<polygon points="193.3,48.7 187.4,54.1 185.4,47.5" fill="#1d2430"/>
+<line x1="90.4" y1="55.9" x2="73.0" y2="50.5" stroke="#1d2430" stroke-width="1.6"/>
+<polygon points="73.0,50.5 80.9,49.3 78.8,55.9" fill="#1d2430"/>
+</g>
+</svg>
+<ol><li>D is foreigners buying U.S. goods and assets. S is Americans buying foreign ones.</li><li>Shift, then mark e2. If e2 is above e1, the dollar appreciated.</li></ol>
+<ul class="calc"><li>U.S. real rate rises (shown): D right, S left, so the dollar appreciates and NX falls.</li><li>Foreign rate rises: D left, S right, the dollar depreciates. Safe-haven rush: D right. U.S. tariffs: S left.</li></ul></section>
+</div>
+</div></div>
+
+<div class="sheet s2"><header><span>ECON 2 final · Side 2 · Rules, formulas, definitions</span><span>Graphs and symbol key are on side 1</span></header>
+<div class="cols">
+<div class="col">
+<section class="p t0"><h2>How to answer (his grading)</h2><ul>
+<li>Answer first ("decreased by $2 trillion"), then the reason in one to three sentences. He says "less is more" inside the boxes.</li>
+<li>On a graph, label both axes, every curve and intercept, and both coordinates of every equilibrium.</li>
+<li>"Show your work": the equation, the numbers plugged in, the result with units. "Explain fully" on a shift: the curve, the direction, and the reason through a formula such as MRPL = MR × MPL.</li></ul></section>
+<section class="p t3"><h2>Formulas: prices, GDP, jobs <small>Class 17</small></h2><ul>
+<li class="k">Y = C + I + G + NX, with NX = EX − IM. I is new capital, new housing, and inventory change. G excludes transfers.</li>
+<li>CPI (consumer price index) = cost of the base-year basket at this year's prices ÷ its cost at base-year prices × 100.</li>
+<li>Inflation π = (index this year − index last year) ÷ index last year × 100.</li>
+<li class="k">Dollars of year A in year-B dollars = amount × (CPI in B ÷ CPI in A).</li>
+<li>Real price change = (new price ÷ old price) ÷ (new CPI ÷ old CPI). Above 1 means the real price rose.</li>
+<li>Real wage = nominal wage ÷ CPI × 100.</li>
+<li class="k">Real interest rate r = i − π, where i is the nominal rate.</li>
+<li>Nominal GDP prices this year's quantities at this year's prices; real GDP prices them at base-year prices. GDP deflator = nominal ÷ real × 100.</li>
+<li>Labor force = employed + unemployed. Unemployment rate = unemployed ÷ labor force × 100. Participation rate = labor force ÷ population aged 16 and over × 100.</li></ul></section>
+<section class="p t3"><h2>Formulas: growth and present value <small>Classes 14, 18</small></h2><ul>
+<li>Growth rate = (this year − last year) ÷ last year.</li>
+<li>Compounding: Y<sub>t</sub> = Y<sub>0</sub> × (1 + g)<sup>t</sup>. Y<sub>0</sub> is the starting level, g the yearly growth rate as a decimal, t the number of years.</li>
+<li>Average yearly growth over t years: g = (Y<sub>t</sub> ÷ Y<sub>0</sub>)<sup>1/t</sup> − 1.</li>
+<li class="k">Rule of 70: years to double ≈ 70 ÷ (growth rate in percent).</li>
+<li>Y/POP = (Y/N) × (N/POP). N is employed workers, POP is population, Y/N is average labor productivity.</li>
+<li class="k">PV = F ÷ (1 + i)<sup>t</sup>. PV is present value (worth today), F a payment t years from now, i the interest rate as a decimal (5% = 0.05).</li>
+<li>Bond or stream: PV = F<sub>1</sub> ÷ (1 + i) + F<sub>2</sub> ÷ (1 + i)<sup>2</sup> + F<sub>3</sub> ÷ (1 + i)<sup>3</sup>. At i = 0, PV = F<sub>1</sub> + F<sub>2</sub> + F<sub>3</sub>.</li>
+<li>Price of capital = MRPK<sub>1</sub> ÷ (1 + i) + MRPK<sub>2</sub> ÷ (1 + i)<sup>2</sup> + ..., where MRPK<sub>t</sub> = MR<sub>t</sub> × MPK<sub>t</sub>.</li></ul></section>
+<section class="p t4"><h2>Formulas: Keynesian cross, policy <small>Classes 19 to 21</small></h2><ul>
+<li>C = C̄ + mpc × (Y − T). C̄ is autonomous consumption; mpc (between 0 and 1) is the share of an extra dollar of income that is spent; Y − T is disposable income.</li>
+<li class="k">PAE = A + mpc × Y, where A = C̄ − mpc × T + I + G + NX is autonomous spending (the intercept).</li>
+<li class="k">Equilibrium Y = A ÷ (1 − mpc). Multiplier = 1 ÷ (1 − mpc). ΔY = multiplier × ΔPAE.</li>
+<li>ΔPAE from policy = ΔG − mpc × ΔT. Tax multiplier = −mpc ÷ (1 − mpc).</li>
+<li>Multipliers: mpc 1/3 gives 1.5; 0.5 gives 2; 0.6 gives 2.5; 2/3 gives 3; 0.75 gives 4; 0.8 gives 5.</li>
+<li>Unplanned inventory change = Y − PAE. Output gap = Y − Y*. Budget surplus = T − G.</li><li><b class="tr">Trap</b>Yearly growth from a multi-year total: take the root, do not divide.</li></ul></section>
+
+<section class="p t3"><h2>Measurement and growth <small>Classes 17, 18</small></h2><table><colgroup><col style="width:29%"><col></colgroup><tr><th>If asked</th><th>Do this</th></tr>
+<tr><td>Did a price rise in real terms?</td><td>Compare its growth factor with the CPI's. Example: price × 3 while CPI × 2, so the real price rose 50% (3 ÷ 2 = 1.5), and the same income buys fewer.</td></tr>
+<tr><td>Does it count in GDP?</td><td>Only final goods and services newly produced in the country this period. Used goods, stocks, bonds, and transfers do not count (a dealer's markup or a broker's fee does). An import raises C and IM equally, so Y is unchanged. Unsold output counts as inventory investment.</td></tr>
+<tr><td>Discouraged workers stop looking.</td><td>They leave the labor force, so the rate falls with no new jobs. Example: 8 ÷ 160 = 5% becomes 6 ÷ 158 = 3.8%.</td></tr>
+<tr><td>Years to double, or growth over many years.</td><td>Use the rule of 70. Example: 3.5% a year doubles in 20 years. For a yearly rate from a total, take the root: 100 to 121 in 2 years is 10% a year.</td></tr>
+<tr><td>What drives growth?</td><td>Average labor productivity, from capital per worker and technology. Diminishing returns mean capital alone cannot keep raising it. Social infrastructure is the rule of law, property rights, and protection from government.</td></tr></table></section>
+</div>
+<div class="col">
+<section class="p t1"><h2>Labor markets <small>graphs 1 to 3</small></h2><table><colgroup><col style="width:29%"><col></colgroup><tr><th>If asked</th><th>Do this</th></tr>
+<tr><td>The output price or MR changes (trade war, tariff, boom).</td><td>Shift labor demand the same way as the price, because MRPL = MR × MPL. Example: price falls from $10 to $6, so MRPL is 60% of before at every L.</td></tr>
+<tr><td>MR and MPL both change.</td><td>Multiply the factors. Example: MPL × 1.5 and price × 0.6 gives 0.9, so MRPL falls 10%.</td></tr>
+<tr><td>Solve for the equilibrium.</td><td>Set the demand equation equal to the supply equation. Example: 30 − 2L = 6 + 2L, so L = 6 and W = 18.</td></tr>
+<tr><td>Immigration or removals.</td><td>Shift supply. With very elastic (flat) demand the wage barely moves, as in the Mariel boatlift.</td></tr>
+<tr><td>The firm has market power.</td><td>Use MRPL (the change in total revenue), which is below P × MPL. Hire every worker with MRPL ≥ W.</td></tr>
+<tr><td>Why did inequality rise, and what helps?</td><td>Skill-biased technology and globalization raised WH and cut WL, and education slowed after about 1970. Remedies: education, help for displaced workers, support at the bottom (EITC).</td></tr></table>
+<ul><li><b class="tr">Trap</b>A lump-sum payment to owners does not shift labor demand, because neither MR nor MPL changes.</li></ul></section>
+<section class="p t1"><h2>Capital and present value <small>graph 4</small></h2><table><colgroup><col style="width:29%"><col></colgroup><tr><th>If asked</th><th>Do this</th></tr>
+<tr><td>The interest rate rises. What happens to a bond's price?</td><td>It falls, because the payments are fixed and every (1 + i)<sup>t</sup> gets bigger. Example: $1,000 in one year is worth $961.54 at 4% and $952.38 at 5%.</td></tr>
+<tr><td>The price when i = 0.</td><td>Just add the payments: F<sub>1</sub> + F<sub>2</sub> + F<sub>3</sub>.</td></tr>
+<tr><td>Future MPK or future output prices fall.</td><td>Each MRPK falls, so the PV and the price of capital fall. Example: less labor is expected, so each machine produces less.</td></tr>
+<tr><td>Should the firm buy the machine?</td><td>Buy if the PV of its MRPKs is at least its price. Example: $1,000 a year for 3 years is worth $2,723.25 at 5%, so buy at $2,500.</td></tr>
+<tr><td>Interest rates fall.</td><td>Bond, stock, and capital prices rise, and investment rises (a move along the I curve). A tax credit shifts I right.</td></tr></table></section>
+<section class="p t2"><h2>Trade <small>graphs 5 to 7</small></h2><table><colgroup><col style="width:29%"><col></colgroup><tr><th>If asked</th><th>Do this</th></tr>
+<tr><td>Who should specialize in what?</td><td>Opportunity cost of 1 X = Y given up ÷ X made. The lower one makes X. Example: a ton costs the U.S. 1 WM and China 2 WM, so the U.S. grows soybeans.</td></tr>
+<tr><td>The terms of trade.</td><td>Export price ÷ import price, in imports per unit of exports. It must lie between the two opportunity costs, or one side will not trade.</td></tr>
+<tr><td>Exports or imports?</td><td>Pw above P1: exports = QS − QD. Pw below P1: imports = QD − QS. Read both quantities at Pw.</td></tr>
+<tr><td>Exports stop and the harvest is fixed.</td><td>The new price is the height of D at QS, far below P1. Next season farmers plant less, so the market moves back toward P1 and Q1.</td></tr>
+<tr><td>Who wins and who loses?</td><td>Exports: producers and their workers win, domestic buyers lose, the country gains. Imports: buyers win, domestic producers lose, the country gains.</td></tr>
+<tr><td>A tariff.</td><td>Domestic price = Pw + t. Revenue = t × imports after the tariff. DWL = d + f. A quota with the same imports gives the same price; e goes to license holders.</td></tr>
+<tr><td>Does a tariff create jobs?</td><td>Maybe in the protected industry; probably not in total, because of retaliation and higher input costs elsewhere.</td></tr>
+</table>
+<ul><li><b class="tr">Trap</b>Exports are QS − QD at Pw, not QS − Q1.</li></ul></section>
+
+<section class="p t6"><h2>Micro review for the multiple choice <small>graph 8</small></h2><ul>
+<li class="k">Markets and rational choices set marginal benefit equal to marginal cost (MB = MC).</li>
+<li>Comparative advantage: specialize in the task you do relatively best (lowest opportunity cost), not in every task you do better than others.</li>
+<li>Compared with perfect competition, a monopolist raises price and reduces quantity, which creates a DWL.</li>
+<li>A negative externality means the market overproduces; a Pigouvian tax equal to EMC fixes it. A positive externality (new inventions) means it underproduces.</li>
+<li>A story about buyers shifts D; a story about sellers shifts S. A change in the good's own price is a movement along the curve.</li>
+<li>A service that needs workers and a place (a haircut) cannot be automated much, so its marginal cost falls little over time.</li>
+<li>Rational spending rule: MU<sub>a</sub> ÷ P<sub>a</sub> = MU<sub>b</sub> ÷ P<sub>b</sub>, where MU is marginal utility (extra satisfaction).</li></ul></section>
+</div>
+<div class="col">
+<section class="p t4"><h2>Keynesian cross and fiscal policy <small>graphs 9, 10</small></h2><table><colgroup><col style="width:29%"><col></colgroup><tr><th>If asked</th><th>Do this</th></tr>
+<tr><td>Combine the terms; find the intercept.</td><td>Add every number not multiplied by Y, keeping signs. Example: C = 6 + 0.5Y, I = 3, G = 4, NX = −1 gives PAE = 12 + 0.5Y, intercept 12.</td></tr>
+<tr><td>Set PAE = Y and solve.</td><td>Y − 0.5Y = 12, so Y = 12 ÷ 0.5 = 24. In general Y = A ÷ (1 − mpc).</td></tr>
+<tr><td>How much did PAE change?</td><td>Add the changes in the parts not multiplied by Y. That is the vertical shift. Example: C̄ −3, I −1, NX +2 gives ΔPAE = −2.</td></tr>
+<tr><td>How much did GDP change?</td><td>New Y − old Y, or multiplier × ΔPAE. That is the horizontal move. Example: 2 × (−2) = −4.</td></tr>
+<tr><td>Are the two changes the same?</td><td>No. GDP changes more because an mpc above 0 creates the multiplier 1 ÷ (1 − mpc): new spending becomes income, and part of it is spent again.</td></tr>
+<tr><td>What change in G offsets the shock?</td><td>The same size as ΔPAE with the opposite sign. Example: PAE fell 2, so raise G by 2.</td></tr>
+<tr><td>What tax change offsets it?</td><td>ΔT = ΔPAE of the shock ÷ mpc. Example: PAE fell 2 and mpc = 0.5, so cut T by 4.</td></tr>
+<tr><td>Transfers rise (benefits, checks).</td><td>Treat it as a cut in T: PAE rises by mpc × the transfer.</td></tr></table>
+<ul><li><b class="tr">Trap</b>Offset with ΔG = −ΔPAE, never −ΔGDP.</li><li><b class="tr">Trap</b>With taxes inside C, subtract mpc × T, not T. Example: C = 3 + 0.5(Y − 2) = 2 + 0.5Y.</li></ul></section>
+<section class="p t5"><h2>The Fed, inflation, return to potential <small>graphs 10, 11</small></h2><table><colgroup><col style="width:29%"><col></colgroup><tr><th>If asked</th><th>Do this</th></tr>
+<tr><td>The Fed raises i.</td><td>Inflation moves slowly, so r = i − π rises. I, C, and NX fall, PAE shifts down, and Y falls by the multiplier. A cut does the reverse.</td></tr>
+<tr><td>Y is above Y*.</td><td>Inflation rises gradually (inflation inertia). The Fed raises r along its RF, so PAE shifts down until Y = Y*.</td></tr>
+<tr><td>Y is below Y*.</td><td>Inflation falls gradually. The Fed cuts r, so PAE shifts up until Y = Y*.</td></tr>
+<tr><td>Read the reaction function.</td><td>Plug in π. Example: r = 3 + 0.5 × (π − 2) at π = 4% gives r = 4%, so i = r + π = 8%.</td></tr>
+<tr><td>An oil price jump (inflation shock).</td><td>π rises at once. The Fed moves up its RF, so output dips below Y*, then returns.</td></tr>
+<tr><td>Rates are near zero.</td><td>Nominal rates cannot go far below 0 because cash pays 0. Use forward guidance and quantitative easing (buying longer-term bonds).</td></tr>
+<tr><td>A bank failed after rates rose.</td><td>Its long-term bonds lost value (PV falls when i rises), so its equity shrank and depositors ran.</td></tr></table></section>
+<section class="p t5"><h2>Exchange rates, trade balance <small>graph 12</small></h2><table><colgroup><col style="width:29%"><col></colgroup><tr><th>If asked</th><th>Do this</th></tr>
+<tr><td>A rate quoted per $1 falls.</td><td>The dollar depreciated and the other currency appreciated. Example: ¥160 to ¥150 per $1.</td></tr>
+<tr><td>Flip a quote.</td><td>Take 1 ÷ the rate. Example: €0.80 per $1 is $1.25 per €1.</td></tr>
+<tr><td>A price in the other currency.</td><td>Divide by the per-$1 rate. Example: ¥30,000 at ¥150 per $1 is $200.</td></tr>
+<tr><td>Why is there a trade deficit?</td><td>NX = −NKI and S + NKI = I. If national saving S is below I, capital flows in and NX &lt; 0. Tariffs leave NKI, and so NX, unchanged in the long run.</td></tr>
+<tr><td>Balance of payments.</td><td>EX + KI = IM + KO (KI, KO are capital inflows, outflows). Example: EX 3, IM 4, KO 1 gives KI = 2.</td></tr></table></section>
+<section class="p t0 defs"><h2>Definitions</h2><ul>
+<li><b>Potential output Y*:</b> output when labor, capital, and technology are used at normal rates. <b>Recessionary gap:</b> Y &lt; Y*. <b>Expansionary gap:</b> Y &gt; Y*.</li>
+<li><b>Inflation inertia:</b> prices and wages adjust slowly, so output follows spending in the short run.</li>
+<li><b>Fiscal policy:</b> taxes, transfers, and G. <b>Monetary policy:</b> the Fed moving interest rates. <b>Automatic stabilizers:</b> taxes and transfers that move against the cycle with no new law.</li>
+<li><b>Transfer:</b> a payment with nothing bought in return (Social Security); it is not G.</li>
+<li><b>Comparative advantage:</b> the lower opportunity cost. <b>Absolute advantage:</b> more output per worker.</li>
+<li><b>Appreciation:</b> a currency buys more of another. <b>Safe haven:</b> a currency investors buy in uncertain times.</li>
+<li><b>Human capital:</b> workers' education and training. <b>Discouraged worker:</b> wants a job but stopped looking, so is not in the labor force.</li>
+<li><b>Credit spread:</b> a risky borrower's rate minus the safe rate. <b>r*:</b> the long-run real rate where S + NKI = I.</li><li><b>Terms of trade:</b> how much of the import one unit of the export buys. <b>Quota rent:</b> area e, kept by whoever holds import licenses.</li></ul></section>
+</div>
+</div></div>
+</div></article></main></div><script src="site.js"></script></body></html>
