@@ -114,3 +114,5 @@ select{font:15px var(--body);padding:7px 10px;border-radius:8px;border:1px solid
 @media print{.top,.side,.toc,.pager,.donebar,.tools{display:none}.layout{display:block}.practice details{display:block}.practice details>.a{display:block}body{background:#fff;color:#000}}
 .badge{display:inline-block;font:600 11px var(--display);letter-spacing:.04em;text-transform:uppercase;padding:1px 7px;border-radius:4px;background:var(--tipbg);color:var(--tipbar);margin-left:6px;vertical-align:1px}
 .upcoming{border-radius:8px;padding:10px 14px;margin:14px 0;background:var(--tipbg);border-left:5px solid var(--tipbar);font-size:15px}
+
+.src{color:var(--mute);font-size:13px}
