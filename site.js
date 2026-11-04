@@ -27,3 +27,38 @@
     document.querySelectorAll("article section[id]").forEach(function(sec){obs.observe(sec)});
   }
 })();
+// Type-your-answer boxes under every practice question, a self-check against the key, and a link to the graded Answer Lab
+(function(){
+  var art=document.querySelector("article"),md=document.getElementById("mark-done");
+  if(!art||!md)return;
+  var slug=md.getAttribute("data-u"),pre=slug.slice(0,2),LAB="https://claude.ai/artifact/Nqs3x8USLNhVN7P5hqdr2e";
+  var AK="econ2-final-ans",st={};
+  try{st=JSON.parse(localStorage.getItem(AK)||"{}")||{}}catch(e){st={}}
+  function save(){try{localStorage.setItem(AK,JSON.stringify(st))}catch(e){}}
+  var blocks=[].slice.call(art.querySelectorAll(".practice")).filter(function(b){return b.querySelector("details")});
+  if(!blocks.length)return;
+  var board=document.createElement("div");board.className="ansboard";
+  var sec=document.getElementById("practice")||blocks[0].parentNode;
+  var anchor=sec.querySelector(".tools")||sec.querySelector("h2");
+  if(anchor&&anchor.parentNode===sec)anchor.insertAdjacentElement("afterend",board);else blocks[0].insertAdjacentElement("beforebegin",board);
+  function tally(){
+    var a=0,f=0,p=0,m=0;
+    blocks.forEach(function(b,i){var r=st[pre+"-"+(i+1)];if(r&&r.t&&r.t.trim())a++;if(r&&r.s==="full")f++;if(r&&r.s==="part")p++;if(r&&r.s==="miss")m++});
+    board.innerHTML='<p><strong>Your answers on this page:</strong> '+a+' of '+blocks.length+' typed · <span class="s-full">'+f+' full</span> · <span class="s-part">'+p+' partial</span> · <span class="s-miss">'+m+' missed</span>. Type an answer, press <em>Check my answer</em>, then mark how you did. For an automatic grade with feedback, use <a href="'+LAB+'#u'+pre+'" target="_blank" rel="noopener">the Answer Lab</a>.</p>';
+  }
+  blocks.forEach(function(b,i){
+    var id=pre+"-"+(i+1),d=b.querySelector("details"),r=st[id]||(st[id]={});
+    var w=document.createElement("div");w.className="mine";
+    w.innerHTML='<label for="a'+id+'">Your answer</label><textarea id="a'+id+'" rows="3" placeholder="Type your answer the way you would write it in the exam box."></textarea>'+
+      '<div class="mine-row"><button class="btn primary chk-btn" type="button">Check my answer</button><a class="btn" href="'+LAB+'#q'+id+'" target="_blank" rel="noopener">Grade it in the Answer Lab</a>'+
+      '<span class="self" hidden>How did you do? <button type="button" data-s="full">Full credit</button><button type="button" data-s="part">Partial</button><button type="button" data-s="miss">Missed</button></span></div>';
+    d.parentNode.insertBefore(w,d);
+    var ta=w.querySelector("textarea"),self=w.querySelector(".self");ta.value=r.t||"";
+    function paint(){b.classList.remove("got-full","got-part","got-miss");if(r.s)b.classList.add("got-"+r.s);w.querySelectorAll(".self button").forEach(function(x){x.classList.toggle("on",x.dataset.s===r.s)});if(r.s)self.hidden=false}
+    var tm;ta.addEventListener("input",function(){clearTimeout(tm);tm=setTimeout(function(){r.t=ta.value;save();tally()},300)});
+    w.querySelector(".chk-btn").addEventListener("click",function(){r.t=ta.value;save();d.open=true;self.hidden=false;tally();d.scrollIntoView({block:"nearest"})});
+    w.querySelectorAll(".self button").forEach(function(x){x.addEventListener("click",function(){r.s=x.dataset.s;save();paint();tally()})});
+    paint();
+  });
+  tally();
+})();
