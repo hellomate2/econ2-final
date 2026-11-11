@@ -130,3 +130,12 @@ select{font:15px var(--body);padding:7px 10px;border-radius:8px;border:1px solid
 .ansboard{background:var(--panel);border:1px solid var(--rule);border-radius:10px;padding:8px 14px;margin:10px 0 16px;font-size:15px}
 .ansboard p{margin:4px 0}.s-full{color:var(--goodbar);font-weight:600}.s-part{color:var(--accent2);font-weight:600}.s-miss{color:var(--badbar);font-weight:600}
 @media print{.mine,.ansboard{display:none}}
+/* upgrade 2026-11-10: big idea, plain words, variations table, quick check, hints */
+.big,.qc,.stuck{border-radius:8px;padding:12px 16px;margin:16px 0;border:1px solid var(--rule);background:var(--panel)}
+.big{border-left:5px solid var(--ink);font-size:1.04em}.big h4,.qc h4,.stuck h4{margin:0 0 6px;font-family:var(--display)}
+.plain{border-left:4px solid var(--goodbar);padding:6px 12px;margin:10px 0;background:var(--exbg);border-radius:6px}
+.stuck{border-left:5px solid var(--accent2)}.qc{border-left:5px solid var(--accent)}
+.qc details{margin:6px 0;padding:6px 10px;border:1px solid var(--rule);border-radius:6px}.qc summary{cursor:pointer;font-weight:600}
+table.vars{border-collapse:collapse;width:100%;font-size:15px;margin:12px 0;display:block;overflow-x:auto}
+table.vars th,table.vars td{border:1px solid var(--rule);padding:6px 9px;vertical-align:top;text-align:left}table.vars th{background:var(--exbg);font-family:var(--display)}
+details.hint{margin:6px 0}details.hint>summary{cursor:pointer;display:inline-block;font:600 14px var(--display);padding:3px 10px;border-radius:6px;border:1px solid var(--keybar);background:var(--keybg)}
