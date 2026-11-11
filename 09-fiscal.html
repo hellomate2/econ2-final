@@ -7,9 +7,11 @@
 
 <section id="learn">
 <h2>The ideas, explained</h2>
+<div class="big"><h4>The big idea</h4><p>Fiscal policy is the government changing what it buys (G) or what it collects in net taxes (T). Either change shifts the PAE line up or down, and the multiplier turns that shift into a bigger change in GDP. For the final, remember two things: a dollar of G moves PAE by a full dollar while a dollar of tax cut moves it by only mpc dollars, and to cancel a shock you match the change in PAE, not the change in GDP.</p></div>
 
 <h3>What fiscal policy is</h3>
 <p>His slide defines it this way: "Fiscal policies are tax rates, cash and other transfers, and direct government purchases of goods and services." So there are two levers. The first is <strong>government purchases (G)</strong>: the government buys goods and services directly, such as roads, military equipment, or teachers' time. The second is <strong>net taxes (T)</strong>: taxes collected minus transfers paid back to households. A transfer is a payment the government makes without buying anything in return, such as Social Security retirement benefits or unemployment insurance.</p>
+<p class="plain"><strong>In plain words:</strong> The government has two ways to change total spending. It can buy more or less stuff itself. Or it can leave more or less money in people's pockets, through taxes and benefit checks.</p>
 <p>This unit builds on the Keynesian cross from the previous unit. Planned aggregate expenditure (PAE) is total planned spending on the economy's output: <code class="f">PAE = C + I + G + NX</code>, where C is consumption, I is planned investment (his slides write I<sup>p</sup>), G is government purchases, and NX is net exports. Short-run equilibrium output is where planned spending equals output, <code class="f">PAE = Y</code>, which is where the PAE line crosses the 45-degree line. The marginal propensity to consume (mpc) is the share of each extra dollar of income that households spend; his slides call it c.</p>
 <p>His slides list what fiscal policy is good for: "Stimulating an economy in recession; cooling off an overheating economy," and creating long-run investments (or the conditions for them). They also list the limits: governments "can't spend more than they tax forever," publicly held debt is high, and "Exactly how and when to tax and spend is a subject of continuing debate and learning."</p>
 
@@ -22,6 +24,7 @@
 </ul>
 <p>The consumption function in his notation is <code class="f">C = C̄ + mpc × (Y − T)</code>. Here C̄ (read "C bar") is <strong>autonomous consumption</strong>, the part of consumption that does not depend on income. The mpc is "between 0 and 1." His slide adds why the economy-wide mpc is an average: "The poor have high MPC equal to 1, while the rich have much lower MPC (closer to 0)." Part of the reason is the size of consumption needs relative to income, and part is wealth.</p>
 <p>Because taxes enter as <code class="f">mpc × (Y − T)</code>, a $1 rise in T lowers consumption by mpc dollars at every level of income. Households absorb the rest of the hit by saving less.</p>
+<p class="plain"><strong>In plain words:</strong> People spend part of whatever they have left after taxes. If the government takes one more dollar, people cut their spending by less than a dollar, because they also save a little less. A tax cut works the same way in reverse: people spend part of it and save the rest.</p>
 <figure class="graph"><svg viewBox="0 0 400 394" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
 <rect x="0" y="0" width="400" height="394" fill="#ffffff"/>
 <polyline points="52.0,179.0 272.0,179.0 272.0,344.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
@@ -60,9 +63,12 @@
 <p><code class="f">PAE = C̄ + mpc × (Y − T) + I + G + NX = (C̄ − mpc × T + I + G + NX) + mpc × Y</code></p>
 <p>The part in parentheses does not depend on Y. His slide labels it <strong>autonomous spending</strong>, and it is the vertical intercept of the PAE line. The slope of the PAE line is the mpc. Setting PAE = Y and solving (his slide 33):</p>
 <div class="key"><p><code class="f">Y = (C̄ − mpc × T + I + G + NX) ÷ (1 − mpc)</code>. Equilibrium output equals autonomous spending times the multiplier <code class="f">1 ÷ (1 − mpc)</code>. G enters autonomous spending with a coefficient of 1. T enters with a coefficient of −mpc.</p></div>
+<p>The missing algebra step, from his slide 33: start with Y = (autonomous spending) + mpc × Y. Subtract mpc × Y from both sides to get Y × (1 − mpc) = autonomous spending. Then divide both sides by (1 − mpc).</p>
+<p class="plain"><strong>In plain words:</strong> Output in the short run equals the spending that happens no matter what income is, scaled up by the multiplier. Government purchases count in full in that starting spending. Taxes count only at the share people would have spent.</p>
 
 <h3>Why there is a multiplier, in his two pictures</h3>
 <p>His slide 34 gives the round-by-round story. Suppose autonomous spending rises by $1. In the first round, output rises by $1, because someone sold $1 more. That $1 is someone's income, so in the second round they spend mpc of it, and output rises by another mpc dollars. In the third round, those sellers spend mpc of that, adding mpc² dollars. Adding every round, <code class="f">1 + mpc + mpc² + ... = 1 ÷ (1 − mpc)</code>. His slide 6 says the same thing in words: "Shocks to income multiply across consumers because we're interconnected."</p>
+<p class="plain"><strong>In plain words:</strong> One person's spending is another person's income. A new dollar of spending gets partly spent again, and again, and again. So the total rise in output ends up bigger than the first dollar.</p>
 <p>His slides 9 to 11 make the point with numbers. If PAE were a flat line, so that spending did not depend on income, GDP would be $30 trillion in normal times, "And maybe $29 if a trillion dollar shock pushes planned spending down." Once PAE slopes upward because C depends on Y, the same $1 trillion shock lowers output to $27.5 trillion: "an even bigger multiplied effect on output." A $2.5 trillion fall from a $1 trillion shock is a multiplier of 2.5, which goes with an mpc of 0.6, since 1 ÷ (1 − 0.6) = 2.5.</p>
 <figure class="graph"><svg viewBox="0 0 400 394" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
 <rect x="0" y="0" width="400" height="394" fill="#ffffff"/>
@@ -122,7 +128,10 @@
 <h3>The spending multiplier and the tax multiplier</h3>
 <p>Slide 63 is the heart of this class: "$100 billion increase in G will increase PAE by $100 billion; $100 billion of tax cuts will increase PAE by MPC·$100 billion." The reason is in the intercept, <code class="f">C̄ − mpc × T + I + G + NX</code>. G sits there with a coefficient of 1. T sits there multiplied by −mpc, because a tax cut first lands in households' pockets, and they save part of it.</p>
 <div class="key"><p>Change in PAE from fiscal policy: <code class="f">ΔPAE = ΔG − mpc × ΔT</code>. Change in equilibrium output: <code class="f">ΔY = ΔPAE ÷ (1 − mpc)</code>.</p></div>
+<p>Watch the sign. A tax cut makes ΔT negative. Then −mpc × ΔT is positive, so PAE rises. A tax increase makes ΔT positive, so PAE falls.</p>
+<p class="plain"><strong>In plain words:</strong> First work out how far the spending line moves up or down. Then multiply that by the multiplier to get the change in output.</p>
 <div class="key"><p>Spending multiplier: <code class="f">ΔY ÷ ΔG = 1 ÷ (1 − mpc)</code>. Tax multiplier: <code class="f">ΔY ÷ ΔT = −mpc ÷ (1 − mpc)</code>. The tax multiplier is negative (a tax cut raises output) and smaller in size than the spending multiplier.</p></div>
+<p class="plain"><strong>In plain words:</strong> Each extra dollar the government spends raises output by the multiplier. Each dollar of tax cut raises output by less, because people save part of the tax cut before any of it gets spent.</p>
 <p>Use Δ (delta) to mean "change in." The table shows both multipliers for the mpc values most likely to appear.</p>
 <div style="overflow-x:auto"><table class="data">
 <tr><th>mpc</th><th>Spending multiplier 1 ÷ (1 − mpc)</th><th>Tax multiplier −mpc ÷ (1 − mpc)</th><th>$1 more of G raises Y by</th><th>$1 tax cut raises Y by</th></tr>
@@ -174,7 +183,9 @@
 <circle cx="337.0" cy="59.0" r="3.4" fill="#1d2430"/>
 </svg><figcaption>mpc = 0.5, starting at PAE<sub>1</sub> = 15 + 0.5Y and Y = 30. Raising G by 4 lifts the intercept by 4 (PAE<sub>3</sub> = 19 + 0.5Y) and output to 38. Cutting taxes by 4 lifts the intercept by only 0.5 × 4 = 2 (PAE<sub>2</sub> = 17 + 0.5Y) and output to 34. Same dollar amount, half the effect.</figcaption></figure>
 <p><strong>Transfers work like negative taxes.</strong> Because T is taxes minus transfers, a $10 billion increase in transfers is a $10 billion cut in T. It raises PAE by mpc × $10 billion, the same as a tax cut, because households save part of it.</p>
+<p class="plain"><strong>In plain words:</strong> A benefit check works like a tax cut for the person who gets it. In neither case is the government buying anything, so neither one counts as G.</p>
 <p><strong>Balanced-budget changes</strong> (this is from the textbook, not his slides). If the government raises G and T by the same amount, the budget balance does not change, but PAE still rises: <code class="f">ΔPAE = ΔG − mpc × ΔG = (1 − mpc) × ΔG</code>. Multiply by 1 ÷ (1 − mpc) and output rises by exactly ΔG. The balanced-budget multiplier is 1.</p>
+<p class="plain"><strong>In plain words:</strong> If the government spends a new dollar and taxes a dollar to pay for it, total spending still goes up. People pay part of the new tax out of their savings, so their spending falls by less than the government's spending rises.</p>
 
 <h3>Closing an output gap: how big a change in G or T</h3>
 <p>Potential output Y* is the output the economy produces with normal use of its labor, capital, and technology. His slide 13: in the short run, "Output responds to match PAE," so output can sit below or above Y*. In the long run, output returns to Y*.</p>
@@ -183,6 +194,8 @@
 <li>An <strong>expansionary gap</strong> means Y is above Y* (an overheating economy). Contractionary fiscal policy (cut G or raise T) closes it.</li>
 </ul>
 <div class="key"><p>Three steps. (1) Needed change in output: <code class="f">ΔY = Y* − Y</code>. (2) Needed change in PAE: <code class="f">ΔPAE = ΔY × (1 − mpc)</code>, because ΔY = ΔPAE ÷ (1 − mpc). (3) Either change G by ΔPAE, or change T by <code class="f">−ΔPAE ÷ mpc</code>.</p></div>
+<p>Where step (3) comes from for taxes: a tax change ΔT moves PAE by −mpc × ΔT. Set −mpc × ΔT equal to the needed ΔPAE. Divide both sides by −mpc, and you get ΔT = −ΔPAE ÷ mpc. The minus sign means that when PAE has to rise, taxes have to fall.</p>
+<p class="plain"><strong>In plain words:</strong> Find how far output has to move. Divide by the multiplier to find how far the spending line has to move. Then move G by exactly that much, or move taxes by more than that, because only part of a tax change turns into spending.</p>
 <figure class="graph"><svg viewBox="0 0 400 394" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
 <rect x="0" y="0" width="400" height="394" fill="#ffffff"/>
 <polyline points="52.0,113.0 283.0,113.0 283.0,344.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
@@ -255,7 +268,8 @@
 <polygon points="118.0,177.3 114.5,170.1 121.5,170.1" fill="#1f5fbf"/>
 <text x="123.0" y="192.2" fill="#1f5fbf" text-anchor="start" font-size="11">T +4, PAE −2</text>
 </svg><figcaption>Expansionary gap. PAE<sub>1</sub> = 18 + 0.5Y gives Y = 36, above Y* = 32. PAE must fall by 4 × 0.5 = 2. A tax increase of 4 lowers PAE by 0.5 × 4 = 2, giving PAE<sub>2</sub> = 16 + 0.5Y and Y = 32. Cutting G by 2 would do the same.</figcaption></figure>
-<p><strong>The offsetting-shock shortcut (Fall 2025 Q3(j)).</strong> If the question tells you a shock moved PAE by some amount and asks for the G that fully counteracts it, you do not need the multiplier at all. Change G by the same amount in the opposite direction. The shock lowered the intercept of PAE; the new G raises it back to where it was, so the PAE line, and with it equilibrium output, returns to the original. The key's wording: "As long as the marginal propensity to consume remains the same across these offsetting shocks, then government could match the decrease in PAE with an equal and opposite increase in PAE deriving from G." To offset the same shock with taxes, you would need a tax cut of the PAE drop divided by mpc, which is bigger.</p>
+<p><strong>The offsetting-shock shortcut (Fall 2025 Q3(j)).</strong> If the question tells you a shock moved PAE by some amount and asks for the G that fully counteracts it, you do not need the multiplier at all. Change G by the same amount in the opposite direction. The shock lowered the intercept of PAE. The new G raises the intercept back to where it was. So the PAE line returns to the original line, and equilibrium output returns to the original level too. The key's wording: "As long as the marginal propensity to consume remains the same across these offsetting shocks, then government could match the decrease in PAE with an equal and opposite increase in PAE deriving from G." To offset the same shock with taxes, you would need a tax cut of the PAE drop divided by mpc, which is bigger.</p>
+<p class="plain"><strong>In plain words:</strong> If a shock knocked planned spending down by $2 trillion, put $2 trillion of government spending back. The same multiplier that made GDP fall by more than $2 trillion will make GDP climb back by that same larger amount. The rule only works if the mpc did not change, because a new mpc changes the slope of the line.</p>
 <figure class="graph"><svg viewBox="0 0 400 394" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
 <rect x="0" y="0" width="400" height="394" fill="#ffffff"/>
 <polyline points="52.0,69.0 327.0,69.0 327.0,344.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
@@ -302,6 +316,7 @@
 <li><strong>Expansionary fiscal policy</strong>: actions that decrease the budget surplus (raise G or cut T). It increases PAE at a given level of Y.</li>
 <li><strong>Countercyclical fiscal policy</strong>: "Working against the business cycle, expansionary when in recession."</li>
 </ul>
+<p class="plain"><strong>In plain words:</strong> If the government collects more than it buys in a year, it has a surplus. If it buys more than it collects, it has a deficit that year and borrows to cover it. The debt is the running total of all that borrowing. Moves that push the budget toward a deficit add spending to the economy (expansionary). Moves that push it toward a surplus take spending out (contractionary).</p>
 <p>His slide 41 shows the federal budget surplus as a percent of GDP from 1997 to 2006, with the Bush tax cuts in the title. The bars are positive (a surplus) from 1998 through 2001 and negative (a deficit) every year from 2002 through 2006. Tax cuts lower T, so T − G falls.</p>
 
 <h3>Why debt matters, and what limits it</h3>
@@ -312,13 +327,15 @@
 <li>Debt that rises too high as a share of GDP "could trigger a debt crisis, where investors lose confidence quickly."</li>
 <li>Debt "can be serviced rather than paid off," meaning the government keeps paying interest and rolls the debt over. But "our children and grandchildren will have to pay more."</li>
 </ul>
+<p class="plain"><strong>In plain words:</strong> Heavy borrowing can push up interest rates. If it gets too big, lenders can get scared all at once. And it leaves a bill for later generations.</p>
 <p>What limits deficits (slide 39):</p>
 <ul>
 <li>For every government, savers in financial markets have to be willing to buy its debt.</li>
-<li>State and local governments face balanced budget amendments. In bad times, he notes, this often means cuts to many services and to K-12 schools. That is procyclical: a recession lowers tax revenue, the rule forces spending cuts, and lower G pushes PAE down further.</li>
-<li>The federal government faces periodic debt ceiling votes and annual budgets. In 2025 the U.S. had the longest government shutdown on record because no FY2026 budget had passed; on 11/12/25 a continuing resolution reopened the government, set to expire after Jan 30, 2026.</li>
+<li>State and local governments face balanced budget amendments. In bad times, he notes, this often means cuts to many services and to K-12 schools. That is procyclical, meaning it moves with the business cycle and makes the swing bigger: a recession lowers tax revenue, the rule forces spending cuts, and lower G pushes PAE down further.</li>
+<li>The federal government faces periodic debt ceiling votes and annual budgets. In 2025 the U.S. had the longest government shutdown on record because no FY2026 budget had passed; on 11/12/25 a continuing resolution (a temporary funding bill) reopened the government, set to expire after Jan 30, 2026.</li>
 </ul>
 <p>His summary title for slide 39: debt does not justify paralysis, "but in good times we should be 'keeping our powder dry,' running surpluses not deficits." The idea is to have borrowing room saved for the next recession.</p>
+<p class="plain"><strong>In plain words:</strong> In good years, pay down debt or at least stop adding to it. Then, when a recession hits, the government has room to borrow and spend.</p>
 
 <h3>Fiscal policy in practice: the 2008 recession and the 2009 stimulus</h3>
 <p><strong>What pushed PAE down.</strong> House prices rose sharply into 2006 and then fell (his slides 49 and 50, FRED's Case-Shiller index). The housing bubble had raised both I and C, and household debt rose a lot (slide 52, Mian and Sufi). When the bubble burst, his slide 57 lists the damage:</p>
@@ -385,10 +402,13 @@
 <circle cx="290.3" cy="105.7" r="3.4" fill="#1d2430"/>
 <circle cx="253.7" cy="142.3" r="3.4" fill="#1d2430"/>
 </svg><figcaption>The shape of his slide 66, with made-up numbers and mpc = 0.5. The housing bust and crisis shift PAE<sub>1</sub> (15 + 0.5Y) down to PAE<sub>2</sub> (11 + 0.5Y), so output falls from Y* = 30 to 22. Stimulus raises autonomous spending by 2 (PAE<sub>3</sub> = 13 + 0.5Y), so output recovers to 26: some of the gap closed, not all.</figcaption></figure>
+<p><strong>A tax cut on its own.</strong> His slides 42 to 44 show the short-run effect of a tax cut by itself. The economy starts at Y<sub>1</sub>, which equals Y*. The tax cut shifts PAE<sub>1</sub> up to PAE<sub>2</sub>, and output rises to Y<sub>2</sub>, to the right of Y*. So a tax cut that arrives when the economy is already at potential pushes output above potential.</p>
 <p><strong>Timing and magnitude.</strong> His slides 45 to 47 combine a fall in autonomous consumption (PAE<sub>1</sub> down to PAE<sub>2</sub>) with a tax cut that shifts PAE back up (PAE<sub>3</sub>, drawn on top of PAE<sub>1</sub>). The note on the slide: "The keys to getting this right involve timing and magnitude," and "Neither is super obvious." Too small, and the gap stays open. Too large, or too late (arriving after private spending has already recovered), and it pushes output above Y*.</p>
 
 <h3>Automatic stabilizers and other practical limits (textbook)</h3>
-<p>His Fall 2025 Class 20 slides do not cover these, so treat this as background from the textbook chapter. <strong>Automatic stabilizers</strong> are parts of the budget that move countercyclically on their own, with no new law. In a recession, incomes fall, so income tax collections fall (T drops), and more people qualify for unemployment insurance and other transfers (T drops again, since transfers count against taxes). Lower T props up disposable income and consumption, so PAE falls by less than it otherwise would. In a boom the reverse happens. The textbook also notes practical limits on deliberate fiscal policy: it takes time for Congress to agree and for money to be spent, and fiscal choices affect long-run supply (for example, public investment in roads or education, or tax rates that change incentives to work and invest), so they are about more than PAE. His learning objectives make the same long-run point: fiscal policy can create "investments in types of capital that produce long-run benefits."</p>
+<p>His Fall 2025 Class 20 slides do not cover these, so treat this as background from the textbook chapter. <strong>Automatic stabilizers</strong> are parts of the budget that move countercyclically on their own, with no new law. In a recession, incomes fall, so income tax collections fall (T drops), and more people qualify for unemployment insurance and other transfers (T drops again, since transfers count against taxes). Lower T props up disposable income and consumption, so PAE falls by less than it otherwise would. In a boom the reverse happens.</p>
+<p class="plain"><strong>In plain words:</strong> Some parts of the budget act like shock absorbers without anyone voting. When people lose income, they pay less tax and some start collecting benefits, so their spending does not fall as far.</p>
+<p>The textbook also notes practical limits on deliberate fiscal policy: it takes time for Congress to agree and for money to be spent, and fiscal choices affect long-run supply (for example, public investment in roads or education, or tax rates that change incentives to work and invest), so they are about more than PAE. His learning objectives make the same long-run point: fiscal policy can create "investments in types of capital that produce long-run benefits."</p>
 </section>
 
 <section id="examples">
@@ -467,6 +487,14 @@
 <div class="mistake"><p><strong>Mistake:</strong> Saying that raising G and T by the same amount has no effect on output because the budget balance does not change.</p><p><strong>Correct:</strong> The G increase raises PAE by the full amount, but the tax increase lowers PAE by only mpc times the amount. Output rises by exactly the change in G (the textbook's balanced-budget multiplier of 1). Example: mpc = 0.75, G and T both up 100, Y up 400 − 300 = 100.</p></div>
 <div class="mistake"><p><strong>Mistake:</strong> Calling automatic stabilizers discretionary fiscal policy.</p><p><strong>Correct:</strong> Automatic stabilizers (falling tax revenue and rising unemployment benefits in a recession) happen on their own with no new law. Discretionary fiscal policy is a new decision by Congress and the President, like the 2009 Recovery Act.</p></div>
 <div class="mistake"><p><strong>Mistake:</strong> Treating the whole deficit during a recession as a structural problem.</p><p><strong>Correct:</strong> Part of it is cyclical: output is below potential, so tax revenue is low and transfers are high. The textbook's structural deficit is the deficit that would remain at potential output. Example: G = 5.0, T = 4.4, and T would be 4.7 at potential, so the structural deficit is 0.3 and the cyclical deficit is 0.3.</p></div>
+<div class="stuck"><h4>If you get stuck on the exam</h4><ul>
+<li>Write PAE as one number plus mpc × Y before anything else. Every change in G, taxes, or transfers goes into that one number, and the slope stays the mpc.</li>
+<li>Decide whether the part asks about the vertical shift of the PAE line (the change in PAE) or the horizontal move of the equilibrium (the change in GDP). Write that word at the top of your answer box.</li>
+<li>Name the lever. For G, the change in PAE equals the change in G. For taxes or transfers, the change in PAE is mpc times the change, with the sign flipped for taxes. Then multiply by 1 ÷ (1 − mpc).</li>
+<li>Check by plugging back in: the new intercept divided by (1 − mpc) should equal the output the question wants.</li>
+<li>Start the answer with the verdict and the units, for example "Increase G by $2 trillion," then give one sentence of reason.</li>
+<li>For a word question with no numbers, say which way PAE shifts, whether the surplus T − G rises or falls, and whether that works with or against the business cycle.</li>
+</ul></div>
 </section>
 
 <section id="exam">
@@ -498,6 +526,39 @@
 <blockquote class="said"><p>"Around the world, many governments face legal or market constraints on borrowing; they can't spend more than they tax forever"</p><cite>Fall 2025 slides, Class 20, slide 35</cite><p class="why">Why it matters: the limit on fiscal policy that he lists as a learning objective.</p></blockquote>
 <blockquote class="said"><p>"The poor have high MPC equal to 1, while the rich have much lower MPC (closer to 0)."</p><cite>Fall 2025 slides, Class 20, slide 21</cite><p class="why">Why it matters: the economy-wide mpc is an average, and it explains why a dollar of tax cut or transfer raises spending more when it goes to households that spend most of what they get.</p></blockquote>
 <blockquote class="said"><p>"If PAE will be low for more than a year, fiscal stimulus needs to last for more than a year as well."</p><cite>Fall 2025 slides, Class 20, slide 65</cite><p class="why">Why it matters: the duration question, one of his three design questions for the 2009 stimulus.</p></blockquote>
+</section>
+
+<section id="variations"><h2>Every way this can be asked</h2>
+<p>These are the distinct ways a fiscal policy question can be worded, drawn from his Class 20 slides, the Fall 2025 final, the practice finals on this site, and the other Berkeley exams adapted below.</p>
+<div style="overflow-x:auto"><table class="vars">
+<tr><th>How the question is worded</th><th>What it is really asking</th><th>How to answer</th></tr>
+<tr><td>"Combine the expenditure terms and find the vertical intercept," with C = C̄ + mpc × (Y − T) and a number for T</td><td>Autonomous spending, including the −mpc × T piece</td><td>Multiply out: intercept = C̄ − mpc × T + I + G + NX. Then Y = intercept ÷ (1 − mpc). Show each line.</td></tr>
+<tr><td>"How big a change in G would fully counteract the shock? Increase, decrease, or no change?" (Fall 2025 Q3(j))</td><td>The size of the vertical shift in PAE</td><td>Change G by the PAE shift with the opposite sign. Say "as long as the mpc stays the same."</td></tr>
+<tr><td>"How big a tax cut would do the same job instead?"</td><td>ΔPAE divided by mpc</td><td>Tax cut = ΔPAE ÷ mpc, which is bigger than the G change. Check: mpc × cut = ΔPAE.</td></tr>
+<tr><td>"Output is X and potential is Y*. What change in G closes the gap?"</td><td>Gap divided by the multiplier</td><td>ΔPAE = (Y* − Y) × (1 − mpc). Change G by ΔPAE, or T by −ΔPAE ÷ mpc.</td></tr>
+<tr><td>"The economy is overheating. What fiscal policy brings it back?"</td><td>An expansionary gap, so PAE must fall</td><td>Cut G or raise T by the computed amount. Call it contractionary, because the surplus T − G rises.</td></tr>
+<tr><td>"Compare a $100 billion increase in G with a $100 billion tax cut" (slide 63)</td><td>The tax cut is partly saved</td><td>G moves PAE by 100. The tax cut moves it by mpc × 100. Multiply each by 1 ÷ (1 − mpc).</td></tr>
+<tr><td>"Find the spending multiplier and the tax multiplier"</td><td>Two formulas</td><td>1 ÷ (1 − mpc) and −mpc ÷ (1 − mpc). They differ by exactly 1 in size.</td></tr>
+<tr><td>"Congress raises Social Security or unemployment benefits"</td><td>Transfers are negative taxes, not G</td><td>T falls by the amount, so PAE rises by mpc × the amount.</td></tr>
+<tr><td>"G and T rise by the same amount, so the deficit does not change. What happens to Y?"</td><td>The balanced-budget case (textbook)</td><td>ΔPAE = (1 − mpc) × ΔG, so ΔY = ΔG. The answer is not zero.</td></tr>
+<tr><td>"Which of these is expansionary (or contractionary, or countercyclical) fiscal policy?"</td><td>His slide 40 definitions</td><td>Find what each option does to T − G. Lower surplus means expansionary. Countercyclical means against the current gap.</td></tr>
+<tr><td>"Define the budget surplus," "deficit versus debt," or "find the debt after these years"</td><td>Flow versus stock</td><td>Surplus = T − G. The deficit is one year's gap. Debt = starting debt + deficits − surpluses.</td></tr>
+<tr><td>"Draw the effect of a tax cut when the economy starts at potential" (slides 42 to 44)</td><td>A parallel upward shift by mpc × the cut</td><td>PAE<sub>1</sub> crosses at Y* = Y<sub>1</sub>. PAE<sub>2</sub> is higher and crosses at Y<sub>2</sub> &gt; Y*. Label the expansionary gap.</td></tr>
+<tr><td>"Draw a fall in autonomous consumption and a tax cut that offsets it" (slides 45 to 47)</td><td>Three lines, with the last on top of the first</td><td>PAE<sub>2</sub> below PAE<sub>1</sub>, then PAE<sub>3</sub> drawn on PAE<sub>1</sub>. Mention timing and magnitude.</td></tr>
+<tr><td>"Show the Recovery Act on a Keynesian cross" (slide 66)</td><td>Partial offset</td><td>PAE<sub>3</sub> between PAE<sub>1</sub> and PAE<sub>2</sub>, with Y<sub>2</sub> &lt; Y<sub>3</sub> &lt; Y*.</td></tr>
+<tr><td>"Which parts of the stimulus raise PAE dollar for dollar?" (slide 64)</td><td>G versus taxes and transfers</td><td>Government investment outlays count one for one. Tax cuts and aid to individuals count at mpc per dollar.</td></tr>
+<tr><td>"G rose by this much and output rose by that much. Find the mpc."</td><td>A reverse multiplier question</td><td>Multiplier = ΔY ÷ ΔG. Then mpc = 1 − 1 ÷ multiplier.</td></tr>
+<tr><td>"Congress raised G, but output did not change. What happened?"</td><td>Reverse: find the hidden shock</td><td>The rest of autonomous spending fell by the same amount as the G increase. Without the G, output would have fallen by the multiplier times that.</td></tr>
+<tr><td>"By how much does PAE change?" versus "by how much is PAE higher at the new equilibrium?"</td><td>Vertical shift versus movement to the new crossing</td><td>The shift at a given Y is ΔG. At equilibrium PAE = Y, so PAE at the crossing rises by ΔY.</td></tr>
+<tr><td>"The mpc falls. Does raising G by the change in the intercept restore output?"</td><td>The key's condition "as long as the mpc remains the same"</td><td>No. The slope changed, so solve for the intercept that gives the target Y with the new mpc.</td></tr>
+<tr><td>"Which plan adds more to the deficit?"</td><td>Closing the same gap costs more with taxes</td><td>G plan adds ΔPAE to the deficit. The tax plan adds ΔPAE ÷ mpc, which is more.</td></tr>
+<tr><td>"Should the tax cut go to low-income or high-income households?" (slide 21)</td><td>Different groups have different mpcs</td><td>First-round ΔPAE = the group's mpc × the cut. The high-mpc group raises PAE more.</td></tr>
+<tr><td>"Why do economists care about debt?" or "What does 'keeping our powder dry' mean?" (slides 38 and 39)</td><td>His three reasons and his advice</td><td>Higher interest rates, risk of a debt crisis, a burden on future generations. Run surpluses in good times to leave room for stimulus.</td></tr>
+<tr><td>"A state with a balanced budget rule cuts spending in a recession"</td><td>Procyclical policy (slide 39)</td><td>Lower G shifts PAE down further and lowers Y by a multiplied amount.</td></tr>
+<tr><td>"Why might stimulus fall short or overshoot?"</td><td>Timing and magnitude (slides 47, 62, 65)</td><td>The PAE drop is not observed "directly or rapidly." Too small leaves a gap. Too big or too late pushes Y above Y*.</td></tr>
+<tr><td>"What are automatic stabilizers?" or "find the structural and cyclical deficit" (textbook)</td><td>Budget changes that happen with no new law</td><td>Taxes fall and transfers rise in a recession. Structural deficit is the deficit at Y*; cyclical is the rest.</td></tr>
+</table></div>
+<div class="tip"><p><strong>Words that change the answer:</strong> "change in PAE" or "at a given level of Y" means the vertical shift, while "change in GDP" or "equilibrium output" means the horizontal move. "Fully counteract" means match the PAE shift, not the GDP change. "Taxes" and "transfers" mean multiply by mpc, while "government purchases" means one for one. "Net taxes" means taxes minus transfers. "Surplus" is T − G, so a bigger deficit is a smaller surplus. "Deficit" is one year, while "debt" is the total. "Countercyclical" means against the current gap. "Increase, decrease, or no change" means you must write the direction word. "As long as the mpc remains the same" warns you that a new mpc changes the slope. Anything the Fed does is monetary policy, not fiscal policy.</p></div>
 </section>
 
 <section id="practice">
@@ -691,10 +752,100 @@
 <p><strong>(a)</strong> National saving = private saving + public saving, and public saving is T − G (the surplus). A larger deficit makes public saving more negative, so <strong>national saving falls</strong>.</p>
 <p><strong>(b)</strong> In a closed economy, saving funds investment. With less saving available, the real interest rate rises and investment falls. This is called <strong>crowding out</strong>. Less investment means a smaller capital stock later, so future potential output is lower. This matches his slides' point that high debt can raise interest rates.</p>
 <p class="credit"><strong>Full credit:</strong> (a) national saving falls because public saving falls; (b) r rises and investment falls (crowding out), lowering future capital.</p></div></details></div>
+<h3>More practice: every variation</h3>
+<p>One question for each row of the variations table that the questions above do not already cover. All numbers are made up for practice.</p>
+
+<div class="practice"><p class="q"><span class="pts">2 points</span> Congress raises government purchases by $50 billion. Nothing else changes, and equilibrium output rises by $200 billion. The marginal propensity to consume must be</p>
+<p>(i) 0.25<br>(ii) 0.75<br>(iii) 0.8<br>(iv) 4</p>
+<details><summary>Show answer</summary><div class="a"><p>(ii). G enters PAE one for one, so PAE shifted up by $50 billion. The multiplier is ΔY ÷ ΔPAE = 200 ÷ 50 = 4. The multiplier is 1 ÷ (1 − mpc), so 1 − mpc = 1 ÷ 4 = 0.25, and mpc = 1 − 0.25 = 0.75. Check: 50 ÷ (1 − 0.75) = 50 ÷ 0.25 = 200.</p>
+<p>Why the others are wrong. (i) 0.25 is 1 − mpc, the denominator of the multiplier, not the mpc. (iii) An mpc of 0.8 gives a multiplier of 5, so output would rise by 50 × 5 = $250 billion, not $200 billion. (iv) 4 is the multiplier itself, and an mpc must be between 0 and 1.</p>
+<p class="credit"><strong>Full credit:</strong> circle (ii).</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">8 points</span> In trillions of dollars, C = 2 + 0.75 × (Y − T), net taxes T = 4, I = 3, G = 4, and NX = −1.</p>
+<p><strong>(a)</strong> (2 points) Combine the terms of PAE and find its vertical intercept. Show your work.</p>
+<p><strong>(b)</strong> (2 points) Find short-run equilibrium output. Show your work.</p>
+<p><strong>(c)</strong> (2 points) Congress cuts net taxes from 4 to 2. Find the new intercept and the new equilibrium output.</p>
+<p><strong>(d)</strong> (2 points) What is the government budget surplus before and after the tax cut? Is the tax cut expansionary or contractionary by his definition?</p>
+<details><summary>Show answer</summary><div class="a">
+<p>(a) PAE = 2 + 0.75 × (Y − 4) + 3 + 4 − 1. Multiply out the consumption term: 0.75 × (Y − 4) = 0.75Y − 3. Add the numbers that do not depend on Y: 2 − 3 + 3 + 4 − 1 = 5. So PAE = 5 + 0.75Y, and the intercept is 5.</p>
+<p>(b) Set 5 + 0.75Y = Y. Subtract 0.75Y from both sides: 5 = 0.25Y. Divide by 0.25: Y = 20. Check: 5 + 0.75 × 20 = 5 + 15 = 20.</p>
+<p>(c) With T = 2, the tax term is −0.75 × 2 = −1.5. Intercept = 2 − 1.5 + 3 + 4 − 1 = 6.5. The intercept rose by 1.5, which is mpc × 2 = 0.75 × 2. Then 6.5 = 0.25Y, so Y = 26. Check with the tax multiplier: −0.75 ÷ 0.25 = −3, and −3 × (−2) = +6, which matches 26 − 20.</p>
+<p>(d) Surplus = T − G. Before: 4 − 4 = 0, a balanced budget. After: 2 − 4 = −2, a deficit of $2 trillion. The tax cut lowers the surplus, so it is expansionary fiscal policy (his slide 40).</p>
+<p class="credit"><strong>Full credit:</strong> 5 + 0.75Y and Y = 20; intercept 6.5 and Y = 26; surplus 0 before and −2 after; expansionary.</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">4 points</span> The economy starts at potential: PAE<sub>1</sub> = 15 + 0.5Y and Y* = 30, in trillions of dollars. Congress cuts net taxes by $2 trillion, and nothing else changes. (This is his slides 42 to 44 with numbers.)</p>
+<p><strong>(a)</strong> (2 points) Describe the Keynesian cross you would draw. Give the new PAE line and the new equilibrium.</p>
+<p><strong>(b)</strong> (2 points) What kind of gap does the tax cut create? Is this tax cut countercyclical?</p>
+<details><summary>Show answer</summary><div class="a">
+<p>(a) Put Y across and PAE up on the same scale, and draw the 45-degree line. PAE<sub>1</sub> starts at 15 with slope 0.5 and crosses the 45-degree line at (30, 30). Mark Y<sub>1</sub> = Y* = 30. The tax cut raises PAE by mpc × 2 = 0.5 × 2 = 1 at every Y, so PAE<sub>2</sub> = 16 + 0.5Y. It is parallel to PAE<sub>1</sub> and 1 higher. It crosses at 16 ÷ 0.5 = 32, so mark Y<sub>2</sub> = 32 with dotted lines to both axes, and draw an upward arrow of 1 between the lines.</p>
+<p>(b) Output of 32 is above potential of 30, so the tax cut creates an expansionary gap of $2 trillion. It is not countercyclical. There was no recession to fight, so the stimulus pushes output above potential. This is why his slide 47 says the keys are "timing and magnitude."</p>
+<p class="credit"><strong>Full credit:</strong> 45-degree line; PAE<sub>1</sub> with intercept 15 crossing at 30; parallel PAE<sub>2</sub> with intercept 16 crossing at 32; expansionary gap of 2; not countercyclical because the economy was already at potential.</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">2 points</span> The mpc is 0.6. Congress raises government purchases by $1 trillion. Which statement is correct?</p>
+<p>(i) The PAE line shifts up by $1 trillion, and GDP rises by $1 trillion<br>(ii) The PAE line shifts up by $1 trillion, and GDP rises by $2.5 trillion<br>(iii) The PAE line gets steeper, and GDP rises by $2.5 trillion<br>(iv) The PAE line shifts up by $0.6 trillion, and GDP rises by $1.5 trillion</p>
+<details><summary>Show answer</summary><div class="a"><p>(ii). G sits in the intercept of PAE with a coefficient of 1, so the line shifts up by exactly $1 trillion at every Y. The multiplier is 1 ÷ (1 − 0.6) = 1 ÷ 0.4 = 2.5, so GDP rises by 1 × 2.5 = $2.5 trillion.</p>
+<p>Why the others are wrong. (i) forgets the multiplier: higher output raises income, which raises consumption, which raises output again. (iii) is wrong because G does not touch the slope. The slope is the mpc, which did not change, so the shift is parallel. (iv) gives the numbers for a $1 trillion tax cut: 0.6 × 1 = 0.6 of PAE and 0.6 × 2.5 = 1.5 of GDP.</p>
+<p class="credit"><strong>Full credit:</strong> circle (ii).</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">6 points</span> In trillions of dollars, PAE = 15 + 0.5Y, so Y = 30, which is potential. Households become cautious and their mpc falls from 0.5 to 0.4. Autonomous spending stays at 15.</p>
+<p><strong>(a)</strong> (2 points) Find the new equilibrium output and describe how the PAE line moves.</p>
+<p><strong>(b)</strong> (2 points) What change in G brings output back to 30? Show your work.</p>
+<p><strong>(c)</strong> (2 points) A classmate says, "The intercept did not change, so by the Fall 2025 rule G should not change." Explain what is wrong.</p>
+<details><summary>Show answer</summary><div class="a">
+<p>(a) New PAE = 15 + 0.4Y. Set 15 + 0.4Y = Y, so 15 = 0.6Y and Y = 15 ÷ 0.6 = 25. The line still starts at 15 but is flatter, because the slope is the mpc. At the old output of 30, the new line gives 15 + 0.4 × 30 = 15 + 12 = 27, which is 3 below the old 30.</p>
+<p>(b) The target is Y = 30 with the new slope 0.4. Output = intercept ÷ (1 − 0.4), so the needed intercept is 30 × 0.6 = 18. The intercept is now 15, so raise G by 18 − 15 = $3 trillion. Check: 18 + 0.4 × 30 = 18 + 12 = 30. Another check: the new multiplier is 1 ÷ 0.6 = 5/3, and 3 × 5/3 = 5, which takes output from 25 to 30.</p>
+<p>(c) The Fall 2025 key's rule holds "as long as the marginal propensity to consume remains the same." Here the mpc changed, so the line rotated instead of shifting. Matching the change in the intercept (zero) would leave output at 25. You have to solve for the intercept that gives 30 with the new mpc.</p>
+<p class="credit"><strong>Full credit:</strong> Y = 25 with a flatter line from the same intercept; raise G by $3 trillion; the shortcut needs an unchanged mpc.</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">4 points</span> Output is $27 trillion and potential is $30 trillion. The mpc is 0.75. Plan G closes the gap by raising government purchases. Plan T closes it with a tax cut. Assume tax revenue does not depend on income.</p>
+<p><strong>(a)</strong> (2 points) How big is the change under each plan? Show your work.</p>
+<p><strong>(b)</strong> (2 points) Which plan adds more to the budget deficit, and by how much?</p>
+<details><summary>Show answer</summary><div class="a">
+<p>(a) The gap is 30 − 27 = 3. The multiplier is 1 ÷ (1 − 0.75) = 4. PAE must rise by 3 ÷ 4 = 0.75. Plan G: raise G by $0.75 trillion. Plan T: a tax cut raises PAE by 0.75 per dollar, so the cut is 0.75 ÷ 0.75 = $1 trillion. Check: 0.75 × 1 = 0.75.</p>
+<p>(b) The deficit is G − T. Plan G raises it by $0.75 trillion. Plan T raises it by $1 trillion. Plan T adds 1 − 0.75 = $0.25 trillion more, which is $250 billion, because households save a quarter of each tax dollar.</p>
+<p class="credit"><strong>Full credit:</strong> G up $0.75 trillion or a $1 trillion tax cut; the tax plan adds $0.25 trillion more to the deficit.</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">4 points</span> Congress has $100 billion for a one-time tax rebate. Plan A sends it to low-income households, whose mpc is 0.9. Plan B sends it to high-income households, whose mpc is 0.3. After the first round, assume each dollar of new income is spent at the economy-wide mpc of 0.6.</p>
+<p><strong>(a)</strong> (2 points) By how much does each plan raise PAE in the first round, and by how much does each raise output?</p>
+<p><strong>(b)</strong> (2 points) Use his slides to explain why the plans differ.</p>
+<details><summary>Show answer</summary><div class="a">
+<p>(a) First round: Plan A raises PAE by 0.9 × 100 = $90 billion. Plan B raises it by 0.3 × 100 = $30 billion. The multiplier at mpc 0.6 is 1 ÷ 0.4 = 2.5. Plan A raises output by 90 × 2.5 = $225 billion. Plan B raises it by 30 × 2.5 = $75 billion.</p>
+<p>(b) His slide 21 says the economy-wide mpc is an average, and that "The poor have high MPC equal to 1, while the rich have much lower MPC (closer to 0)." A rebate only becomes spending to the extent people spend it, so the same dollars raise PAE three times as much when they go to households that spend most of what they get. For comparison, $100 billion of G would raise output by 100 × 2.5 = $250 billion.</p>
+<p class="credit"><strong>Full credit:</strong> $90 billion and $30 billion of PAE; $225 billion and $75 billion of output; high-mpc households spend more of each dollar.</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">4 points</span> The mpc is 0.5, and the economy was at its potential of $30 trillion. This year Congress raised government purchases by $2 trillion, yet output stayed at exactly $30 trillion.</p>
+<p><strong>(a)</strong> (2 points) What must have happened to the rest of planned spending? Explain using the PAE intercept.</p>
+<p><strong>(b)</strong> (2 points) Where would output be without the G increase? Show your work.</p>
+<details><summary>Show answer</summary><div class="a">
+<p>(a) Output stayed the same and the mpc stayed the same, so the PAE intercept must be unchanged. G added 2 to the intercept. So the rest of autonomous spending (C̄, I, or NX) must have fallen by $2 trillion at the same time. One example is a drop in investment.</p>
+<p>(b) Without the G increase, only the $2 trillion drop would have happened. The multiplier is 1 ÷ (1 − 0.5) = 2, so output would have fallen by 2 × 2 = 4, to 30 − 4 = $26 trillion. The G increase was countercyclical: it fully offset a shock you cannot see in the output numbers.</p>
+<p class="credit"><strong>Full credit:</strong> other autonomous spending fell by $2 trillion; output would have been $26 trillion.</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">2 points</span> Output is above potential and inflation is rising. Congress cuts income taxes. By his definitions, this tax cut is</p>
+<p>(i) expansionary and countercyclical<br>(ii) contractionary and countercyclical<br>(iii) expansionary and procyclical<br>(iv) contractionary and procyclical</p>
+<details><summary>Show answer</summary><div class="a"><p>(iii). A tax cut lowers T, so the surplus T − G falls. His slide 40 calls actions that lower the surplus expansionary, and they raise PAE at every Y. Countercyclical means "working against the business cycle." The economy is already above potential, so raising PAE pushes output further above potential. That works with the cycle, which makes it procyclical.</p>
+<p>Why the others are wrong. (i) is right that it is expansionary, but expansionary policy is countercyclical only in a recession. (ii) and (iv) call a tax cut contractionary, but a tax cut lowers the surplus, and contractionary policy raises it. A countercyclical move here would be raising taxes or cutting G.</p>
+<p class="credit"><strong>Full credit:</strong> circle (iii).</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">4 points</span> The mpc is 0.5. Congress raises government purchases by $2 trillion, and nothing else changes.</p>
+<p><strong>(a)</strong> (2 points) By how much does the PAE line shift up at a given level of Y?</p>
+<p><strong>(b)</strong> (2 points) By how much is PAE at the new equilibrium higher than PAE at the old equilibrium? Explain why this is a different number from (a).</p>
+<details><summary>Show answer</summary><div class="a">
+<p>(a) G enters PAE one for one, so the line shifts up by $2 trillion at every level of Y.</p>
+<p>(b) At any equilibrium, PAE = Y. Output rises by 2 × 1 ÷ (1 − 0.5) = 2 × 2 = $4 trillion, so PAE at the new crossing is $4 trillion higher than at the old crossing. The extra 2 comes from moving along the new line: output rose by 4, so consumption rose by 0.5 × 4 = 2. Adding the two pieces gives 2 + 2 = 4. The "change in PAE" in his questions means (a), the vertical shift.</p>
+<p class="credit"><strong>Full credit:</strong> (a) $2 trillion; (b) $4 trillion, because PAE equals Y in equilibrium and the higher income adds 2 of consumption.</p></div></details></div>
 </section>
 
 <section id="summary">
 <h2>One-minute review</h2>
+<div class="qc"><h4>Quick check</h4>
+<details><summary>A $1 tax cut raises PAE by how much?</summary><p>By mpc dollars, because households save the rest of the dollar.</p></details>
+<details><summary>The mpc is 0.75. What are the spending and tax multipliers?</summary><p>4 and −3, since 1 ÷ 0.25 = 4 and −0.75 ÷ 0.25 = −3.</p></details>
+<details><summary>A shock lowers PAE by $3 trillion and GDP by $6 trillion. What change in G offsets it?</summary><p>Raise G by $3 trillion, matching the PAE drop, because the multiplier also doubles the G increase.</p></details>
+<details><summary>Is a rise in unemployment benefits an increase in G?</summary><p>No. Benefits are transfers, which lower net taxes T, so PAE rises by only mpc per dollar.</p></details>
+<details><summary>Does a change in G or T change the slope of the PAE line?</summary><p>No. Both sit in the intercept, and the slope is the mpc, so the line shifts parallel.</p></details>
+<details><summary>What is the difference between the deficit and the debt?</summary><p>The deficit is one year's spending above taxes, and the debt is the accumulation of past deficits.</p></details>
+</div>
 <ul>
 <li>Fiscal policy is government purchases G and net taxes T, where T = taxes − transfers.</li>
 <li>Consumption depends on disposable income: C = C̄ + mpc × (Y − T). Autonomous spending is C̄ − mpc × T + I + G + NX, the PAE intercept; the slope is mpc.</li>
@@ -708,4 +859,4 @@
 </ul>
 <p><strong>Free extra practice:</strong> OpenStax Principles of Economics 3e on <a href="https://openstax.org/books/principles-economics-3e/pages/30-4-using-fiscal-policy-to-fight-recession-unemployment-and-inflation">using fiscal policy to fight recession and inflation</a>, <a href="https://openstax.org/books/principles-economics-3e/pages/30-5-automatic-stabilizers">automatic stabilizers</a>, and <a href="https://openstax.org/books/principles-economics-3e/pages/30-6-practical-problems-with-discretionary-fiscal-policy">practical problems with discretionary fiscal policy</a>.</p>
 </section>
-<div class="donebar"><button class="btn primary" id="mark-done" data-u="09-fiscal">Mark this unit as done</button><span style="color:var(--mute);font-size:15px">Progress is saved in this browser.</span></div><nav class="pager"><a href="08-fluctuations.html"><small>Previous</small>Recessions and the Keynesian cross</a><a href="10-monetary.html" style="text-align:right"><small>Next</small>Monetary policy and financial markets</a></nav></article></main><aside class="toc"><h4>On this page</h4><a href="#learn">The ideas, explained</a><a href="#examples">Worked examples</a><a href="#mistakes">Common mistakes</a><a href="#exam">How it shows up on the final</a><a href="#said">From his slides</a><a href="#practice">Practice questions</a><a href="#summary">One-minute review</a></aside></div><script src="site.js"></script></body></html>
+<div class="donebar"><button class="btn primary" id="mark-done" data-u="09-fiscal">Mark this unit as done</button><span style="color:var(--mute);font-size:15px">Progress is saved in this browser.</span></div><nav class="pager"><a href="08-fluctuations.html"><small>Previous</small>Recessions and the Keynesian cross</a><a href="10-monetary.html" style="text-align:right"><small>Next</small>Monetary policy and financial markets</a></nav></article></main><aside class="toc"><h4>On this page</h4><a href="#learn">The ideas, explained</a><a href="#examples">Worked examples</a><a href="#mistakes">Common mistakes</a><a href="#exam">How it shows up on the final</a><a href="#said">From his slides</a><a href="#variations">Every way this can be asked</a><a href="#practice">Practice questions</a><a href="#summary">One-minute review</a></aside></div><script src="site.js"></script></body></html>

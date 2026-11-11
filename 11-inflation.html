@@ -7,23 +7,27 @@
 
 <section id="learn">
 <h2>The ideas, explained</h2>
+<div class="big"><h4>The big idea</h4><p>This unit explains why a recession or a boom does not last forever in his model. Inflation barely moves at first, then slowly rises when output is above potential and slowly falls when output is below it, and the Fed answers by moving the real interest rate the same way inflation moved. That pushes spending, and so output, back to potential. The one thing to remember for the final: in the short run inflation is stuck and the Fed moves r; in the long run output is back at Y*, r is back at r*, and only inflation can end up different.</p></div>
 
 <h3>Where Class 22 fits: the long run and the short run</h3>
 <p>He opens the class by putting the whole second half of the course on one picture. <strong>Potential GDP</strong>, written Y* (he also writes it as Ȳ, "Y-bar"), is what the economy's labor, capital, and technology can produce when they are all in normal use. That is the long run from Classes 17 and 18. <strong>Actual GDP</strong>, written Y, is what agents actually spend on in the short run: <code class="f">Y = C + I + G + NX</code>, where C is consumption, I is investment, G is government purchases, and NX is net exports. That is the Keynesian cross from Classes 19 to 21.</p>
 <p>The <strong>output gap</strong> is <code class="f">Y − Y*</code>. When it is negative (a recessionary gap), some workers and machines sit idle, so unemployment is above its normal long-run level. When it is positive (an expansionary gap), the economy is running hot. His FRED chart of real GDP against potential GDP labels the episodes: a "Long lasting recession" after 2008, a "Big, short recession" in 2020, and "Recovery and 'overheating'" in the mid-2000s.</p>
+<p class="plain"><strong>In plain words:</strong> potential output is what the economy can make when people and machines are working at their normal pace. The output gap tells you whether the economy is making less than that (a slump, with extra people out of work) or more than that (running hot).</p>
 <p>What is new in Class 22 is inflation. His slide 14 adds the labels "more inflation" to the stretches where Y was above Y* and "less inflation" where Y was below it. The rest of the class explains that pattern and what the Federal Reserve (the Fed, the U.S. central bank) does about it.</p>
 
 <h3>The Fed's tool: the real interest rate</h3>
 <p>The Fed is charged with keeping inflation low and stable (his slides use a 2% target) and with full employment. In this course its key policy tool is the <strong>real interest rate</strong>, r. The Fed directly sets a <strong>nominal interest rate</strong>, i, the rate written on loans and bonds. The real rate subtracts inflation, π:</p>
 <div class="key"><p><code class="f">r = i − π</code>, which is the same as <code class="f">i = r + π</code>. Because inflation π is fixed in the very short run, choosing i is the same as choosing r. Example: i = 5% and π = 2% means r = 3%.</p></div>
+<p class="plain"><strong>In plain words:</strong> the nominal rate is the number written on the loan. The real rate is what borrowing really costs once you account for prices going up while you hold the loan. Prices change slowly, so when the Fed moves the loan rate by a point, the real cost of borrowing moves by a point too.</p>
 <p>A higher real interest rate lowers <strong>planned aggregate expenditure</strong> (PAE, the total spending households, firms, government, and foreigners plan at each level of income) through three channels:</p>
 <ul>
 <li>Planned investment falls, because borrowing to build a factory or a house costs more. He writes this as <code class="f">I<sup>P</sup> = a − b r</code>, a downward-sloping line.</li>
 <li>Consumption falls at every income level, because saving pays more and interest-sensitive purchases like new cars cost more to finance.</li>
 <li>Net exports fall, because a higher r makes the dollar appreciate (that is Class 23, unit 12).</li>
 </ul>
-<p>His conclusion slide: an increase in r reduces PAE at a given Y. In the Keynesian cross, the PAE line shifts <strong>down in a parallel way</strong> (its slope is still the marginal propensity to consume, mpc), and equilibrium output falls by more than the shift because of the multiplier <code class="f">1 ÷ (1 − mpc)</code>.</p>
-<p>To keep numbers consistent on this whole page, use one made-up economy: PAE = A + ½Y, where autonomous spending (the part of spending that does not depend on income) is A = 24 − 3r in trillions of dollars, with r in percent. The mpc is ½, so the multiplier is 2 and equilibrium output is Y = 2A. At r = 3%, A = 15 and Y = 30, which we will treat as potential output.</p>
+<p>His conclusion slide: an increase in r reduces PAE at a given Y. In the Keynesian cross, the PAE line shifts <strong>down in a parallel way</strong>. Its slope does not change, because the slope is still the marginal propensity to consume (mpc), the share of each extra dollar of income that households spend. Equilibrium output falls by more than the shift because of the multiplier <code class="f">1 ÷ (1 − mpc)</code>, the number you multiply a shift in PAE by to get the change in output. Lower spending means lower income for someone else, who then spends less too, and those rounds add up.</p>
+<p class="plain"><strong>In plain words:</strong> when borrowing gets more expensive, people and firms spend less at every income level, so the spending line drops. Output drops by even more, because one person's cut in spending is another person's lost income.</p>
+<p>To keep numbers consistent on this whole page, use one made-up economy: PAE = A + ½Y, where autonomous spending (the part of spending that does not depend on income) is A = 24 − 3r in trillions of dollars, with r in percent. The mpc is ½, so the multiplier is 1 ÷ (1 − ½) = 2. To find equilibrium output, set PAE = Y: A + ½Y = Y, so A = ½Y, so Y = 2A. At r = 3%, A = 24 − 9 = 15 and Y = 2 × 15 = 30, which we will treat as potential output.</p>
 <figure class="graph"><svg viewBox="0 0 470 396" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
 <rect x="0" y="0" width="470" height="396" fill="#ffffff"/>
 <polyline points="52.0,94.0 292.0,94.0 292.0,334.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
@@ -65,6 +69,7 @@
 <li>To pursue another objective, mainly to reduce inflation.</li>
 <li>By mistake. His example is monetary policy in the Great Depression.</li>
 </ul>
+<p class="plain"><strong>In plain words:</strong> the Fed changes rates to cancel out some other hit to spending, to bring inflation down, or because it got it wrong.</p>
 <p>In the Great Depression, his charts show the money stock dropping from about $46 billion to about $35 billion, bank reserves falling, and the real interest rate climbing above 12 percent, while industrial production fell by roughly half. In the cross there are two downward shifts. First, autonomous consumption fell on its own (PAE<sub>2</sub>). Then the monetary contraction raised r, which pushed PAE down again (PAE<sub>3</sub>), so output fell far below potential.</p>
 <figure class="graph"><svg viewBox="0 0 470 396" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
 <rect x="0" y="0" width="470" height="396" fill="#ffffff"/>
@@ -112,8 +117,10 @@
 <h3>Financial crises shift PAE down too</h3>
 <p>A <strong>financial crisis</strong> is a time when a number of financial institutions are in danger of failing, people lose confidence in many of them, and lending (financial intermediation) is widely disrupted. His case is Silicon Valley Bank (SVB) in 2023. Many of SVB's assets were long-term U.S. Treasury bonds. A bond's price is the present value of its fixed payments,</p>
 <div class="key"><p><code class="f">Price = PV = F<sub>1</sub> ÷ (1 + i) + F<sub>2</sub> ÷ (1 + i)<sup>2</sup> + ... + F<sub>T</sub> ÷ (1 + i)<sup>T</sup></code>. When market interest rates i rise and the payments F stay fixed, the bond's price falls. Long-term bonds lose more because their payments are discounted over more years.</p></div>
-<p>When rates rose, SVB's bonds lost value. On March 9, depositors including Peter Thiel's Founders Fund pulled their money out in a bank run, because a bank lends out deposits and does not keep all the cash in a vault. SVB was allowed to fail on March 10, fear spread to First Republic Bank (its shares fell sharply), the Federal Deposit Insurance Corporation (FDIC) moved to cover all deposits beyond the usual $250,000 per account, and SVB was later bought by other banks at a very low price.</p>
+<p class="plain"><strong>In plain words:</strong> a bond is a promise of fixed dollars later. When new loans pay more interest, those old fixed dollars are worth less today, so the bond's price drops. It drops more when the payments are further away.</p>
+<p>When rates rose, SVB's bonds lost value. On March 9, depositors including Peter Thiel's Founders Fund pulled their money out in a bank run (many depositors withdrawing at once). A run can drain a bank because a bank lends out deposits and does not keep all the cash in a vault. SVB was allowed to fail on March 10. Fear spread to First Republic Bank, whose shares fell sharply. The Federal Deposit Insurance Corporation (FDIC) moved to cover all deposits, beyond the usual $250,000 per account. SVB was later bought by other banks at a very low price.</p>
 <p>A crisis lowers PAE at every level of Y in three ways: it raises <strong>credit spreads</strong> (the extra interest that risky loans pay above safe assets), it tightens lending standards so loans are harder to get, and it hurts consumer and business confidence. All three shift the PAE line down, just like a rate hike.</p>
+<p class="plain"><strong>In plain words:</strong> when banks are in trouble, loans cost more, loans are harder to get, and people feel nervous, so everyone spends less. On the graph that looks the same as the Fed raising rates.</p>
 <figure class="graph"><svg viewBox="0 0 470 396" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
 <rect x="0" y="0" width="470" height="396" fill="#ffffff"/>
 <polyline points="52.0,94.0 292.0,94.0 292.0,334.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
@@ -149,9 +156,11 @@
 </svg><figcaption>Slide 31 to scale (made-up numbers). Wider credit spreads, tighter lending, and lost confidence cut autonomous spending from 15 to 12.5, so output falls from 30 to 25.</figcaption></figure>
 
 <h3>Inflation does not move much in the short run</h3>
-<p>There are <strong>nominal rigidities</strong>: prices and wages do not change much in the short run because of limited information, menu costs (the cost of changing posted prices), long-term contracts, and similar factors. He also calls this <strong>inflation inertia</strong>. In his final review he defined it as prices and wages being unable to "quickly adjust to new optima, especially if the optima are below current prices."</p>
+<p>There are <strong>nominal rigidities</strong>: prices and wages do not change much in the short run because of limited information, menu costs (the cost of changing posted prices), long-term contracts, and similar factors. He also calls this <strong>inflation inertia</strong>. In his final review he defined it as prices and wages being unable to "quickly adjust to new optima, especially if the optima are below current prices." (An optimum here is the price or wage that would be best if it could be changed for free.)</p>
+<p class="plain"><strong>In plain words:</strong> prices are sticky. Firms do not reprint menus or rewrite contracts every week, so inflation this month looks a lot like inflation last month.</p>
 <p>Over time, contracts expire, menus wear out, and uncertainty is resolved, so inflation does respond to the output gap:</p>
 <div class="key"><p>When Y &gt; Y* (an expansionary gap), inflation gradually <strong>rises</strong>. When Y &lt; Y* (a recessionary gap), inflation gradually <strong>falls</strong>. When Y = Y*, inflation <strong>stays the same</strong>. The word "gradually" matters: in the short run inflation is fixed.</p></div>
+<p class="plain"><strong>In plain words:</strong> an economy running hot slowly pushes inflation up, a weak economy slowly pulls it down, and an economy at its normal level leaves inflation where it was.</p>
 <p>The reasons, from his slides:</p>
 <ul>
 <li>When Y &gt; Y*, firms are operating above their comfortable capacity, so they want to raise their prices relative to other firms' prices. They raise prices by more than past inflation, and when many firms do this, inflation rises.</li>
@@ -161,12 +170,14 @@
 <p>His data slides line up with this. In the first chart (titled 1962 to 1970), output stayed above potential for several years and inflation climbed from under 2% to around 5%. In the second (titled 1979 to 1987), output fell well below potential and inflation dropped from about 9% to about 2% to 3%. In the third (titled 1994 to 1997), the gap stayed close to zero and inflation held near 2%.</p>
 
 <h3>Inflation shocks: a different source of inflation</h3>
-<p>An <strong>inflation shock</strong> is a sudden jump, usually upward, in a small set of prices (often oil) for reasons unrelated to how Y compares with Y*. Unlike gap-driven inflation, an inflation shock changes inflation <strong>immediately</strong>. His example is the inflation shock of 1973 to 1974, where his chart of core PCE inflation jumps to above 10%. So there are two kinds of inflation in this model: the slow, demand-driven kind that builds up when the economy runs above potential, and the sudden supply-side kind from a price shock.</p>
-<p>Central banks care because keeping inflation reasonably low and stable is part of the legal mandate of almost every central bank, and there is evidence that both sustained very high and sustained very low inflation are harmful (and make people unhappy about the economy).</p>
+<p>An <strong>inflation shock</strong> is a sudden jump, usually upward, in a small set of prices (often oil) for reasons unrelated to how Y compares with Y*. Unlike gap-driven inflation, an inflation shock changes inflation <strong>immediately</strong>. His example is the inflation shock of 1973 to 1974, where his chart of core PCE inflation jumps to above 10%. (Core PCE inflation is the growth rate of the personal consumption expenditures price index, leaving out food and energy.) So there are two kinds of inflation in this model: the slow, demand-driven kind that builds up when the economy runs above potential, and the sudden supply-side kind from a price shock.</p>
+<p class="plain"><strong>In plain words:</strong> inflation changes in two ways. It drifts slowly because the economy is too hot or too cold, or it jumps all at once because something like oil suddenly costs much more.</p>
+<p>Central banks care about inflation for two reasons. First, keeping inflation reasonably low and stable is part of the legal mandate of almost every central bank. Second, there is evidence that both sustained very high and sustained very low inflation are harmful to the economy, and that they make people unhappy about economic conditions (slide 44).</p>
 
 <h3>The Fed's reaction function</h3>
 <p>When inflation rises, the Fed raises the real interest rate. That lowers planned spending and output, and because inflation responds to output over time, inflation comes back down. When inflation falls, the Fed lowers r and the process runs in reverse. This rule, r up when π is up and r down when π is down, is the Fed's <strong>reaction function</strong> (RF). Its purpose is to keep inflation from getting too low or too high.</p>
-<p>His slide 17 gives a numerical version with a 2% target and a normal real rate of 3%: <code class="f">r − 3 = 0.5 × (π − 2)</code>, in percent. Every row of his table follows from it, with i = r + π:</p>
+<p class="plain"><strong>In plain words:</strong> the Fed's habit is to make borrowing more expensive when inflation goes up and cheaper when inflation goes down.</p>
+<p>His slide 17 gives a numerical version with a 2% target and a normal real rate of 3%: <code class="f">r − 3 = 0.5 × (π − 2)</code>, in percent. The 3 is the normal real rate, the real rate the Fed sets when inflation is exactly on target. The 0.5 means the Fed moves r by half a point for every point that inflation is above or below the 2% target. Every row of his table follows from it, with i = r + π:</p>
 <div style="overflow-x:auto"><table class="data">
 <tr><th>Inflation π</th><th>The Fed will</th><th>Real rate r = 3 + 0.5(π − 2)</th><th>Nominal rate i = r + π</th><th>Output gap Y − Y*</th></tr>
 <tr><td>3%</td><td>Raise the real interest rate</td><td>3 + 0.5(1) = 3.5%</td><td>6.5%</td><td>Dips negative</td></tr>
@@ -176,6 +187,7 @@
 <tr><td>−2%</td><td>Lower it a lot</td><td>3 + 0.5(−4) = 1%</td><td>−1.0%</td><td>He leaves this for ECON 100B</td></tr>
 </table></div>
 <p>The last row is why he warns that "real difficulties arise with deflation" (inflation below zero): to get r = 1% with π = −2%, the nominal rate would have to be −1%, and nominal rates cannot go far below zero.</p>
+<p class="plain"><strong>In plain words:</strong> for every point inflation is above 2%, the Fed adds half a point to the normal 3% real rate, and for every point below, it takes half a point off. To get the rate written on loans, add inflation back on top.</p>
 <figure class="graph"><svg viewBox="0 0 440 352" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
 <rect x="0" y="0" width="440" height="352" fill="#ffffff"/>
 <polyline points="52.0,152.0 175.3,152.0 175.3,290.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
@@ -221,8 +233,9 @@
 <text x="243.2" y="140.5" fill="#1d2430" text-anchor="start" font-size="10">π = 3%: r = 3.5%</text>
 <text x="116.8" y="191.1" fill="#1d2430" text-anchor="start" font-size="10">π = 1%: r = 2.5%</text>
 </svg><figcaption>The reaction function is an upward-sloping line in a graph with inflation π on the horizontal axis and the real rate r on the vertical axis. The dots are the rows of his slide 17 table. Where the line crosses r* = 3% is the inflation rate the economy settles at in the long run, 2%.</figcaption></figure>
-<p>His slide on this graph adds a line in red: the Fed "has no choice about what r is in the long run." In the long run, r* is set by saving and investment (Class 21). So the reaction function really pins down long-run inflation: it is the π where the RF line is at height r*. By choosing its reaction function, the Fed is choosing long-run inflation.</p>
-<div class="key"><p>Long-run inflation is the π where the reaction function crosses r*. Example: if RF is r = 1 + 0.5π and r* = 3%, then 3 = 1 + 0.5π, so π = 4% in the long run.</p></div>
+<p>His slide on this graph adds a line in red: the Fed "has no choice about what r is in the long run." The long-run real interest rate, r*, is set by saving and investment (Class 21). So the reaction function really pins down long-run inflation: it is the π where the RF line is at height r*. By choosing its reaction function, the Fed is choosing long-run inflation.</p>
+<div class="key"><p>Long-run inflation is the π where the reaction function crosses r*. Example: if RF is r = 1 + 0.5π and r* = 3%, then 3 = 1 + 0.5π, so 0.5π = 2 and π = 4% in the long run.</p></div>
+<p class="plain"><strong>In plain words:</strong> in the long run the Fed cannot pick the interest rate, because saving and investment pick it. What the Fed does pick, through its rule, is which inflation rate goes with that interest rate.</p>
 <p>His FRED chart for 2002 to 2006 shows the reaction function in the data: the federal funds rate sat near 1% into mid-2004, then rose steadily to above 5% by 2006 as CPI inflation (inflation in the consumer price index) climbed.</p>
 
 <h3>How the economy returns to potential on its own</h3>
@@ -233,6 +246,7 @@
 <li>A lower r raises consumption at each Y and raises planned investment, so the PAE line shifts up and Y rises.</li>
 <li>As long as Y ≠ Y*, inflation keeps changing, so the Fed keeps moving r and Y keeps moving. The process stops only when the PAE line crosses the 45° line at Y*. That final line is PAE<sub>LR</sub>, the long-run PAE line.</li>
 </ol>
+<p class="plain"><strong>In plain words:</strong> a slump slowly brings inflation down, the Fed answers by making borrowing cheaper, spending picks up, and this repeats until output is back to normal.</p>
 <p>In long-run equilibrium nothing pushes inflation, so π, r, the PAE line, and Y all stay put until a new shock hits. (He notes that Y* is itself growing during this process and the model ignores it: "We can shoot a steadily moving target.")</p>
 <figure class="graph"><svg viewBox="0 0 470 396" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
 <rect x="0" y="0" width="470" height="396" fill="#ffffff"/>
@@ -281,7 +295,8 @@
 <div class="tip"><p>In a recessionary gap, the self-correcting chain is: Y &lt; Y*, so π falls, so the Fed lowers r, so PAE shifts up, so Y rises, and it repeats until Y = Y*. In an expansionary gap, flip every arrow: π rises, the Fed raises r, PAE shifts down, Y falls back to Y*. Writing this chain in full sentences is most of the credit on a "what happens over time" question.</p></div>
 
 <h3>Lowering inflation on purpose: shifting the reaction function</h3>
-<p>Suppose the economy is in long-run equilibrium, so inflation is steady, but the Fed decides that inflation is too high and wants it lower in the long run. (His slide says "(suspenseful music plays)" here, and then shows inflation in 1976 to 1979, when core inflation ran about 6% to 7.5%, next to 2021 to 2022, when it climbed from about 3% to above 5%.) Because long-run inflation is where RF crosses r*, the Fed has to <strong>shift its reaction function up</strong>: at every inflation rate, it now sets a higher r.</p>
+<p>Suppose the economy is in long-run equilibrium, so inflation is steady, but the Fed decides that inflation is too high and wants it lower in the long run. His slide says "(suspenseful music plays)" here. The next slide shows inflation in 1976 to 1979, when core inflation ran about 6% to 7.5%, next to 2021 to 2022, when it climbed from about 3% to above 5%. Because long-run inflation is where RF crosses r*, the Fed has to <strong>shift its reaction function up</strong>: at every inflation rate, it now sets a higher r.</p>
+<p class="plain"><strong>In plain words:</strong> to get lower inflation for good, the Fed has to become stricter, charging a higher real rate at every inflation level. That causes a recession first, and the recession is what slowly brings inflation down.</p>
 <figure class="graph"><svg viewBox="0 0 440 352" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
 <rect x="0" y="0" width="440" height="352" fill="#ffffff"/>
 <polyline points="52.0,152.0 263.4,152.0 263.4,290.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
@@ -393,6 +408,7 @@
 <li>A <strong>movement along</strong> the RF happens when inflation changes and the Fed follows its usual rule. An oil shock that pushes π from 2% to 5% moves the Fed up its line from r = 3% to r = 4.5%. Long-run inflation does not change, because the line still crosses r* at 2%.</li>
 <li>A <strong>shift</strong> of the RF happens when the Fed changes its rule, for example to get lower long-run inflation. Shifting up lowers long-run inflation. Shifting down would raise it.</li>
 </ul>
+<p class="plain"><strong>In plain words:</strong> if inflation changed and the Fed did what it always does, that is a move along the line. If the Fed changed what it always does, that is a shift of the line.</p>
 <figure class="graph"><svg viewBox="0 0 440 352" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
 <rect x="0" y="0" width="440" height="352" fill="#ffffff"/>
 <polyline points="52.0,152.0 175.3,152.0 175.3,290.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
@@ -456,11 +472,12 @@
 <h3>The textbook's version: aggregate demand and inflation adjustment</h3>
 <p>His slides title the chapter "Aggregate Demand, Aggregate Supply, and Inflation" but draw everything with the Keynesian cross and the reaction function. The textbook (Frank, Bernanke, and coauthors, Chapter 27) puts the same story on one graph with inflation on the vertical axis and output on the horizontal axis. You will not need it if you can do the cross and the RF, but it helps to see that it is the same model.</p>
 <ul>
-<li>The <strong>aggregate demand (AD) curve</strong> slopes down: higher inflation makes the Fed raise r, which lowers PAE and output. In our numbers, plugging r = 2 + 0.5π into Y = 48 − 6r gives Y = 36 − 3π.</li>
+<li>The <strong>aggregate demand (AD) curve</strong> slopes down: higher inflation makes the Fed raise r, which lowers PAE and output. In our numbers, the rule after the disinflation (RF<sub>2</sub>) is r = 3 + 0.5(π − 2), which simplifies to r = 2 + 0.5π. Output is Y = 2A = 2(24 − 3r) = 48 − 6r. Plugging the rule into output gives Y = 48 − 6(2 + 0.5π) = 48 − 12 − 3π = 36 − 3π. Check: at π = 4, Y = 24; at π = 2, Y = 30.</li>
 <li>The <strong>inflation adjustment (IA) line</strong> is horizontal at current inflation, because inflation is fixed in the short run.</li>
 <li>The <strong>long-run aggregate supply (LRAS) line</strong> is vertical at Y*.</li>
 <li>If AD and IA cross left of Y*, inflation falls, so IA shifts down over time until all three meet at Y*. An inflation shock is IA jumping up at once.</li>
 </ul>
+<p class="plain"><strong>In plain words:</strong> the textbook graph tells the same story with inflation on the side axis. Higher inflation means the Fed raises rates, so output is lower, and the flat inflation line slides toward the point where output is back at potential.</p>
 <figure class="graph"><svg viewBox="0 0 440 352" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
 <rect x="0" y="0" width="440" height="352" fill="#ffffff"/>
 <polyline points="52.0,152.0 274.0,152.0 274.0,290.0" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
@@ -571,6 +588,14 @@
 <div class="mistake"><p><strong>Mistake:</strong> "The Fed can keep output above potential for good by keeping rates low," or the same claim about government spending.</p><p><strong>Correct:</strong> Any gap makes inflation move, and inflation keeps moving until Y = Y*. In the long run policy changes only inflation, not output.</p></div>
 <div class="mistake"><p><strong>Mistake:</strong> Treating a recessionary gap and a downward inflation shock as the same thing.</p><p><strong>Correct:</strong> A recessionary gap lowers inflation gradually, over many periods. A downward inflation shock (oil prices collapsing, say) lowers inflation at once. In the textbook's graph, the IA line drifts down in the first case and drops in one step in the second.</p></div>
 <div class="mistake"><p><strong>Mistake:</strong> "The economy returns to potential on its own, so stabilization policy is pointless."</p><p><strong>Correct:</strong> The self-correcting process works slowly, because inflation adjusts gradually. That slowness is the textbook's case for active fiscal and monetary policy in a deep recession.</p></div>
+<div class="stuck"><h4>If you get stuck on the exam</h4><ul>
+<li>Write the chain skeleton in the margin first: gap, then inflation, then r, then PAE, then Y. Then fill in the direction of each arrow for the case in front of you.</li>
+<li>Split the answer into two lines labeled "Short run:" and "Long run:". In the short run inflation is fixed (unless the question names an inflation shock). In the long run Y = Y* and r = r*.</li>
+<li>For any interest rate number, write r = i − π and the reaction function on scrap paper and plug in. Check your result against his slide 17 table: π = 3% gives r = 3.5%, π = 5% gives r = 4.5%, π = 1% gives r = 2.5%.</li>
+<li>For a "how much" question, the change in PAE is the change in autonomous spending, and the change in GDP is the multiplier 1 ÷ (1 − mpc) times that. To offset a shock, match the change in PAE, never the change in GDP.</li>
+<li>For long-run inflation, set the reaction function equal to r* and solve for π.</li>
+<li>For "shift or movement," check only whether the Fed changed its rule. If it did not, it is a movement along the reaction function.</li>
+</ul></div>
 </section>
 
 <section id="exam">
@@ -596,6 +621,39 @@
 <blockquote class="said"><p>"Y falls (by more than the amount of the downward shift in PAE, because of the multiplier)."</p><cite>Fall 2025 slides, Class 22, slide 62</cite><p class="why">Why it matters: the same multiplier point as Fall 2025 final Q3(i). Say "multiplier" and give 1 ÷ (1 − mpc).</p></blockquote>
 <blockquote class="said"><p>"Notice that in the adjustment process, the PAE line moves (because of movements in inflation changing the Fed's choice of the real interest rate) until it crosses the 45 degree line at Y*."</p><cite>Fall 2025 slides, Class 22, slide 55</cite><p class="why">Why it matters: this is the sentence to paraphrase when asked how the economy returns to potential.</p></blockquote>
 <blockquote class="said"><p>"Inflation was falling the whole time Y was below Y*, and there was never a period when Y was above Y*."</p><cite>Fall 2025 slides, Class 22, slide 66</cite><p class="why">Why it matters: this is his argument for why the disinflation leaves inflation permanently lower, without any algebra.</p></blockquote>
+</section>
+
+<section id="variations"><h2>Every way this can be asked</h2>
+<p>These are the question types this unit can produce, drawn from his Class 22 slides, his final review deck, the Fall 2025 final, and the practice finals on this site, with what each one is really testing and how to answer it.</p>
+<div style="overflow-x:auto"><table class="vars">
+<tr><th>How the question is worded</th><th>What it is really asking</th><th>How to answer</th></tr>
+<tr><td>"When Y is below (or above) Y*, inflation..." (multiple choice)</td><td>The direction and the timing of gap-driven inflation</td><td>Below potential: inflation gradually falls. Above: gradually rises. At potential: stays the same. Any option with "immediately" is wrong unless it is an inflation shock.</td></tr>
+<tr><td>"What happens to inflation right away? Over the following year or two?"</td><td>Inflation inertia in the short run, then the gap rule</td><td>Right away: no change, because of nominal rigidities (menu costs, long-term contracts, limited information). Over time: it moves in the direction of the gap.</td></tr>
+<tr><td>"Why does inflation stay the same when Y = Y*?"</td><td>The role of expected inflation</td><td>Firms do not want their prices to rise or fall relative to other firms' prices, so they keep up with expected inflation, which mostly comes from past inflation.</td></tr>
+<tr><td>"Inflation fell steadily for two years with no inflation shock. What was output doing?" (reverse)</td><td>Read the gap off the inflation trend</td><td>Steadily falling inflation means Y &lt; Y*. Rising means Y &gt; Y*. Flat means Y = Y*.</td></tr>
+<tr><td>"Oil prices jump" or "a bad harvest raises food prices." What kind of event is this?</td><td>Whether it is an inflation shock or gap-driven inflation</td><td>A sudden jump in a small set of prices, unrelated to Y versus Y*, is an inflation shock. It moves inflation at once, and the Fed moves along its reaction function.</td></tr>
+<tr><td>"The nominal rate is X and inflation is Y. What is the real rate?"</td><td>r = i − π</td><td>Subtract. Watch for the trap answer that adds them.</td></tr>
+<tr><td>"The Fed wants a real rate of X with inflation at Y. What nominal rate does it set?" or "The Fed holds i still while inflation rises."</td><td>i = r + π, and what a fixed nominal rate does to r</td><td>Add. If i stays put while π rises, r falls, which is a hidden rate cut.</td></tr>
+<tr><td>"The Fed follows r − 3 = 0.5(π − 2). Inflation is X. What does it do?"</td><td>Plugging into the reaction function</td><td>Find r, then i = r + π, then the gap direction: r above 3% pushes Y below Y*, r below 3% pushes Y above Y*.</td></tr>
+<tr><td>"The Fed set the nominal rate at 9.5% (or the real rate at 2.5%). What inflation is it reacting to?" (reverse)</td><td>Solving the rule backward</td><td>From r: π − 2 = (r − 3) ÷ 0.5. From i: substitute r = i − π, which gives i = 2 + 1.5π for his rule.</td></tr>
+<tr><td>"Inflation rises from 2% to 4%. By how much does the nominal rate rise?" (trick)</td><td>Both r and π enter i</td><td>r rises 1 point and π rises 2, so i rises 3 points. The nominal rate has to rise by more than inflation for r to rise.</td></tr>
+<tr><td>"Inflation is −2%. What nominal rate does the rule call for? Can the Fed set it?"</td><td>Deflation and the floor on nominal rates</td><td>The rule wants r = 1%, so i = 1 + (−2) = −1%. Nominal rates cannot go far below zero, so r is stuck higher than the rule wants. He calls this "real difficulties" and leaves it for ECON 100B.</td></tr>
+<tr><td>"The Fed raises r by X. By how much do PAE and GDP change?"</td><td>Parallel shift, then the multiplier</td><td>Change in PAE = change in autonomous spending. Change in GDP = that times 1 ÷ (1 − mpc). Say "the multiplier" and name the mpc.</td></tr>
+<tr><td>"How big a policy change returns Y to Y*? Is it $3 trillion?"</td><td>The size of the PAE shift, not the GDP gap</td><td>Needed change in PAE = GDP gap × (1 − mpc). If the tool is r, divide by the change in spending per point of r.</td></tr>
+<tr><td>"Compare a tax cut (rebate checks) with an increase in G of the same size."</td><td>G enters PAE one for one, a tax cut through the mpc</td><td>G of X raises PAE by X. A tax cut of X raises PAE by mpc × X (his Class 20 slide 63). Then multiply by the multiplier.</td></tr>
+<tr><td>"Explain fully what happens over time" or "how does the economy return to potential?"</td><td>The self-correcting chain</td><td>Gap moves π gradually, the Fed moves r along its reaction function, PAE shifts, Y moves. Repeat until PAE crosses the 45° line at Y*.</td></tr>
+<tr><td>"Graph the Keynesian cross before and after, and show the return to potential." (draw and label)</td><td>A parallel shift drawn to scale</td><td>45° line from the origin, parallel PAE lines with labeled intercepts, equilibria with dotted lines to both axes, an arrow for the shift, and PAE<sub>LR</sub> crossing at Y*.</td></tr>
+<tr><td>"Draw the Fed's reaction function and show long-run inflation." (draw and label)</td><td>The RF graph from slide 47</td><td>π on the horizontal axis, r on the vertical, an upward-sloping RF, a horizontal line at r*. Long-run inflation is where they cross.</td></tr>
+<tr><td>"The RF is r = 1 + 0.5π and r* = 3%. What is long-run inflation?"</td><td>Long-run r is r*, so solve the rule at r*</td><td>3 = 1 + 0.5π, so π = 4%.</td></tr>
+<tr><td>"In long-run equilibrium, which is true?" (trick)</td><td>What is pinned down in the long run</td><td>Y = Y*, r = r*, and inflation is steady. Inflation does not have to equal 2%; it is wherever the RF crosses r*.</td></tr>
+<tr><td>"The Fed wants permanently lower inflation. What must it do? Short-run and long-run effects?"</td><td>An upward shift of the RF, worked through his slide 69 steps</td><td>Short run: π unchanged, r up, PAE down, Y falls by more (multiplier). Over time: π falls, r falls, Y returns. Long run: r back at r*, I and C unchanged, π lower.</td></tr>
+<tr><td>"Is this a movement along the reaction function or a shift of it?"</td><td>Whether the Fed changed its rule</td><td>Inflation changed and the Fed followed its rule: movement along. The Fed changed its rule: shift. Only a shift changes long-run inflation.</td></tr>
+<tr><td>"Why did the central bank change rates? Classify this episode."</td><td>His three reasons on slide 21</td><td>To offset another force shifting PAE (Great Recession, COVID-19), to reduce inflation, or a mistake (the Great Depression).</td></tr>
+<tr><td>"A bank fails" or "a financial crisis hits." Effects on bond prices and PAE?</td><td>Present value and the three crisis channels</td><td>Rates up means bond prices down, more for long-term bonds. Crisis: wider credit spreads, tighter lending, lower confidence, so PAE shifts down.</td></tr>
+<tr><td>"Two central banks with different rules face the same shock. Compare." or "Is this policy good or bad?"</td><td>Comparison and the output-inflation tradeoff</td><td>A steeper rule moves r more, so the short-run recession is deeper. Long-run inflation is the same if both rules cross r* at the same π. "Good or bad" is "a little tricky": output above Y* is good, rising inflation is bad.</td></tr>
+<tr><td>"His chart shows inflation and Y − Y* over several years. Explain the pattern."</td><td>Matching data to the gap rule</td><td>Years with Y &gt; Y* should show rising inflation, years with Y &lt; Y* falling inflation, and a gap near zero steady inflation. Name which case each period is.</td></tr>
+</table></div>
+<div class="tip"><p><strong>Words that change the answer:</strong> "right away," "immediately," and "in the short run" mean inflation is fixed unless the question names an inflation shock. "Over time," "gradually," and "eventually" mean the gap moves inflation. "In the long run" means Y = Y* and r = r*. "Real" and "nominal" are different rates: r = i − π. "Change in PAE" is the shift at a given Y, while "change in GDP" is the multiplier times that. "Permanently lower inflation" means a shift of the reaction function, and "inflation rose and the Fed responded" means a movement along it. "Temporary" and "permanent" matter for spending shocks: a permanent rise in spending changes r* and so long-run inflation. And "inflation falls" does not mean prices fall; prices still rise, only more slowly, unless inflation is below zero.</p></div>
 </section>
 
 <section id="practice">
@@ -972,10 +1030,106 @@
 <p><strong>(d)</strong> His model: an inflation shock, a sudden jump in a small set of prices unrelated to the gap, so the Fed moves along its reaction function. Textbook: the IA line jumps up at once.</p>
 <p class="credit"><strong>Full credit:</strong> (a) PAE up, AD right; (b) along the reaction function, IA up; (c) reaction function up, AD left; (d) inflation shock along the reaction function, IA up.</p>
 </div></details></div>
+<h3>More practice: the variations not covered above</h3>
+<p>Each question below matches a row in "Every way this can be asked" that the questions above do not already drill. Numbers use this page's made-up economy (PAE = A + ½Y, A = 24 − 3r, Y* = 30) unless the question says otherwise.</p>
+
+<div class="practice"><p class="q"><span class="pts">2 points</span> Over the past two years, inflation fell steadily, and there was no inflation shock. According to his model, the most likely reason is that</p>
+<p>(i) Actual output Y was above potential output Y*<br>(ii) Actual output Y was below potential output Y*<br>(iii) Actual output Y was equal to potential output Y*<br>(iv) The Fed shifted its reaction function down</p>
+<details><summary>Show answer</summary><div class="a"><p><strong>(ii).</strong> This is the gap rule run backward. With no inflation shock, the only thing moving inflation in the model is the output gap, and inflation falls gradually when Y &lt; Y* (slide 41). (i) is the opposite case: Y &gt; Y* makes inflation rise. (iii) is wrong because at Y = Y* firms just keep up with expected inflation, so inflation holds steady. (iv) is wrong because a lower reaction function means a lower r at every inflation rate, which raises PAE, pushes Y above Y*, and makes inflation rise, not fall.</p>
+<p class="credit"><strong>Full credit:</strong> circle (ii).</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">2 points</span> In March 2020, as COVID-19 shut down businesses and spending collapsed, the Fed cut its policy rate to near zero. In his list of reasons a central bank changes interest rates, this was</p>
+<p>(i) Countercyclical policy, to offset another force that was shifting the PAE line down<br>(ii) Policy to reduce inflation<br>(iii) A mistake, like monetary policy in the Great Depression<br>(iv) An upward shift of the Fed's reaction function</p>
+<details><summary>Show answer</summary><div class="a"><p><strong>(i).</strong> His slide 21 names "during the COVID-19 pandemic" as an example of countercyclical policy: the shutdown pushed PAE down, and a lower r pushes it back up. (ii) is wrong because reducing inflation calls for raising r, and the Fed cut. (iii) is wrong because his mistake example is the Great Depression, when r rose while output collapsed; cutting into a collapse is the opposite. (iv) is wrong because an upward shift means a higher r at every inflation rate, and the Fed lowered r.</p>
+<p class="credit"><strong>Full credit:</strong> circle (i).</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">2 points</span> In long-run equilibrium in his model, which of these is <em>not</em> necessarily true?</p>
+<p>(i) Actual output equals potential output, Y = Y*<br>(ii) Inflation is steady<br>(iii) The real interest rate equals r*, the rate set by saving and investment<br>(iv) Inflation equals 2%</p>
+<details><summary>Show answer</summary><div class="a"><p><strong>(iv).</strong> Long-run inflation is wherever the Fed's reaction function crosses r*, and that need not be 2%. Example: with r = 1 + 0.5π and r* = 3%, long-run inflation is 4%. The other three always hold. (i) holds because any gap would keep moving inflation, and the Fed would keep moving r. (ii) holds because at Y = Y* there is "no force acting to change inflation" (slide 55). (iii) holds because the Fed "has no choice about what r is in the long run" (slide 47).</p>
+<p class="credit"><strong>Full credit:</strong> circle (iv).</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">2 points</span> The Fed follows r − 3 = 0.5(π − 2), in percent, with i = r + π. Inflation rises from 2% to 4%. By how much does the nominal interest rate i rise?</p>
+<p>(i) 1 percentage point<br>(ii) 2 percentage points<br>(iii) 3 percentage points<br>(iv) 0, because the Fed only moves the real rate</p>
+<details><summary>Show answer</summary><div class="a"><p><strong>(iii).</strong> At π = 2%: r = 3 + 0.5(0) = 3%, so i = 3 + 2 = 5%. At π = 4%: r = 3 + 0.5(2) = 4%, so i = 4 + 4 = 8%. The nominal rate rises from 5% to 8%, which is 3 points. (i) is only the change in r. (ii) is only the change in π. (iv) is wrong because the Fed sets the real rate by setting i; with inflation 2 points higher, i must rise by those 2 points just to keep r the same, plus 1 more point to raise r.</p>
+<p class="credit"><strong>Full credit:</strong> circle (iii).</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">4 points</span> <strong>Working backward.</strong> The Fed follows r − 3 = 0.5(π − 2), in percent, with i = r + π. You do not know inflation, but you see what the Fed did.</p>
+<p><strong>(a)</strong> (2 points) The Fed sets the real interest rate at 2.5%. What inflation rate is it reacting to, and what nominal rate does it set? In this page's economy, what is output, and which way is the gap? Show your work.</p>
+<p><strong>(b)</strong> (2 points) On another day, the Fed announces a nominal rate of 9.5%. What inflation rate is it reacting to, and what real rate is that? Show your work.</p>
+<details><summary>Show answer</summary><div class="a">
+<p><strong>(a)</strong> Set 2.5 − 3 = 0.5(π − 2). The left side is −0.5, so π − 2 = −0.5 ÷ 0.5 = −1, and π = 1%. The nominal rate is i = r + π = 2.5 + 1 = 3.5%. Output: A = 24 − 3(2.5) = 24 − 7.5 = 16.5, so Y = 2 × 16.5 = 33. The gap is 33 − 30 = +3, an expansionary gap. This matches the 1% row of his slide 17 table, where the gap "dips positive."</p>
+<p class="credit"><strong>Full credit:</strong> π = 1%, i = 3.5%, Y = 33, a positive gap of 3, with the algebra shown.</p>
+<p><strong>(b)</strong> You cannot just subtract the target, because i includes inflation itself. Substitute r = 3 + 0.5(π − 2) into i = r + π: i = 3 + 0.5π − 1 + π = 2 + 1.5π. Set 2 + 1.5π = 9.5, so 1.5π = 7.5 and π = 5%. Then r = i − π = 9.5 − 5 = 4.5%. Check with the rule: 3 + 0.5(5 − 2) = 4.5%. This is the 5% row of his slide 17 table.</p>
+<p class="credit"><strong>Full credit:</strong> π = 5% and r = 4.5%, with i = 2 + 1.5π (or trial and check) shown.</p>
+</div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">6 points</span> <strong>Stuck at zero.</strong> After a financial crisis, autonomous spending is 6 lower at every interest rate: A = 18 − 3r, with PAE = A + ½Y and Y* = $30 trillion. Inflation has fallen to −2% (deflation). The Fed follows r − 3 = 0.5(π − 2), with i = r + π.</p>
+<p><strong>(a)</strong> (2 points) What real and nominal rates does the rule call for? What output would that real rate produce? Show your work.</p>
+<p><strong>(b)</strong> (2 points) Nominal rates cannot go far below zero, so suppose the Fed can set i no lower than 0%. What real rate does the economy get, and what is output? Show your work.</p>
+<p><strong>(c)</strong> (2 points) With output where it is in (b), what does the model say happens to inflation next, and what does that do to the real rate if i stays at 0%? Explain why his slides warn that "real difficulties arise with deflation."</p>
+<details><summary>Show answer</summary><div class="a">
+<p><strong>(a)</strong> r = 3 + 0.5(−2 − 2) = 3 + 0.5(−4) = 3 − 2 = 1%. The nominal rate is i = r + π = 1 + (−2) = −1%. At r = 1%, A = 18 − 3 = 15 and Y = 2 × 15 = 30 = Y*. So the rule's rate would close the gap. This is the −2% row of his slide 17 table.</p>
+<p class="credit"><strong>Full credit:</strong> r = 1%, i = −1%, Y = 30, with the steps shown.</p>
+<p><strong>(b)</strong> With i = 0, r = i − π = 0 − (−2) = 2%. Then A = 18 − 3(2) = 12 and Y = 2 × 12 = 24. The gap is 24 − 30 = −6, a recession.</p>
+<p class="credit"><strong>Full credit:</strong> r = 2% because subtracting a negative inflation rate raises r; Y = 24, a gap of −6.</p>
+<p><strong>(c)</strong> With Y &lt; Y*, inflation keeps falling gradually. If it falls to −3% while i is stuck at 0, the real rate rises to r = 0 − (−3) = 3%, so A = 18 − 9 = 9 and Y = 18. The rule says to lower r when inflation falls, but the floor on i makes r rise instead, which pushes PAE down and the gap wider. That is why deflation causes "real difficulties" (slide 16). His slide 17 table stops at this row with "Come visit in ECON 100B," so the fix is beyond this course.</p>
+<p class="credit"><strong>Full credit:</strong> inflation keeps falling; with i stuck at 0, r = −π rises, which lowers PAE and output further, the opposite of what the reaction function wants.</p>
+</div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">6 points</span> <strong>The Fed instead of Congress.</strong> Use the Fall 2025 final's numbers: before the 2025 headwinds, PAE = 20 + (1/3)Y and Y = $30 trillion; after them, PAE' = 18 + (1/3)Y and Y = $27 trillion. Suppose (hypothetically) inflation is steady at 2%, the real rate is 3%, and each 1 percentage point cut in r raises autonomous investment and consumption by a combined $1 trillion at every Y.</p>
+<p><strong>(a)</strong> (2 points) By how much must PAE rise at each Y to bring GDP back to $30 trillion? Explain why it is not $3 trillion.</p>
+<p><strong>(b)</strong> (2 points) By how many points must the Fed cut the real rate? What are the new real and nominal rates? Show your work.</p>
+<p><strong>(c)</strong> (2 points) Compare this with the official answer to Q3(j), raising G by $2 trillion. Does GDP end up the same? Which kinds of spending are higher under each policy?</p>
+<details><summary>Show answer</summary><div class="a">
+<p><strong>(a)</strong> PAE must rise by $2 trillion. The multiplier is 1 ÷ (1 − 1/3) = 1 ÷ (2/3) = 1.5. A $2 trillion rise in PAE raises GDP by 1.5 × 2 = $3 trillion, from 27 back to 30. Raising PAE by $3 trillion would overshoot to 27 + 1.5 × 3 = 31.5. The offset matches the drop in PAE, not the drop in GDP.</p>
+<p class="credit"><strong>Full credit:</strong> $2 trillion, with the multiplier of 1.5 as the reason.</p>
+<p><strong>(b)</strong> Each point of r is worth $1 trillion of autonomous spending, so the Fed must cut r by 2 ÷ 1 = 2 points, from 3% to 1%. Inflation stays at 2% in the short run, so the nominal rate falls from i = 3 + 2 = 5% to i = 1 + 2 = 3%. Check: the intercept goes back to 18 + 2 = 20, and 20 + (1/3)Y = Y gives Y = 20 × 1.5 = 30.</p>
+<p class="credit"><strong>Full credit:</strong> a 2-point cut, r = 1% and i = 3%, with the arithmetic shown.</p>
+<p><strong>(c)</strong> GDP ends at $30 trillion either way, because both policies raise the PAE intercept back to 20. The difference is which spending fills the gap. Raising G by 2 makes government purchases higher, while consumption and investment stay at their post-shock levels. Cutting r makes interest-sensitive investment and consumption (housing, new cars) higher, while G stays at 5. His Class 22 slides 12 and 13 list both routes: "increase G, cut T, or the Fed can reduce real interest rate to raise I."</p>
+<p class="credit"><strong>Full credit:</strong> same GDP of 30; G is higher under the fiscal route, I and C are higher under the monetary route.</p>
+</div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">4 points</span> <strong>Steep rule, gentle rule.</strong> Two central banks run identical economies, each with A = 24 − 3r, PAE = A + ½Y, Y* = 30, and r* = 3%. Bank G follows the gentle rule r = 3 + 0.5(π − 2). Bank S follows the steep rule r = 3 + 1 × (π − 2). Both start at π = 2%. An oil shock raises inflation in both economies to 3% overnight.</p>
+<p><strong>(a)</strong> (2 points) Find the real rate, nominal rate, and output each bank produces right after the shock. Show your work.</p>
+<p><strong>(b)</strong> (2 points) Which economy ends up with lower inflation in the long run? Explain, and state the tradeoff between the two rules.</p>
+<details><summary>Show answer</summary><div class="a">
+<p><strong>(a)</strong> Bank G: r = 3 + 0.5(3 − 2) = 3.5%, i = 3.5 + 3 = 6.5%, A = 24 − 10.5 = 13.5, Y = 27, a gap of −3. Bank S: r = 3 + 1(3 − 2) = 4%, i = 4 + 3 = 7%, A = 24 − 12 = 12, Y = 24, a gap of −6.</p>
+<p class="credit"><strong>Full credit:</strong> G: r = 3.5%, i = 6.5%, Y = 27. S: r = 4%, i = 7%, Y = 24.</p>
+<p><strong>(b)</strong> Neither. Long-run inflation is where each rule crosses r* = 3%. Gentle: 3 = 3 + 0.5(π − 2) gives π = 2%. Steep: 3 = 3 + 1(π − 2) gives π = 2%. Both rules pass through (π = 2%, r = 3%), so the shock is a movement along each rule and long-run inflation stays at 2% in both. The tradeoff is in the short run: the steep rule raises r more for the same shock, so it causes a deeper recession (a gap of −6 instead of −3).</p>
+<p class="credit"><strong>Full credit:</strong> same long-run inflation of 2% in both, because both rules cross r* at 2%; the steep rule gives a bigger short-run drop in output.</p>
+</div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">4 points</span> <strong>Checks versus spending.</strong> His Class 22 slides opened with $2,000 "tariff rebate checks" and asked, "What would the effects be of a cut in taxes T like this, on GDP? On inflation?" The CARES Act sent out $0.5 trillion in direct payments in 2020. Use this page's economy (mpc = ½, starting at Y = Y* = 30) and treat a new round of $0.5 trillion in checks as a one-time cut in net taxes T.</p>
+<p><strong>(a)</strong> (2 points) By how much do PAE and GDP rise? Compare with a $0.5 trillion increase in G. Show your work.</p>
+<p><strong>(b)</strong> (2 points) What happens to inflation right away and over time, and what does the Fed do?</p>
+<details><summary>Show answer</summary><div class="a">
+<p><strong>(a)</strong> Consumption depends on disposable income, Y − T, so a tax cut raises PAE only by mpc × the cut (his Class 20 slide 63). PAE rises by 0.5 × 0.5 = $0.25 trillion, and GDP rises by the multiplier times that, 2 × 0.25 = $0.5 trillion, to 30.5. A $0.5 trillion rise in G raises PAE by the full $0.5 trillion and GDP by 2 × 0.5 = $1 trillion. The checks would have to total $1 trillion to match $0.5 trillion of G, because households save half of each check.</p>
+<p class="credit"><strong>Full credit:</strong> PAE up $0.25 trillion and GDP up $0.5 trillion for the checks; PAE up $0.5 trillion and GDP up $1 trillion for G; the mpc is the reason.</p>
+<p><strong>(b)</strong> Right away inflation does not change, because of inflation inertia. The economy started at potential, so the checks open an expansionary gap (Y = 30.5 &gt; 30), and over time inflation gradually rises. Following its reaction function, the Fed raises r as inflation rises, which lowers PAE and pulls output back toward Y*.</p>
+<p class="credit"><strong>Full credit:</strong> no change at first, then rising inflation because Y &gt; Y*, and the Fed raising r along its reaction function.</p>
+</div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">4 points</span> <strong>Reading his charts.</strong> His Class 22 slides show inflation and the output gap Y − Y* in three periods. In the chart titled 1962 to 1970, output stayed above potential for several years. In the one titled 1979 to 1987, output fell well below potential. In the one titled 1994 to 1997, the gap stayed close to zero.</p>
+<p><strong>(a)</strong> (2 points) For each period, what does the model predict inflation did, and why?</p>
+<p><strong>(b)</strong> (2 points) His later slide on the federal funds rate since 1979 shows rates near 20% around 1980 and 1981, and inflation in the 1979 to 1987 chart fell from about 9% to about 2% to 3% and stayed there. Which experiment from this unit does that pattern look like? Explain.</p>
+<details><summary>Show answer</summary><div class="a">
+<p><strong>(a)</strong> 1962 to 1970: Y &gt; Y*, so firms were above comfortable capacity and raised prices by more than past inflation, and inflation gradually rose (his chart shows it climbing from under 2% to around 5%). 1979 to 1987: Y &lt; Y*, so inflation gradually fell (about 9% down to about 2% to 3%). 1994 to 1997: Y close to Y*, so firms just kept up with expected inflation and inflation held steady (near 2%).</p>
+<p class="credit"><strong>Full credit:</strong> rising, falling, and steady, each tied to the sign of the gap.</p>
+<p><strong>(b)</strong> It looks like an upward shift of the reaction function, the "lowering inflation on purpose" experiment. A very high interest rate while inflation was still high caused a deep recession first. Inflation then fell the whole time output was below potential. Before this, core inflation had run at about 6% to 7.5% for years (his slide 57 shows 1976 to 1979), so that looked like the old rule's long-run rate. Ending up lastingly at 2% to 3% means long-run inflation changed, and in the model only a shift of the reaction function changes long-run inflation. A movement along an unchanged rule would bring inflation back to the old long-run rate. (His slides show these charts without naming the experiment, so this is the model's reading of the data.)</p>
+<p class="credit"><strong>Full credit:</strong> an upward shift of the reaction function: recession first, permanently lower inflation after.</p>
+</div></details></div>
 </section>
 
 <section id="summary">
 <h2>One-minute review</h2>
+<div class="qc"><h4>Quick check</h4>
+<details><summary>The nominal rate is 6% and inflation is 5%. What is the real rate?</summary><p>1%, because r = i − π = 6 − 5.</p></details>
+<details><summary>Output is above potential today. What does inflation do this month?</summary><p>Almost nothing, because of inflation inertia; it rises gradually over the following months and years.</p></details>
+<details><summary>Under r = 3 + 0.5(π − 2), what real and nominal rates go with 4% inflation?</summary><p>r = 3 + 0.5 × 2 = 4%, and i = r + π = 4 + 4 = 8%.</p></details>
+<details><summary>PAE falls by $2 trillion and the mpc is 1/3. How much does GDP fall?</summary><p>$3 trillion, because the multiplier is 1 ÷ (1 − 1/3) = 1.5 and 1.5 × 2 = 3.</p></details>
+<details><summary>Does an oil shock change long-run inflation if the Fed keeps its rule?</summary><p>No, it is a movement along the reaction function, which still crosses r* at the same inflation rate.</p></details>
+<details><summary>After the Fed shifts its reaction function up, where does the real rate end up in the long run?</summary><p>Back at r*, because saving and investment set the long-run real rate; only inflation ends up lower.</p></details>
+</div>
 <ul>
 <li>Potential GDP Y* comes from labor, capital, and technology. Actual GDP Y = C + I + G + NX. The output gap is Y − Y*.</li>
 <li>The Fed's tool is the real interest rate: r = i − π, so i = r + π. Inflation is fixed in the very short run, so setting i sets r.</li>
@@ -990,4 +1144,4 @@
 </ul>
 <p><strong>Free extra practice:</strong> <a href="https://eml.berkeley.edu/~saez/econ2/FinalF2024.pdf">Saez ECON 2 Fall 2024 final</a> with <a href="https://eml.berkeley.edu/~saez/econ2/FinalF2024solutions.pdf">solutions</a> (a Keynesian cross with a Fed reaction function shift); <a href="https://eml.berkeley.edu/~saez/econ2/FinalF2023.pdf">Saez Fall 2023 final</a> with <a href="https://eml.berkeley.edu/~saez/econ2/FinalF2023solutions.pdf">solutions</a> (return to potential); <a href="https://openstax.org/books/principles-economics-3e/pages/25-3-the-phillips-curve">OpenStax 25.3, The Phillips Curve</a> (textbook topic, not on his slides); <a href="https://ocw.mit.edu/courses/14-02-principles-of-macroeconomics-spring-2023/pages/problem-sets/">MIT 14.02 problem sets with solutions</a> (harder, different notation).</p>
 </section>
-<div class="donebar"><button class="btn primary" id="mark-done" data-u="11-inflation">Mark this unit as done</button><span style="color:var(--mute);font-size:15px">Progress is saved in this browser.</span></div><nav class="pager"><a href="10-monetary.html"><small>Previous</small>Monetary policy and financial markets</a><a href="12-intl-macro.html" style="text-align:right"><small>Next</small>Exchange rates and international macro</a></nav></article></main><aside class="toc"><h4>On this page</h4><a href="#learn">The ideas, explained</a><a href="#examples">Worked examples</a><a href="#mistakes">Common mistakes</a><a href="#exam">How it shows up on the final</a><a href="#said">From his slides</a><a href="#practice">Practice questions</a><a href="#summary">One-minute review</a></aside></div><script src="site.js"></script></body></html>
+<div class="donebar"><button class="btn primary" id="mark-done" data-u="11-inflation">Mark this unit as done</button><span style="color:var(--mute);font-size:15px">Progress is saved in this browser.</span></div><nav class="pager"><a href="10-monetary.html"><small>Previous</small>Monetary policy and financial markets</a><a href="12-intl-macro.html" style="text-align:right"><small>Next</small>Exchange rates and international macro</a></nav></article></main><aside class="toc"><h4>On this page</h4><a href="#learn">The ideas, explained</a><a href="#examples">Worked examples</a><a href="#mistakes">Common mistakes</a><a href="#exam">How it shows up on the final</a><a href="#said">From his slides</a><a href="#variations">Every way this can be asked</a><a href="#practice">Practice questions</a><a href="#summary">One-minute review</a></aside></div><script src="site.js"></script></body></html>
